@@ -1,6 +1,6 @@
 # KFrost
 
-# 👋 AWS Engineer & Dev Learner in Japan
+# 👋 I'm a AWS Engineer & Dev Learner in Japan
 
 ## 🧠 Background
 - AWS運用保守・自動化システム構築経験（1.5-2.0年）
