@@ -1,50 +1,57 @@
-# KFrost
+# 👋 AWS Engineer | Dev Learner based in Japan
 
-# 👋 I'm a AWS Engineer & Dev Learner in Japan
+## 📌 Specializing in:  
+AWS Operations・Infrastructure Automation（Python / VBA）・JP/EN Technical Support
 
-## 📌 Specializing in AWS Ops + Python/VBA automation + JP/EN Support
+---
 
-## 🧠 Background 
+## 🧠 Professional Background
 
-- SESにて、日本の大手IT企業等で勤務(2022.05-現在まで)
-- 2022.05-2023.10 日系大手航空会社にて、日英NW障害切り分け対応
-- 2023.10-2024.07 大手ガス会社のAWS環境のLambda関数, VBA, Batchスクリプト更新対応)
-- 2024.07- 大手IT企業にて、AWSの運用保守、リソースの微更新作業、運用効率化等実施
+- 2022.05–現在：SESとして日本の大手IT企業に参画  
+- 2022.05–2023.10：日系大手航空会社にてNW障害切り分け（日英対応）  
+- 2023.10–2024.07：ガス会社向けAWS運用（Lambda / VBA / バッチ更新）  
+- 2024.07–現在：大手IT企業にてAWSの保守運用・改善作業・自動化対応
 
-## 💼 Experience
-- 日英対応（大手日系航空会社にて、翻訳・NW障害切り分け対応経験あり）
-- AWS運用保守経験
-- Cfnを利用した構築経験 (EC2, S3, ECR, ECS, DynamoDB, IAM, VPCなど)
-- Lambda関数の微更新 & CloudWatchログ、メトリクスでのモニタリング (pandas, pymysql使用経験あり)
-- 手順書等の大規模整備実施 (個人での問題提起に基づく)
-- 自動化スクリプトの構築、動作フローチャートの作成 
+---
 
-## 💡 Interests & Strengths
-- YAMLを用いた構築経験
-- AWSでの運用保守経験あり
-- 自動化スクリプト作成経験あり(Python, Lamnbda, VBA, Shell script, Batch)
-- Python, HTML, AWSの学習を通じた開発への挑戦
+## 💼 Technical Experience
 
-## 💼 自己学習・技術習得
+- AWSインフラ運用（S3 / EC2 / ECS / ECR / VPC / IAM / DynamoDB 等）  
+- CloudFormationを用いた構築業務  
+- Lambda関数の更新とCloudWatchを活用したログ解析（Python: pandas / pymysql）  
+- 日本語・英語による技術対応と翻訳（航空業界での実績）  
+- 自動化スクリプト作成（Python / Lambda / VBA / Shell / Batch）  
+- 技術手順書の標準化と業務改善提案  
+- 作業フロー図・構成図の作成による技術可視化
 
-- Courseraでクラウド／自動化技術を継続的に学習  
-- AWS環境構築（YAMLを用いたインフラ定義）  
-- Pythonによる自動化スクリプト開発  
-- PHP + AWS（Lambda/S3）構成によるWeb自動化システムを構築中
+---
 
+## 🧪 Skills & Learning
+
+- YAMLベースのAWS構築  
+- AWSを中心とした運用・自動化経験  
+- Courseraを通じた継続的学習（AWS / Python / クラウド設計）  
+- PHP + AWS（Lambda / S3）構成による静的Web自動生成システムに挑戦中
+
+---
 
 ## 🎯 Future Vision
-　AWSの経験を活かして、プログラミング技術を鍛えることで、開発業務にシフトしていきたいと考えております。
-  
-## 1-3年後: 
 
-- 言語を用いた開発はほぼ未経験の分野となります。
-- PHP, Java等現場に応じた学習をしつつ、現場経験を重ねていきます。
-- 開発チームの中枢的な立ち位置になることを目指していきます。
+AWS運用の経験を活かし、今後は開発業務へとステップアップ。  
+言語面はまだ発展途上ですが、現場で実践を重ね、将来的にはチームの中核エンジニアとして活躍したいと考えています。
 
-## 3-5年後:
-- 一エンジニアとして、現場の開発チームの中枢かつ、現場での教育&相談役としての立ち位置を確立したいです。
-- 新技術の学習を継続したいです。
+### ⏳ 1–3年後
 
-## 📫 Contact
-- LinkedIn: [https://www.linkedin.com/in/kenta-c-620535255]
+- 開発領域（PHP / Javaなど）の現場経験を積み上げる  
+- チームの中心的なエンジニアとしてのスキルと信頼を獲得
+
+### 🚀 3–5年後
+
+- 技術面だけでなく、教育・相談役としても頼られる存在に  
+- 新技術への探求心を忘れず、継続的な学習を続ける
+
+---
+
+## 🌐 Contact
+
+- LinkedIn: [https://www.linkedin.com/in/kenta-c-620535255](https://www.linkedin.com/in/kenta-c-620535255)
