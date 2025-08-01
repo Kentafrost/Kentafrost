@@ -25,10 +25,13 @@
 - 自動化スクリプト作成経験あり(Python, Lamnbda, VBA, Shell script, Batch)
 - Python, HTML, AWSの学習を通じた開発への挑戦
 
-## 💼 My own learning
-- Courseraでの学習
-- YAMLファイルを用いたAWS環境の構築
-- 自動化スクリプト作成(主にPython) 
+## 💼 自己学習・技術習得
+
+- Courseraでクラウド／自動化技術を継続的に学習  
+- AWS環境構築（YAMLを用いたインフラ定義）  
+- Pythonによる自動化スクリプト開発  
+- PHP + AWS（Lambda/S3）構成によるWeb自動化システムを構築中
+
 
 ## 🎯 Future Vision
 　AWSの経験を活かして、プログラミング技術を鍛えることで、開発業務にシフトしていきたいと考えております。
