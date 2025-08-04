@@ -16,10 +16,15 @@ AWS Operations・Infrastructure Automation（Python / VBA）・JP/EN Technical S
 
 ## 💼 Technical Experience
 
+1年4か月(2022.05–2023.10)
+- 日本語・英語による技術対応と翻訳（航空業界での実績）
+
+9か月(2023.10–2024.07)
+- Lambda関数の更新とCloudWatchを活用したログ解析（Python: pandas / pymysql）  
+
+1年(2024.07-)
 - AWSインフラ運用（S3 / EC2 / ECS / ECR / VPC / IAM / DynamoDB 等）  
 - CloudFormationを用いた構築業務  
-- Lambda関数の更新とCloudWatchを活用したログ解析（Python: pandas / pymysql）  
-- 日本語・英語による技術対応と翻訳（航空業界での実績）  
 - 自動化スクリプト作成（Python / Lambda / VBA / Shell / Batch）  
 - 技術手順書の標準化と業務改善提案  
 - 作業フロー図・構成図の作成による技術可視化
