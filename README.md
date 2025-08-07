@@ -7,7 +7,8 @@ AWS Operations・Infrastructure Automation（Python / VBA）・JP/EN Technical S
 
 ## 🧠 Professional Background
 
-- 2022.05–現在：SESとして日本の大手IT企業に参画  
+- 2022.05–現在：SES企業から日本の大手企業に客先常駐
+  
 - 2022.05–2023.10：日系大手航空会社にてNW障害切り分け（日英対応）  
 - 2023.10–2024.07：ガス会社向けAWS運用（Lambda / VBA / バッチ更新）  
 - 2024.07–現在：大手IT企業にてAWSの保守運用・改善作業・自動化対応
@@ -22,10 +23,11 @@ AWS Operations・Infrastructure Automation（Python / VBA）・JP/EN Technical S
 9か月(2023.10–2024.07)
 - Lambda関数の更新とCloudWatchを活用したログ解析（Python: pandas / pymysql）  
 
-1年(2024.07-)
+1年以上(2024.07-)
 - AWSインフラ運用（S3 / EC2 / ECS / ECR / VPC / IAM / DynamoDB 等）  
 - CloudFormationを用いた微構築業務
-  (完全な新規作成は、ほぼ経験なしだが、既存リソースをベースとした構築、微調整は経験あり。仕様書をベースに構築することは可能)  
+  - 完全な新規作成は、ほぼ経験なし。既存リソースをベースとした構築、微調整は経験あり。
+    仕様書をベースに構築することは可能
 
 - 自動化スクリプト作成（Python / Lambda / VBA / Shell / Batch）  
 - 技術手順書の標準化と業務改善提案  
