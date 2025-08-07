@@ -24,7 +24,9 @@ AWS Operations・Infrastructure Automation（Python / VBA）・JP/EN Technical S
 
 1年(2024.07-)
 - AWSインフラ運用（S3 / EC2 / ECS / ECR / VPC / IAM / DynamoDB 等）  
-- CloudFormationを用いた構築業務  
+- CloudFormationを用いた微構築業務
+  (完全な新規作成は、ほぼ経験なしだが、既存リソースをベースとした構築、微調整は経験あり。仕様書をベースに構築することは可能)  
+
 - 自動化スクリプト作成（Python / Lambda / VBA / Shell / Batch）  
 - 技術手順書の標準化と業務改善提案  
 - 作業フロー図・構成図の作成による技術可視化
