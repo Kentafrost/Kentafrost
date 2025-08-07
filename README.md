@@ -8,6 +8,7 @@ AWS Operations・Infrastructure Automation（Python / VBA）・JP/EN Technical S
 ## 🧠 Professional Background
 
 - 2022.05–現在：SES企業から日本の大手企業に客先常駐
+======================================================
   
 - 2022.05–2023.10：日系大手航空会社にてNW障害切り分け（日英対応）  
 - 2023.10–2024.07：ガス会社向けAWS運用（Lambda / VBA / バッチ更新）  
