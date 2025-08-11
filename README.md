@@ -1,7 +1,9 @@
 # 👋 AWS Engineer | Dev Learner based in Japan
 
 ## 📌 Specializing in:  
-AWS Operations・Infrastructure Automation（Python / VBA）・JP/EN Technical Support
+- ・AWS Operations
+- ・Infrastructure Automation（Python / VBA）
+- ・JP/EN Technical Support
 
 ---
 
