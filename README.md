@@ -65,9 +65,7 @@ AWS運用の経験を活かし、今後は開発業務へとステップアッ�
 ---
 
 
-### My Life Background
-
-## Phase	Description
+## 🚀 My Life Background
 - 🎓 Academia	Local university → Graduate school → Research & eventual pause
 - 🧪 Exploration	Public service exams, 150+ interviews, facing systemic barriers in Japan (オヤカク)
 
