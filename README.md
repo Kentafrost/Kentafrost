@@ -63,9 +63,3 @@ AWS運用の経験を活かし、今後は開発業務へとステップアッ�
 
 - 技術面だけでなく、教育・相談役としても頼られる存在に  
 - 新技術への探求心を忘れず、継続的な学習を続ける
-
----
-
-## 🌐 Contact
-
-- LinkedIn: [https://www.linkedin.com/in/kenta-c-620535255](https://www.linkedin.com/in/kenta-c-620535255)
