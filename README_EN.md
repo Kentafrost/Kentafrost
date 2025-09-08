@@ -33,20 +33,27 @@ Working as a dispatched engineer from an SES company to major Japanese enterpris
 
 - **1+ year (2024.07–)**  
   AWS infrastructure operations (S3, EC2, ECS, ECR, VPC, IAM, DynamoDB, etc.)  
-  Micro-level infrastructure setup using CloudFormation.  
-  Experience in modifying and extending existing resources based on specifications.  
-  Automation scripting (Python / Lambda / VBA / Shell / Batch).  
-  Standardization of technical documentation and workflow improvement proposals.  
-  Visualization of workflows and system architecture.
+  Micro-level infrastructure setup using CloudFormation  
+  Experience in modifying and extending existing resources based on specifications  
+  Automation scripting (Python / Lambda / VBA / Shell / Batch)  
+  Standardization of technical documentation and workflow improvement proposals  
+  Visualization of workflows and system architecture
 
 ---
 
-## 🧪 Skills & Learning
+## 🧪 Skills
 
 - YAML-based AWS infrastructure configuration  
-- Hands-on experience in AWS operations and automation  
-- Ongoing learning via Coursera (AWS, Python, Cloud Architecture)  
-- Currently building a static website auto-generation system using PHP + AWS (Lambda / S3)
+- Hands-on experience in AWS operations and automation
+- Monitoring in AWS services
+- AWS CLI, boto3 in Python
+- Automation tool in Python, Batch, Shell scripts
+
+## 🧪 Learning
+- Currently building a static website auto-generation system using PHP for local website and AWS for releasing public (Lambda / S3 / DynamoDB / SNS)
+- I'm working to release my PHP website in public
+- Actively learning JavaScript, PHP (Node.js, Vue.js), HTML, and CSS for full-stack development via Coursera, hands-on
+- Exploring UI/UX design principles to enhance user-facing systems
 
 ---
 
@@ -56,12 +63,15 @@ Leveraging my AWS operations experience to transition into development roles.
 While my language skills are still developing, I aim to grow through real-world practice and become a core engineer within a team.
 
 ### ⏳ 1–3 Years
-- Gain hands-on experience in development (PHP / Java)  
-- Build trust and technical credibility as a central team member
+- Gain hands-on experience in development (PHP / Java / JavaScript / Vue.js)  
+- Build trust and technical credibility as a central team member  
+- Begin online studies at an Indian university (2026–2028) to deepen technical and theoretical foundations  
+- Continue English and German language training for future international collaboration
 
 ### 🚀 3–5 Years
 - Become a technical mentor and advisor  
-- Continue exploring new technologies with curiosity and consistency
+- Continue exploring new technologies with curiosity and consistency  
+- Prepare for relocation and integration into European tech ecosystems
 
 ---
 
@@ -74,15 +84,16 @@ Local university → Graduate school → Research → Pause
 Public service exams, 150+ job interviews, navigating systemic barriers in Japan (e.g., family approval culture)
 
 ### 🧳 Survival Mode  
-Moved out at night, worked low-income jobs (caregiving, call centers), began self-reliance over 6 months
-
+Moved out at night, worked low-income jobs (caregiving, call centers), began self-reliance over 6 months  
 → Secured full-time employment at an SES company in Tokyo, launching my IT career
 
 ### 🚀 Technical Pivot  
 SES work led to AWS, scripting, automation, and a growing interest in UI/UX
 
 ### 🛠️ Independent Builder  
-Creating personal tools, PHP-based sites, and planning for international expansion
+Creating personal tools, PHP-based sites, and planning for international expansion  
+→ Preparing for online study at an Indian university (2026–2028), followed by immersive German language training and eventual relocation to Europe
 
-## 🌐 Contact
+---
+### 🌐 Contact
 LinkedIn: https://www.linkedin.com/in/kenta-c-620535255
