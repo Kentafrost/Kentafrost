@@ -93,7 +93,3 @@ SES work led to AWS, scripting, automation, and a growing interest in UI/UX
 ### 🛠️ Independent Builder  
 Creating personal tools, PHP-based sites, and planning for international expansion  
 → Preparing for online study at an Indian university (2026–2028), followed by immersive German language training and eventual relocation to Europe
-
----
-### 🌐 Contact
-LinkedIn: https://www.linkedin.com/in/kenta-c-620535255
