@@ -66,17 +66,6 @@ AWS運用の経験を活かし、今後は開発業務へとステップアッ�
 
 ---
 
-
-## 🚀 My Life Background
-- 🎓 Academia	Local university → Graduate school → Research & eventual pause
-- 🧪 Exploration	Public service exams, 150+ interviews, facing systemic barriers in Japan (オヤカク)
-
-- 🧳 Survival Mode	Night move from home, low-income jobs (介護・コールセンター), self-reliance begins for 6 months
-  - ⇒ get a full-time job in SES company(IT) in Tokyo, Japan. (Starting my career in IT field)
-
-- 🚀 Technical Pivot	SES work, AWS, scripting, automation, UI/UX awakening
-- 🛠️ Independent Builder	Portfolio creation, PHP site, narratable tools, international ambitions
-
 ## 🌐 Contact
 
 - LinkedIn: [https://www.linkedin.com/in/kenta-c-620535255](https://www.linkedin.com/in/kenta-c-620535255)
