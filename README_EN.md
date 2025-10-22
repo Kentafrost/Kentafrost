@@ -1,95 +1,67 @@
-# 👋 AWS Engineer | Dev Learner based in Japan
+# 🌐 Pragmatic & Globally-Oriented IT Professional
 
-## 📌 Specialties
-- AWS Operations & Infrastructure Monitoring  
-- Infrastructure Automation (Python / VBA / Shell / Batch)  
-- Technical Support in Japanese & English  
+Welcome! I'm K.C, a resilient and globally-minded IT engineer with 4+ years of hands-on experience in infrastructure operations, cloud automation, and scripting. My journey spans from microbiology labs to AWS dashboards—and it's still evolving.
 
 ---
 
-## 🧠 Professional Background
-
-**2022.05–Present**  
-Working as a dispatched engineer from an SES company to major Japanese enterprises.
-
-- **2022.05–2023.10**  
-  Network troubleshooting and bilingual technical support (JP/EN) at a major Japanese airline.
-
-- **2023.10–2024.07**  
-  AWS operations for a gas company (Lambda, VBA, batch updates).
-
-- **2024.07–Present**  
-  AWS maintenance, automation, and operational improvements at a major IT firm.
+## 🎓 Academic Phase (2015.04–2020.03)
+- Studied **Food Science and Microbiology** in Japan  
+- Focused on **fermentation**, **hygiene**, and **microbial behavior**  
+- Entered graduate school, later paused studies to pursue employment
 
 ---
 
-## 💼 Technical Experience
-
-- **1 year 4 months (2022.05–2023.10)**  
-  Technical support and translation in Japanese and English (aviation industry).
-
-- **9 months (2023.10–2024.07)**  
-  Lambda function updates and log analysis using CloudWatch (Python: pandas / pymysql).
-
-- **1+ year (2024.07–)**  
-  AWS infrastructure operations (S3, EC2, ECS, ECR, VPC, IAM, DynamoDB, etc.)  
-  Micro-level infrastructure setup using CloudFormation  
-  Experience in modifying and extending existing resources based on specifications  
-  Automation scripting (Python / Lambda / VBA / Shell / Batch)  
-  Standardization of technical documentation and workflow improvement proposals  
-  Visualization of workflows and system architecture
+## 🚪 Job Search & Barriers (2020.07–2022.04)
+- Took **civil service exams** and applied to **200+ companies**  
+- Targeted **retail**, **construction**, and **IT** sectors  
+- Faced systemic issues: **parental consent**, **housing guarantors**  
+- Lived independently in a low-cost apartment while working dispatch jobs
 
 ---
 
-## 🧪 Skills
-
-- YAML-based AWS infrastructure configuration  
-- Hands-on experience in AWS operations and automation
-- Monitoring in AWS services
-- AWS CLI, boto3 in Python
-- Automation tool in Python, Batch, Shell scripts
-
-## 🧪 Learning
-- Currently building a static website auto-generation system using PHP for local website and AWS for releasing public (Lambda / S3 / DynamoDB / SNS)
-- I'm working to release my PHP website in public
-- Actively learning JavaScript, PHP (Node.js, Vue.js), HTML, and CSS for full-stack development via Coursera, hands-on
-- Exploring UI/UX design principles to enhance user-facing systems
+## 🧠 IT Entry: Network Operations (2022.05–2023.08)
+- Joined SES firm, handled **fault isolation** and **incident triage**  
+- Duration: **1 year and 4 months**  
+- Focused on **monitoring**, **troubleshooting**, and **reporting flow**
 
 ---
 
-## 🎯 Future Vision
-
-Leveraging my AWS operations experience to transition into development roles.  
-While my language skills are still developing, I aim to grow through real-world practice and become a core engineer within a team.
-
-### ⏳ 1–3 Years
-- Gain hands-on experience in development (PHP / Java / JavaScript / Vue.js)  
-- Build trust and technical credibility as a central team member  
-- Begin online studies at an Indian university (2026–2028) to deepen technical and theoretical foundations  
-- Continue English and German language training for future international collaboration
-
-### 🚀 3–5 Years
-- Become a technical mentor and advisor  
-- Continue exploring new technologies with curiosity and consistency  
-- Prepare for relocation and integration into European tech ecosystems
+## ☁️ Cloud Operations Engineering (2023.09–Present)
+- **2 years total** across two companies in AWS operations  
+  - Current: **1 year 3 months**  
+  - Previous: **9 months**  
+- Tools: `CloudWatch`, `Lambda`, `S3`, `EC2`, `SNS`, `Health Dashboard`  
+- Infrastructure as Code: `CloudFormation (Cfn)`  
+- Automation: `Python`, `PowerShell`, `AWS Batch`  
+- Cost Optimization: `Lambda + QuickSight`, storing results in `RDBs`  
+- Legacy Automation: `VBA scripting`
 
 ---
 
-## 🚀 Life Background
+## 🛠️ Personal Development (2024.04–Present)
+- Started with Python:  
+  - Folder organization  
+  - Windows Task Scheduler  
+  - Google Drive automation  
+- Libraries used: `boto3`, `pandas`, `pymysql`, `matplotlib`  
+- Since **2025.06**, practicing `PHP` and `JavaScript`  
+- Building personal tools to strengthen technical skills beyond work
 
-### 🎓 Academia  
-Local university → Graduate school → Research → Pause
+---
 
-### 🧪 Exploration  
-Public service exams, 150+ job interviews, navigating systemic barriers in Japan (e.g., family approval culture)
+## 📅 Next Step: Web Development (2026.02–2029.01 planned)
+- Will join SES company to gain **web development experience**  
+- Focus: `JavaScript` and `TypeScript`  
+- **3-year plan** to build full-stack capabilities
 
-### 🧳 Survival Mode  
-Moved out at night, worked low-income jobs (caregiving, call centers), began self-reliance over 6 months  
-→ Secured full-time employment at an SES company in Tokyo, launching my IT career
+---
 
-### 🚀 Technical Pivot  
-SES work led to AWS, scripting, automation, and a growing interest in UI/UX
+## 🌍 Long-Term Career Plan (from 2029.02 onward)
+- 🎓 Online study at an **Indian university** (e.g., University of Madras)  
+- 🌏 English training in **Cebu** using systems like **Credo** + international work  
+- 🇩🇪 German language study and employment in **Germany**  
+- 🎯 Goal: Become a **global technologist and cultural bridge**—sharing Japanese values abroad and integrating global perspectives
 
-### 🛠️ Independent Builder  
-Creating personal tools, PHP-based sites, and planning for international expansion  
-→ Preparing for online study at an Indian university (2026–2028), followed by immersive German language training and eventual relocation to Europe
+---
+
+> “My journey is not just about career—it’s about designing a life of autonomy, adaptability, and cross-cultural impact.”
