@@ -1,96 +1,95 @@
-# 🌏 K.F – From AWS Operations & Micro-Infrastructure to Web Development
+# 🌏 K.F – From AWS Operations to Web Development
 
-With over 4 years of hands-on experience in infrastructure operations, cloud automation, and scripting, 
-I transitioned from food science to IT—building my career through resilience and strategic growth. 
-I’ve overcome structural barriers and continue to pursue autonomy and global impact through technology.
-
----
-
-## 🎓 Academic Phase (2015.04–2020.03)
-
-- Majored in **Food Science and Microbiology** at a Japanese university  
-- Studied **fermentation**, **hygiene**, and **microbial behavior**  
-- Entered graduate school, but later paused studies
-
-### 🔍 Reason for Pausing Graduate Research
-
-- Despite working from early morning until 9 PM, I hit a **slump**  
-- In microbiology, results are often invisible and hard to interpret  
-- Many areas remain **scientifically unexplored**, making progress feel uncertain  
-- I felt like my efforts were being **swallowed by a black hole**, with little feedback or reward  
-- Motivation declined as I couldn’t clearly see what I was doing wrong or right
+A pragmatic IT professional with over 4 years of hands-on experience in infrastructure operations, cloud automation, and scripting.  
+Originally trained in food science and microbiology, I transitioned into tech by overcoming structural barriers and building a self-driven, strategic career.
 
 ---
 
-## 🚪 Job Search & Structural Barriers (2020.07–2022.04)
+## 🎓 University & Graduate School (Apr 2015 – Mar 2020)
 
-- Took **civil service exams** while applying to over **200 companies**  
-- Targeted **retail**, **construction**, and **IT sectors**  
-- Faced systemic issues like **parental consent** and **housing guarantor requirements**  
-- Lived independently in a low-cost apartment while working dispatch jobs
+- Majored in Food Science and Microbiology at a private university in Japan  
+- Studied fermentation, hygiene management, and microbial behavior  
+- Entered graduate school and continued research, but later took a leave of absence
 
-### 🎯 Motivation Behind Career Choices
+### 🔍 Reason for Leave of Absence
 
-- Chose **retail** for its **visible impact**—smiles, sales figures, and measurable results  
-- Eventually chose **IT** because:  
-  - Systems are built on existing logic—there’s usually an answer  
-  - Reference materials are accessible online  
-  - Testing and learning can be done anywhere  
-  - These factors made it easier to maintain motivation and track progress
+- Faced a prolonged slump during intensive research (7 AM to 9 PM daily)  
+- Nature is not man-made—many phenomena were unpredictable and difficult to validate  
+- Despite repeated testing, I often questioned whether hypotheses were truly correct  
+- Motivation declined due to the abstract nature of results  
+- Decided to pursue job hunting to find a career better aligned with my strengths
 
 ---
 
-## 🧠 IT Career Start: Network Operations (2022.05–2023.08)
+## 🚪 Job Hunting & Structural Barriers (Jul 2020 – Apr 2022)
 
-- Joined an SES firm, handling **fault isolation** and **incident triage**  
-- Duration: **1 year and 4 months**  
-- Focused on **monitoring**, **troubleshooting**, and **reporting workflows**
-
----
-
-## ☁️ Cloud Operations Engineering (2023.09–Present)
-
-- Working in **AWS operations** across two companies  
-  - Current: **1 year 3 months**  
-  - Previous: **9 months**  
-- Tools & services:  
-  - `CloudWatch`, `Lambda`, `S3`, `EC2`, `SNS`, `Health Dashboard`, `CloudFormation`, `SecurityHub`, `DynamoDB`  
-- Infrastructure as Code: `CloudFormation (Cfn)`  
-- Automation scripting: `Python`, `PowerShell`, `AWS Batch`  
-- Cost optimization: `Lambda + QuickSight`, storing results in `RDBs`  
-- Legacy automation: `VBA scripting`
+- Applied to over 200 companies while preparing for civil service exams  
+- Explored diverse industries: retail, construction, IT  
+- Faced structural challenges such as parental consent and guarantor requirements  
+- Began independent living in a low-cost apartment while working temporary jobs
 
 ---
 
-## 🛠️ Personal Development (2024.04–Present)
+## 🎯 Career Motivation
 
-- Started with Python:  
+- **Retail**: Results are visible (sales, customer satisfaction), which helps maintain motivation  
+- **Construction**: Tangible outcomes like buildings provide a sense of accomplishment  
+- **IT**:  
+  - Easy access to information and testing environments via the internet  
+  - Constant evolution keeps the field engaging  
+  - Suited to my hands-on nature—allows for experimentation and continuous learning  
+  - Ideal for self-study and certification efforts
+
+---
+
+## 🧠 IT Career Start – Network Operations (May 2022 – Aug 2023)
+
+- Worked at an SES company handling network incident triage and fault isolation  
+- Duration: 1 year and 4 months  
+- Responsibilities:
+  - Monitoring and troubleshooting  
+  - Dispatching engineers and managing escalation  
+  - Diagnosing issues via ping tests  
+  - Bilingual support (Japanese-English, primarily email)
+
+---
+
+## ☁️ Cloud Operations Engineer – AWS Focus (Sep 2023 – Present)
+
+- Engaged in AWS infrastructure operations and maintenance  
+- Tenure: 1 year and 3 months (current), 9 months (previous)  
+- Responsibilities:
+  - Legacy automation using VBA  
+  - AWS cost calculation via QuickSight + Lambda + RDB  
+  - Infrastructure management via CloudFormation  
+  - Automation scripting with Python, PowerShell, AWS Batch  
+- Technologies:
+  - CloudWatch, Lambda, S3, EC2, SNS, Health Dashboard  
+  - CloudFormation, SecurityHub, DynamoDB
+
+---
+
+## 🛠️ Personal Development & Skill Expansion (Apr 2024 – Present)
+
+- Built personal tools for:
   - Folder organization  
-  - Windows Task Scheduler  
-  - Google Drive automation  
-- Libraries used: `boto3`, `pandas`, `pymysql`, `matplotlib`  
-- Since **2025.06**, practicing `PHP` and `JavaScript`  
-- Building personal tools to strengthen technical skills beyond work  
-- Technologies explored: `AWS`, `Google API`, `Python`, `JavaScript`, `PHP`, `SQL`
+  - Windows Task Scheduler automation  
+  - Google Drive integration  
+- Started practicing PHP and JavaScript (Jun 2025)  
+- Continuously strengthening technical skills outside of work
+
+### Technologies
+- AWS, Google API, Python, JavaScript, PHP, SQL
+
+### Libraries
+- boto3, pandas, pymysql, matplotlib
 
 ---
 
-## 📅 Next Step: Web Development (2026.02–2029.01 planned)
+## 📅 Next Step – Web Development (From Feb 2026)
 
-- Will join a new SES company to gain **web development experience**  
-- Focus: `JavaScript` and `TypeScript`  
-- **3-year plan** to build full-stack capabilities
-
----
-
-## 🌍 Long-Term Career Plan (from 2029.02 onward)
-
-- 🎓 Online study at an **Indian university** (e.g., University of Madras)  
-- 🌏 English training in **Cebu, Philippines** using systems like **Credo**  
-- 💼 Work at an **international company** in the Philippines  
-- 🇩🇪 German language study and employment in **Germany**  
-- 🎯 Goal: Become a **global technologist and cultural bridge**—sharing Japanese values abroad and integrating global perspectives
+- Transitioning to web development at an SES company  
+- Target technologies: Python, JavaScript, TypeScript  
+- Goal: Gain full-stack development experience over a 3-year period
 
 ---
-
-> “My career is not just a path—it's a design for autonomy, adaptability, and cross-cultural impact.”
