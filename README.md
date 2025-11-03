@@ -75,5 +75,5 @@
 - 勉強中: JavaScript, PHP
 - 主な使用ライブラリ：boto3, pandas, pymysql, matplotlib
 
-📅 次のステップ：Web開発（2026.02〜）
-使用したい技術：Python, JavaScript, TypeScript
+## 📅 次のステップ：Web開発（2026.02〜）
+- 使用したい技術：Python, JavaScript, TypeScript, DB操作(MySQLなど)
