@@ -29,12 +29,11 @@
 
 
 ### 🛠️ 個人開発・スキル拡張（2024.04〜現在）
-- Pythonでフォルダ整理、Windowsタスクスケジューラー操作、Google Drive連携などを実装
-- 2025.06頃からPHPとJavaScriptの練習を開始
+- Pythonでフォルダ整理、Windowsタスクスケジューラー操作、Google Drive連携、グラフ作成などのツールを実装
 - 個人ツール開発を通じて、業務外でも技術力を強化中
   
 - 使用技術：AWS, Google API, Python
-- 勉強中: JavaScript, PHP
+- 勉強中: JavaScript, PHP, React, HTML, CSS
 - 主な使用ライブラリ：boto3, pandas, pymysql, matplotlib
 
 ### 📅 次のステップ：Web開発（2026.02〜）
