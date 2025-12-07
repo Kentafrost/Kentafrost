@@ -9,22 +9,23 @@
 
 
 ### ☁️ クラウドオペレーションエンジニア（AWS中心）（2023.09〜現在）
-- AWS環境の運用保守に従事（現職：1年3か月、前職：9か月）
+- 使用技術：VBA, Batch, PowerShell, AWS, Teams, MS製品一式
+
+- AWS環境の運用保守業務
 
 - VBAによる書類作成、AWSリソースのパラメータシートの作成業務の自動化
 - QuickSightとLambdaでAWSコスト計算・RDB格納
+
 - CloudFormationによる構成管理・更新
-  - DynamoDB, S3, CloudWatch, ECS, Lambda
+  - DynamoDB, S3, CloudWatch, ECS, Lambdaを始めとする20以上のサ―ビス
 
 - Python, PowerShell, AWS Batchによる自動化スクリプト作成
-  - AWSリソースの設定値取得(EC2, S3, SNS, ECS, ECR, EventBridge, Lambda, DynamoDBなど20種類以上のサービス)
+  - AWSリソースの設定値取得(EC2, S3, SNS, ECS, ECR, EventBridge, Lambda, DynamoDBなど20以上のサービス)
   - 自動CloudFormationスタック作成
   - 土日祝日のみスクリプトを動作させるため、土日祝日のリストアップ用スクリプト(requestsライブラリ使用)
   - EC2インスタンスの起動実績をCSV出力し、利用状況を可視化（コスト削減）
   - LambdaでPDFファイルをS3から取得 → API経由でサーバー側に送信・処理 → 処理結果に応じてAmazon SNSで通知メールを発報(サーバー側の監視強化)
   - AWS CLI未導入端末のEventViewerログを収集・共有・CloudWatchに連携し、エラー検知を自動化
-  
-- 使用技術：CloudWatch, Lambda, S3, EC2, SNS, Health Dashboard, CloudFormation, SecurityHub, DynamoDB
 
 
 ### 🛠️ 個人開発・スキル拡張（2024.04〜現在）
