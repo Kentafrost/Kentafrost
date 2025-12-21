@@ -37,4 +37,9 @@
 - 主な使用ライブラリ：boto3, pandas, pymysql, matplotlib
 
 ### 📅 次のステップ：Web開発（2026.02〜）
-- 使用したい技術：Python, JavaScript, TypeScript, DB操作(MySQLなど)
+
+#### 希望する技術
+- 言語：Python, JavaScript, TypeScript
+- 環境: AWS, Azure
+- database: MongoDB, sqlite
+- framework: react, flask
