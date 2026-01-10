@@ -31,15 +31,16 @@
 ### 🛠️ 個人開発・スキル拡張（2024.04〜現在）
 - Pythonでフォルダ整理、Windowsタスクスケジューラー操作、Google Drive連携、グラフ作成などのツールを実装
 - 個人ツール開発を通じて、業務外でも技術力を強化中
+- reactにて公開用、個人用UI作成
   
 - 使用技術：AWS, Google API, Python
 - 勉強中: JavaScript, PHP, React, HTML, CSS
 - 主な使用ライブラリ：boto3, pandas, pymysql, matplotlib
 
-### 📅 次のステップ：Web開発（2026.02〜）
+### 📅 次のステップ：開発の現場にて保守、開発経験を積む（2026.01〜）
 
-#### 希望する技術
-- 言語：Python, JavaScript, TypeScript
-- 環境: AWS, Azure
-- database: MongoDB, sqlite
-- framework: react, flask
+#### 学習する技術
+- Programming language：Python, JavaScript, TypeScript, Java
+- Cloud Environment: AWS, Azure
+- Database: MongoDB, sqlite
+- Framework: react, Springboot, vue.js
