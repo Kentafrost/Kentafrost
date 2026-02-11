@@ -26,80 +26,146 @@
 
 ## 📈 職歴詳細
 
-### 🛠️ 障害一次切り分け窓口（2022.05〜2023.08）
+### 🛠️ **障害一次切り分け窓口** (2022.05〜2023.08)
 
-**📋 基本情報**
-- **期間:** 1年4か月
-- **業界:** 航空業界（大手日系航空会社）
-- **雇用形態:** SES
+<table>
+  <tr>
+    <th align="center">📋 基本情報</th>
+    <th align="left">🎯 主な業務内容・実績</th>
+  </tr>
+  <tr>
+    <td align="center">
+      <strong>期間:</strong> 1年4か月
+      <br/>
+      <br/>
+      <strong>業務範囲:</strong>
+      <br/>ネットワーク障害一次切り分け・インシデント対応 
+      <br/>(航空業界・SES)
+      <br/>
+      <br/>
+      <strong>主要技術:</strong>
+      <br/>• ネットワーク監視
+      <br/>• インシデント対応
+      <br/>• 英日バイリンガル対応
+      <br/>• トラブルシューティング
+    </td>
+    <td><strong>🔧 インシデント対応・監視業務</strong>
+      <br/>• ネットワーク障害の一次切り分け・対応
+      <br/>• 運用監視・トラブル対応・報告フロー整備
+      <br/>• ping疎通による障害確認・技術者派遣
+      <br/>• 日英バイリンガル環境でのメール対応
+      <br/>
+      <br/>
+      <strong>📈 成果・学び</strong>
+      <br/>• 障害対応スキル・緊急時判断力の向上
+      <br/>• 航空業界特有のシステム運用経験
+      <br/>• 多言語コミュニケーション能力の実践
+      <br/>• 24時間365日運用体制での責任感の醸成
+    </td>
+  </tr>
+</table>
 
-**🎯 主な業務内容**
-- ネットワーク障害の一次切り分け・インシデント対応
-- 運用監視、トラブル対応、報告フローの整備
-- ping疎通による障害確認、技術者ディスパッチ
-- 日英バイリンガル環境でのメール対応
+<br/>
+
+### ☁️ **クラウドオペレーションエンジニア（AWS中心）** (2023.09〜2025.12)
+
+<table>
+  <tr>
+    <th align="center">📋 基本情報</th>
+    <th align="left">🎯 主な業務内容・実績</th>
+  </tr>
+  <tr>
+    <td align="center">
+      <strong>期間:</strong> 2年4か月
+      <br/>
+      <br/>
+      <strong>業務範囲:</strong>
+      <br/>AWS環境運用保守・自動化
+      <br/>
+      <br/>
+      <strong>主要技術:</strong>
+      <br/>• AWS (20+サービス)
+      <br/>• Python, VBA
+      <br/>• PowerShell
+      <br/>• CloudFormation
+      <br/>• Lambda, S3, DynamoDB
+      <br/>• QuickSight, CloudWatch
+    </td>
+    <td><strong>📊 運用自動化・効率化</strong>
+      <br/>• VBAによる書類・パラメータシート完全自動化
+      <br/>• QuickSight + Lambda でAWSコスト計算システム構築
+      <br/>• EC2利用状況可視化によるコスト削減施策
+      <br/>
+      <br/>
+      <strong>🏗️ インフラ構成管理</strong>
+      <br/>• CloudFormationによる20+AWSサービス構成管理
+      <br/>• DynamoDB, ECS, Lambda等の運用保守
+      <br/>• 自動CloudFormationスタック作成スクリプト開発
+      <br/>
+      <br/>
+      <strong>🔧 Python自動化開発</strong>
+      <br/>• 20+AWSサービス設定値取得自動化
+      <br/>• 土日祝日判定ロジック実装(requests使用)
+      <br/>• Lambda+S3+SNS PDF処理・通知システム
+      <br/>• EventViewer自動ログ収集・CloudWatch連携
+    </td>
+  </tr>
+</table>
+
+<br/>
+
+### 💻 **OSS運用・開発エンジニア** (2026.01〜現在)
+
+<table>
+  <tr>
+    <th align="center">📋 基本情報</th>
+    <th align="left">🎯 主な業務内容・実績</th>
+  </tr>
+  <tr>
+    <td align="center">
+      <strong>期間:</strong> 1か月・継続中
+      <br/>
+      <br/>
+      <strong>業務範囲:</strong>
+      <br/>オープンソース運用・改善・検証
+      <br/>
+      <br/>
+      <strong>主要技術:</strong>
+      <br/>• OSS管理・運用
+      <br/>• Java, Kubernetes
+      <br/>• AWS, Git/GitHub
+      <br/>• コード品質管理
+      <br/>• CI/CD, DevOps
+    </td>
+    <td><strong>🔍 OSS運用・検証</strong>
+      <br/>• OSSの動作検証・品質保証
+      <br/>• システム運用・モニタリング
+      <br/>• パフォーマンス最適化・トラブルシューティング
+      <br/>
+      <br/>
+      <strong>📝 文書化・ナレッジ管理</strong>
+      <br/>• OSS運用ドキュメント作成・更新
+      <br/>• ベストプラクティスの文書化
+      <br/>• 技術的知見の社内共有体制構築
+      <br/><br/>
+      <strong>🔧 コード改善・最適化</strong>
+      <br/>• OSSコード調整・パフォーマンス改善
+      <br/>• バグ修正・機能強化・リファクタリング
+      <br/>• コード品質向上・レビュープロセス改善<br/>
+      <br/>
+      <strong>🚀 今後の業務予定</strong>
+      <br/>• AWSサービス連携 - クラウドネイティブ構築
+      <br/>• Java開発 - エンタープライズアプリ開発
+      <br/>• Kubernetes運用 - コンテナオーケストレーション
+    </td>
+  </tr>
+</table>
 
 ---
 
-### ☁️ クラウドオペレーションエンジニア（AWS中心）（2023.09〜2025.12）
+## 💻 技術スタック・習熟度マップ
 
-**📋 基本情報**
-- **期間:** 2年4か月
-- **主要技術:** AWS, Python, VBA, PowerShell, CloudFormation
-- **業務範囲:** AWS環境の運用保守・自動化
-
-**🎯 主な実績・業務内容**
-
-**📊 運用自動化・効率化**
-- VBAによる書類作成・パラメータシート作成の完全自動化
-- QuickSight + Lambda でAWSコスト計算システム構築
-- EC2インスタンス利用状況の可視化によるコスト削減施策
-
-**🏗️ インフラ構成管理**
-- CloudFormationによる20以上のAWSサービスの構成管理
-- DynamoDB, S3, CloudWatch, ECS, Lambda等の運用保守
-- 自動CloudFormationスタック作成スクリプト開発
-
-**🔧 Python自動化開発**
-- 20以上のAWSサービスの設定値取得自動化
-- 土日祝日判定ロジック実装（requestsライブラリ使用）
-- Lambda + S3 + SNSを活用したPDF処理・通知システム
-- EventViewerログ自動収集・CloudWatch連携システム
-
----
-
-### 💻 OSS運用・開発エンジニア（2026.01〜現在）
-
-**📋 基本情報**
-- **期間:** 1か月（継続中）
-- **主要技術:** OSS, Java, Kubernetes, AWS, Git/GitHub
-- **業務範囲:** オープンソースソフトウェアの運用・改善・検証
-
-**🎯 主な業務内容**
-
-**🔍 OSS運用・検証**
-- • OSSの動作検証・品質保証
-- • システム運用・モニタリング
-- • パフォーマンス最適化・トラブルシューティング
-
-**📝 文書化・ナレッジ管理**
-- • OSSの運用ドキュメント作成・更新
-- • ベストプラクティスの文書化
-- • 技術的知見の社内共有
-
-**🔧 コード改善・最適化**
-- • OSSコードの調整・パフォーマンス改善
-- • バグ修正・機能強化
-- • コード品質向上・リファクタリング
-
-**🚀 今後の業務予定**
-- • **AWSサービス連携** - クラウドネイティブアーキテクチャの構築
-- • **Java開発** - エンタープライズアプリケーション開発
-- • **Kubernetes運用** - コンテナオーケストレーション学習・実装
-
----
-
-### 💻 技術スタック・習熟度マップ
+### ☁️ **クラウド・インフラ技術**
 
 <table>
   <tr>
@@ -160,8 +226,20 @@
     <td align="center">学習予定</td>
     <td>マルチクラウド対応準備</td>
   </tr>
-  
-  <!-- 💻 プログラミング言語 -->
+</table>
+
+<br/>
+
+### 💻 **プログラミング言語**
+
+<table>
+  <tr>
+    <th align="center">🏷️ カテゴリ</th>
+    <th align="center">技術・言語</th>
+    <th align="center">⭐ 習熟度</th>
+    <th align="center">⏰ 実務経験</th>
+    <th align="center">📝 主な実績・用途</th>
+  </tr>
   <tr>
     <td rowspan="5" align="center"><strong>💻<br/>プログラミング<br/>言語</strong></td>
     <td><strong>Python</strong></td>
@@ -193,8 +271,20 @@
     <td align="center">学習中</td>
     <td>Spring Boot開発</td>
   </tr>
-  
-  <!-- 🛠️ フレームワーク・ライブラリ -->
+</table>
+
+<br/>
+
+### 🛠️ **フレームワーク・ライブラリ**
+
+<table>
+  <tr>
+    <th align="center">🏷️ カテゴリ</th>
+    <th align="center">技術・言語</th>
+    <th align="center">⭐ 習熟度</th>
+    <th align="center">⏰ 実務経験</th>
+    <th align="center">📝 主な実績・用途</th>
+  </tr>
   <tr>
     <td rowspan="5" align="center"><strong>🛠️<br/>フレームワーク<br/>ライブラリ</strong></td>
     <td>boto3（AWS SDK）</td>
@@ -226,8 +316,20 @@
     <td align="center">学習中</td>
     <td>Javaバックエンド開発</td>
   </tr>
-  
-  <!-- 🌐 ネットワーク・システム -->
+</table>
+
+<br/>
+
+### 🌐 **ネットワーク・システム**
+
+<table>
+  <tr>
+    <th align="center">🏷️ カテゴリ</th>
+    <th align="center">技術・言語</th>
+    <th align="center">⭐ 習熟度</th>
+    <th align="center">⏰ 実務経験</th>
+    <th align="center">📝 主な実績・用途</th>
+  </tr>
   <tr>
     <td rowspan="3" align="center"><strong>🌐<br/>ネットワーク<br/>システム</strong></td>
     <td>障害切り分け・インシデント対応</td>
@@ -239,24 +341,53 @@
     <td>Windows Server運用</td>
     <td align="center">⭐⭐⭐</td>
     <td align="center">3年8か月</td>
-    <td>EventViewer・システム監視</td>
+    <td>EventViewer・システム監視・ADサーバー使用</td>
   </tr>
   <tr>
     <td>MS Office製品（Expert）</td>
     <td align="center"><strong>⭐⭐⭐⭐⭐</strong></td>
     <td align="center">3年8か月</td>
-    <td>英日バイリンガル対応・業務効率化</td>
+    <td>ドキュメント作成など</td>
   </tr>
 </table>
 
-### 🏆 習熟度レベルの定義
+<br/>
+
+### **言語スキル**
+
+<table>
+  <tr>
+    <th align="center">🏷️ カテゴリ</th>
+    <th align="center">技術・言語</th>
+    <th align="center">⭐ 習熟度</th>
+    <th align="center">⏰ 実務経験</th>
+    <th align="center">📝 主な実績・用途</th>
+  </tr>
+  <tr>
+    <td rowspan="2" align="center"><strong>🌍<br/>言語<br/>スキル</strong></td>
+    <td><strong>日本語（母国語）</strong></td>
+    <td align="center"><strong>⭐⭐⭐⭐⭐</strong></td>
+    <td align="center">ネイティブ</td>
+    <td>母国語レベル・技術文書作成</td>
+  </tr>
+  <tr>
+    <td><strong>英語（ビジネスレベル）</strong></td>
+    <td align="center"><strong>⭐⭐⭐</strong></td>
+    <td align="center">3年8か月</td>
+    <td>日英バイリンガル業務・技術メール対応</td>
+  </tr>
+</table>
+
+<br/>
+
+### �🏆 **習熟度レベルの定義**
 - **⭐⭐⭐⭐⭐** **エキスパート** - 他者への指導・最適化提案が可能
 - **⭐⭐⭐⭐** **上級レベル** - 複雑なタスクを独立実行可能
 - **⭐⭐⭐** **中級レベル** - 基本タスクを独立実行可能
 - **⭐⭐** **初級レベル** - 基礎理解・簡単なタスク実行可能
 - **⭐** **入門レベル** - 基本概念を理解・学習中
 
-
+---
 
 ## 🚀 個人プロジェクト・開発実績
 
@@ -306,7 +437,48 @@
 
 ---
 
-## 🎯 キャリア目標・学習計画
+## 資格・認定
+
+<table>
+  <tr>
+    <th align="center">🏷️ カテゴリ</th>
+    <th align="center">🏅 資格名</th>
+    <th align="center">⏰ 取得日</th>
+    <th align="left">📝 関連技術・用途</th>
+  </tr>
+  
+  <!-- AWS資格 -->
+  <tr>
+    <td rowspan="3" align="center"><strong>☁️<br/>AWS<br/>資格</strong></td>
+    <td align="center"><strong>AWS Certified Solutions Architect – Associate</strong></td>
+    <td align="center">2024年</td>
+    <td>AWSアーキテクチャ設計・構築・運用</td>
+  </tr>
+  <tr>
+    <td align="center"><strong>AWS Certified DevOps Engineer – Associate</strong></td>
+    <td align="center">2025年</td>
+    <td>CI/CDパイプライン・インフラ自動化</td>
+  </tr>
+  <tr>
+    <td align="center"><strong>LinuC Level 1</strong></td>
+    <td align="center">2022年</td>
+    <td>Linuxシステム管理・運用基礎</td>
+  </tr>
+  
+  <!-- 語学資格 -->
+  <tr>
+    <td align="center"><strong>🌍<br/>語学<br/>資格</strong></td>
+    <td align="center">
+      <strong>TOEIC Listening & Reading Test</strong>
+    </td>
+    <td align="center">790点</td>
+    <td>英語ビジネスコミュニケーション能力証明<br/>（CEFR B2～C1レベル相当）</td>
+  </tr>
+</table>
+
+---
+
+## �🎯 キャリア目標・学習計画
 
 ### 📅 **期間別キャリアロードマップ**
 

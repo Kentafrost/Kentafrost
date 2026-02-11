@@ -26,99 +26,148 @@
 
 ## 📈 Work Experience Details
 
-### 🛠️ Tier-1 Network Incident Response (May 2022 – Aug 2023)
+### 🛠️ **Tier-1 Network Incident Response** (May 2022 – Aug 2023)
 
-### 🛍️ Retail
-- Easy to see tangible results, which helps maintain motivation  
-- Direct feedback through customer interaction and sales performance
+<table>
+  <tr>
+    <th align="center">📋 Basic Information</th>
+    <th align="left">🎯 Key Responsibilities & Achievements</th>
+  </tr>
+  <tr>
+    <td align="center">
+      <strong>Duration:</strong> 1 year 4 months
+      <br/>
+      <br/>
+      <strong>Scope:</strong>
+      <br/>Network Incident Triage & Response
+      <br/>(Aviation Industry, SES)
+      <br/>
+      <br/>
+      <strong>Key Technologies:</strong>
+      <br/>• Network Monitoring
+      <br/>• Incident Response
+      <br/>• Bilingual Support
+      <br/>• Troubleshooting
+    </td>
+    <td><strong>🔧 Incident Response & Monitoring</strong>
+      <br/>• Network incident triage & response coordination
+      <br/>• Operations monitoring & troubleshooting workflows
+      <br/>• Ping connectivity checks & technician dispatch
+      <br/>• Bilingual email communication (Japanese/English)
+      <br/>
+      <br/>
+      <strong>📈 Results & Learning</strong>
+      <br/>• Enhanced incident response & emergency decision skills
+      <br/>• Aviation industry system operations experience
+      <br/>• Multilingual communication capabilities in practice
+      <br/>• Responsibility development in 24/7 operations environment
+    </td>
+  </tr>
+</table>
 
-### 🏗️ Construction
-- Work results are visible in the form of physical structures  
-- Strong sense of accomplishment from completing projects
+<br/>
 
-### 💻 IT Industry
-- Accessible from anywhere via the internet, enabling self-driven learning and experimentation  
-- Constantly evolving field that never gets boring  
-- Suits my hands-on personality—ideal for self-study, certification, and home-based technical exploration
+### ☁️ **Cloud Operations Engineer (AWS Focus)** (Sep 2023 – Dec 2025)
+
+<table>
+  <tr>
+    <th align="center">📋 Basic Information</th>
+    <th align="left">🎯 Key Responsibilities & Achievements</th>
+  </tr>
+  <tr>
+    <td align="center">
+      <strong>Duration:</strong> 2 years 4 months
+      <br/>
+      <br/>
+      <strong>Scope:</strong>
+      <br/>AWS Environment Operations & Automation
+      <br/>
+      <br/>
+      <strong>Key Technologies:</strong>
+      <br/>• AWS (20+ Services)
+      <br/>• Python, VBA
+      <br/>• PowerShell
+      <br/>• CloudFormation
+      <br/>• Lambda, S3, DynamoDB
+      <br/>• QuickSight, CloudWatch
+    </td>
+    <td><strong>📊 Operations Automation & Efficiency</strong>
+      <br/>• Complete VBA automation for documents & parameter sheets
+      <br/>• AWS cost calculation system with QuickSight + Lambda
+      <br/>• EC2 usage visualization for cost reduction initiatives
+      <br/>
+      <br/>
+      <strong>🏗️ Infrastructure Configuration Management</strong>
+      <br/>• CloudFormation management of 20+ AWS services
+      <br/>• Operations & maintenance of DynamoDB, ECS, Lambda
+      <br/>• Automated CloudFormation stack creation scripts
+      <br/>
+      <br/>
+      <strong>🔧 Python Automation Development</strong>
+      <br/>• Automated configuration retrieval from 20+ AWS services
+      <br/>• Holiday detection logic implementation (requests library)
+      <br/>• Lambda+S3+SNS PDF processing & notification system
+      <br/>• EventViewer log auto-collection & CloudWatch integration
+    </td>
+  </tr>
+</table>
+
+<br/>
+
+### 💻 **OSS Operations & Development Engineer** (Jan 2026 – Present)
+
+<table>
+  <tr>
+    <th align="center">📋 Basic Information</th>
+    <th align="left">🎯 Key Responsibilities & Achievements</th>
+  </tr>
+  <tr>
+    <td align="center">
+      <strong>Duration:</strong> 1 month, Ongoing
+      <br/>
+      <br/>
+      <strong>Scope:</strong>
+      <br/>Open Source Operations, Improvement & Validation
+      <br/>
+      <br/>
+      <strong>Key Technologies:</strong>
+      <br/>• OSS Management
+      <br/>• Java, Kubernetes
+      <br/>• AWS, Git/GitHub
+      <br/>• Code Quality Management
+      <br/>• CI/CD, DevOps
+    </td>
+    <td><strong>🔍 OSS Operations & Validation</strong>
+      <br/>• OSS operational validation & quality assurance
+      <br/>• System operations & monitoring
+      <br/>• Performance optimization & troubleshooting
+      <br/>
+      <br/>
+      <strong>📝 Documentation & Knowledge Management</strong>
+      <br/>• OSS operational documentation creation & updates
+      <br/>• Best practices documentation & standardization
+      <br/>• Technical knowledge sharing system establishment
+      <br/>
+      <br/>
+      <strong>🔧 Code Improvement & Optimization</strong>
+      <br/>• OSS code adjustments & performance improvements
+      <br/>• Bug fixes, feature enhancements & refactoring
+      <br/>• Code quality improvement & review process enhancement
+      <br/>
+      <br/>
+      <strong>🚀 Future Work Plans</strong>
+      <br/>• AWS Service Integration - Cloud-native architecture
+      <br/>• Java Development - Enterprise application development
+      <br/>• Kubernetes Operations - Container orchestration
+    </td>
+  </tr>
+</table>
 
 ---
 
-## 📈 Work Experience Details
+## 💻 Technical Skills & Proficiency Map
 
-### 🛠️ Tier-1 Network Incident Response (May 2022 – Aug 2023)
-
-**📋 Basic Information**
-- **Duration:** 1 year 4 months
-- **Industry:** Aviation Industry (Major Japanese Airline)
-- **Employment Type:** SES (System Engineering Services)
-
-**🎯 Main Responsibilities**
-- Network incident triage & incident response
-- Operations monitoring, troubleshooting, reporting workflow management
-- Ping connectivity checks, technician dispatch coordination
-- Bilingual email communication (Japanese/English)
-
----
-
-### ☁️ Cloud Operations Engineer (AWS Focus) (Sep 2023 – Dec 2025)
-
-**📋 Basic Information**
-- **Duration:** 2 years 4 months
-- **Key Technologies:** AWS, Python, VBA, PowerShell, CloudFormation
-- **Scope:** AWS environment operations & automation
-
-**🎯 Major Achievements & Responsibilities**
-
-**📊 Operations Automation & Efficiency**
-- Complete automation of document creation & parameter sheet generation using VBA
-- AWS cost calculation system construction with QuickSight + Lambda
-- EC2 instance usage visualization for cost reduction initiatives
-
-**🏗️ Infrastructure Configuration Management**
-- Configuration management of 20+ AWS services using CloudFormation
-- Operations & maintenance of DynamoDB, S3, CloudWatch, ECS, Lambda, etc.
-- Automated CloudFormation stack creation script development
-
-**🔧 Python Automation Development**
-- Automation of configuration data retrieval from 20+ AWS services
-- Holiday detection logic implementation (using requests library)
-- PDF processing & notification system using Lambda + S3 + SNS
-- EventViewer log auto-collection & CloudWatch integration system
-
----
-
-### 💻 OSS Operations & Development Engineer (Jan 2026 – Present)
-
-**📋 Basic Information**
-- **Duration:** 1 month (Ongoing)
-- **Key Technologies:** OSS, Java, Kubernetes, AWS, Git/GitHub
-- **Scope:** Open Source Software operations, improvement & validation
-
-**🎯 Main Responsibilities**
-
-**🔍 OSS Operations & Validation**
-- • OSS operational validation & quality assurance
-- • System operations & monitoring
-- • Performance optimization & troubleshooting
-
-**📝 Documentation & Knowledge Management**
-- • OSS operational documentation creation & updates
-- • Best practices documentation
-- • Technical knowledge sharing within the organization
-
-**🔧 Code Improvement & Optimization**
-- • OSS code adjustments & performance improvements
-- • Bug fixes & feature enhancements
-- • Code quality improvement & refactoring
-
-**🚀 Future Work Plans**
-- • **AWS Service Integration** - Cloud-native architecture construction
-- • **Java Development** - Enterprise application development
-- • **Kubernetes Operations** - Container orchestration learning & implementation
-
----
-
-### 💻 Technical Skills & Proficiency Map
+### ☁️ **Cloud & Infrastructure Technologies**
 
 <table>
   <tr>
@@ -179,8 +228,20 @@
     <td align="center">Planned</td>
     <td>Multi-cloud preparation</td>
   </tr>
-  
-  <!-- 💻 Programming Languages -->
+</table>
+
+<br/>
+
+### 💻 **Programming Languages**
+
+<table>
+  <tr>
+    <th align="center">🏷️ Category</th>
+    <th align="center">Technology & Language</th>
+    <th align="center">⭐ Proficiency</th>
+    <th align="center">⏰ Experience</th>
+    <th align="center">📝 Main Achievements & Usage</th>
+  </tr>
   <tr>
     <td rowspan="5" align="center"><strong>💻<br/>Programming<br/>Languages</strong></td>
     <td><strong>Python</strong></td>
@@ -212,8 +273,20 @@
     <td align="center">Learning</td>
     <td>Spring Boot development</td>
   </tr>
-  
-  <!-- 🛠️ Frameworks & Libraries -->
+</table>
+
+<br/>
+
+### 🛠️ **Frameworks & Libraries**
+
+<table>
+  <tr>
+    <th align="center">🏷️ Category</th>
+    <th align="center">Technology & Language</th>
+    <th align="center">⭐ Proficiency</th>
+    <th align="center">⏰ Experience</th>
+    <th align="center">📝 Main Achievements & Usage</th>
+  </tr>
   <tr>
     <td rowspan="5" align="center"><strong>🛠️<br/>Frameworks<br/>Libraries</strong></td>
     <td>boto3 (AWS SDK)</td>
@@ -245,8 +318,20 @@
     <td align="center">Learning</td>
     <td>Java backend development</td>
   </tr>
-  
-  <!-- 🌐 Network & Systems -->
+</table>
+
+<br/>
+
+### 🌐 **Network & Systems**
+
+<table>
+  <tr>
+    <th align="center">🏷️ Category</th>
+    <th align="center">Technology & Language</th>
+    <th align="center">⭐ Proficiency</th>
+    <th align="center">⏰ Experience</th>
+    <th align="center">📝 Main Achievements & Usage</th>
+  </tr>
   <tr>
     <td rowspan="3" align="center"><strong>🌐<br/>Network<br/>Systems</strong></td>
     <td>Incident Response & Troubleshooting</td>
@@ -268,14 +353,43 @@
   </tr>
 </table>
 
-### 🏆 Proficiency Level Definitions
+<br/>
+
+### **Language Skills**
+
+<table>
+  <tr>
+    <th align="center">🏷️ Category</th>
+    <th align="center">Technology & Language</th>
+    <th align="center">⭐ Proficiency</th>
+    <th align="center">⏰ Experience</th>
+    <th align="center">📝 Main Achievements & Usage</th>
+  </tr>
+  <tr>
+    <td rowspan="2" align="center"><strong>🌍<br/>Language<br/>Skills</strong></td>
+    <td><strong>Japanese (Native)</strong></td>
+    <td align="center"><strong>⭐⭐⭐⭐⭐</strong></td>
+    <td align="center">Native</td>
+    <td>Native level ・ Technical documentation creation</td>
+  </tr>
+  <tr>
+    <td><strong>English (Business Level)</strong></td>
+    <td align="center"><strong>⭐⭐⭐⭐</strong></td>
+    <td align="center">3 years 8 months</td>
+    <td>Bilingual operations ・ Technical email communication</td>
+  </tr>
+</table>
+
+<br/>
+
+### �🏆 **Proficiency Level Definitions**
 - **⭐⭐⭐⭐⭐** **Expert** - Can teach others & propose optimizations
 - **⭐⭐⭐⭐** **Advanced** - Can independently handle complex tasks
 - **⭐⭐⭐** **Intermediate** - Can independently handle basic tasks
 - **⭐⭐** **Beginner** - Understanding fundamentals & can handle simple tasks
 - **⭐** **Entry** - Understanding basic concepts & currently learning
 
-
+---
 
 ## 🚀 Personal Projects & Development Achievements
 
@@ -320,6 +434,45 @@
     <td align="center">Spring Boot<br/>Java<br/>Gradle</td>
     <td>• RESTful API design & implementation<br/>• Database integration<br/>• MVC architecture learning</td>
     <td align="center">🟡 **Learning**</td>
+  </tr>
+</table>
+
+---
+
+## � Certifications & Qualifications
+
+<table>
+  <tr>
+    <th align="center">🏷️ Category</th>
+    <th align="center">🏅 Certification Name</th>
+    <th align="center">⏰ Obtained</th>
+    <th align="left">📝 Related Technologies & Usage</th>
+  </tr>
+  
+  <!-- AWS Certifications -->
+  <tr>
+    <td rowspan="3" align="center"><strong>☁️<br/>AWS<br/>Certifications</strong></td>
+    <td align="center"><strong>AWS Certified Solutions Architect – Associate</strong></td>
+    <td align="center">2024</td>
+    <td>AWS Architecture Design, Construction & Operations</td>
+  </tr>
+  <tr>
+    <td align="center"><strong>AWS Certified DevOps Engineer – Associate</strong></td>
+    <td align="center">2025</td>
+    <td>CI/CD Pipelines & Infrastructure Automation</td>
+  </tr>
+  <tr>
+    <td align="center"><strong>LinuC Level 1</strong></td>
+    <td align="center">2024</td>
+    <td>Linux System Administration & Operations Foundation</td>
+  </tr>
+  
+  <!-- Language Certifications -->
+  <tr>
+    <td align="center"><strong>🌍<br/>Language<br/>Certifications</strong></td>
+    <td align="center"><strong>TOEIC Listening & Reading Test</strong></td>
+    <td align="center">790 points</td>
+    <td>English Business Communication Proficiency Certification<br/>(Equivalent to CEFR B2-C1 Level)</td>
   </tr>
 </table>
 
