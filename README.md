@@ -229,76 +229,176 @@
 
 ## 🚀 個人プロジェクト・開発実績
 
-### 📂 **自動化ツール開発** (2024.04〜現在)
-- **🗂️ フォルダ整理・ファイル管理システム**
-  - Python + Windows APIによる自動フォルダ整理
-  - Google Drive連携による自動バックアップ
-  - Windowsタスクスケジューラー操作自動化
-
-- **📊 データ可視化・分析ツール**
-  - pandasによるデータ処理・分析
-  - matplotlibによるグラフ作成・レポート生成
-  - AWS QuickSightとの連携
-
-### 🌐 **Web開発プロジェクト** (学習中)
-
-- **React フロントエンド開発**
-  - 個人用・公開用UI作成(react, fastAPI)
-  - JavaScript ES6+の活用
-  - レスポンシブデザイン実装
-
-- **Java バックエンド開発**
-  - Spring Boot フレームワーク学習中
-  - RESTful API設計・実装練習
-
----
-
-## 🎯 今後のキャリア目標・学習計画
-
-### 🚀 **短期目標** (2026年〜2027年)
-
-- ✅ **フルスタック開発スキルの向上**
-  - React + Spring Boot によるWebアプリケーション開発
-  - TypeScript導入による型安全な開発
-  - データベース設計・API設計の体系的学習
-
-- ✅ **クラウドアーキテクチャの深化**
-  - Docker・Kubernetesによるコンテナ運用学習
-
-
-### 🚀 **中・長期目標** (2028年〜2029年)
-
-**🏢 開発現場での実務経験積極的獲得**
-  - Web開発・システム開発の実プロジェクト参画
-  - チーム開発・アジャイル開発手法の習得
-  - コードレビュー・設計レビューの経験
-
-
-### 📚 **継続学習技術ロードマップ**
-
-#### **優先度：高** 🔥
-- **言語:** TypeScript, Java（Spring Boot）
-- **フレームワーク:** React（上級）, Vue.js（新規）
-- **クラウド:** Azure（基礎〜中級）
-- **データベース:** MongoDB, PostgreSQL
-
-#### **優先度：中** ⚡
-- **コンテナ技術:** Docker, Kubernetes
-- **CI/CD:** GitHub Actions, Jenkins
-- **テスト:** Jest, JUnit
-- **インフラ:** Terraform（IaC）
-
-#### **優先度：将来** 📅
-- **モバイル開発:** React Native, Flutter
-- **AI/ML:** TensorFlow, PyTorch
-- **ブロックチェーン:** Solidity, Web3
+<table>
+  <tr>
+    <th align="left">📂 プロジェクト名</th>
+    <th align="center">⏰ 期間</th>
+    <th align="center">💻 主要技術</th>
+    <th align="left">📝 機能・実績</th>
+    <th align="center">📊 進捗</th>
+  </tr>
+  
+  <!-- 自動化ツール開発 -->
+  <tr>
+    <td rowspan="2"><strong>🗂️ フォルダ整理・<br/>ファイル管理システム</strong></td>
+    <td align="center">2024.04〜現在</td>
+    <td align="center">Python<br/>Windows API<br/>Google Drive API</td>
+    <td>• 自動フォルダ整理・分類<br/>• Google Drive連携バックアップ<br/>• Windowsタスクスケジューラー操作</td>
+    <td align="center">🟢 **運用中**</td>
+  </tr>
+  <tr>
+    <td><strong>📊 データ可視化・<br/>分析ツール</strong></td>
+    <td align="center">2024.06〜現在</td>
+    <td align="center">pandas<br/>matplotlib<br/>AWS QuickSight</td>
+    <td>• Excel/CSV データ処理・分析<br/>• グラフ作成・レポート自動生成<br/>• QuickSightダッシュボード連携</td>
+    <td align="center">🟢 **運用中**</td>
+  </tr>
+  
+  <!-- Web開発プロジェクト -->
+  <tr>
+    <td rowspan="2"><strong>🌐 Web開発<br/>プロジェクト</strong></td>
+    <td align="center">2024.08〜学習中</td>
+    <td align="center">React<br/>FastAPI<br/>JavaScript ES6+</td>
+    <td>• 個人用・公開用UI作成<br/>• レスポンシブデザイン実装<br/>• SPA (Single Page Application) 開発</td>
+    <td align="center">🟡 **開発中** <br />
+      <a href="https://kentafrost.github.io/ReactApp/">reactデモページ</a>
+    </td>
+  </tr>
+  <tr>
+    <td><strong>☕ Java バックエンド<br/>開発</strong></td>
+    <td align="center">2024.10〜学習中</td>
+    <td align="center">Spring Boot<br/>Java<br/>Gradle</td>
+    <td>• RESTful API設計・実装<br/>• データベース連携<br/>• MVC アーキテクチャ学習</td>
+    <td align="center">🟡 **学習中**</td>
+  </tr>
+</table>
 
 ---
 
-## 📞 連絡先・SNS
+## 🎯 キャリア目標・学習計画
 
-💼 **LinkedIn:** [LinkedIn プロフィール]  
-🐱 **GitHub:** [@Kentafrost](https://github.com/Kentafrost)
+### 📅 **期間別キャリアロードマップ**
+
+<table>
+  <tr>
+    <th align="center">⏰ 期間</th>
+    <th align="center">🎯 主要目標</th>
+    <th align="left">📋 具体的な取り組み</th>
+    <th align="center">📊 成果指標</th>
+  </tr>
+  
+  <tr>
+    <td align="center"><strong>2026年〜2027年<br/>(短期目標)</strong></td>
+    <td align="center">🚀 **フルスタック<br/>開発スキル向上**</td>
+    <td>
+      • React + Spring Boot による完全なWebアプリ開発<br/>
+      • TypeScript導入による型安全な開発<br/>
+      • データベース設計・API設計の体系的学習<br/>
+      • Docker・Kubernetesによるコンテナ運用学習
+    </td>
+    <td align="center">✅ ポートフォリオ<br/>完成・公開<br/><br/>🏆 技術資格取得</td>
+  </tr>
+  
+  <tr>
+    <td align="center"><strong>2028年〜2029年<br/>(中・長期目標)</strong></td>
+    <td align="center">🏢 **開発現場での<br/>実務経験獲得**</td>
+    <td>
+      • Web開発・システム開発の実プロジェクト参画<br/>
+      • チーム開発・アジャイル開発手法の習得<br/>
+      • コードレビュー・設計レビューの経験<br/>
+      • リーダーシップ・メンタリングスキル向上
+    </td>
+    <td align="center">💼 開発チーム<br/>中核メンバー<br/><br/>👥 後輩指導経験</td>
+  </tr>
+</table>
+
+
+### 📚 **学習技術ロードマップ**
+
+<table>
+  <tr>
+    <th align="center">🔥 優先度</th>
+    <th align="center">📂 技術分野</th>
+    <th align="left">💻 技術・フレームワーク</th>
+    <th align="center">⏰ 学習予定時期</th>
+    <th align="left">📝 学習目的・用途</th>
+  </tr>
+  
+  <!-- 優先度：高 -->
+  <tr>
+    <td rowspan="6" align="center"><strong>🔥<br/>最優先<br/>(2026年内)</strong></td>
+    <td align="center"><strong>言語・基礎</strong></td>
+    <td>TypeScript, Java（Spring Boot）</td>
+    <td align="center">2026年前半</td>
+    <td>型安全な大規模開発・エンタープライズ開発</td>
+  </tr>
+  <tr>
+    <td align="center"><strong>フロントエンド</strong></td>
+    <td>React（上級）, Vue.js（新規）</td>
+    <td align="center">2026年通年</td>
+    <td>モダンSPA開発・フレームワーク比較学習</td>
+  </tr>
+  <tr>
+    <td align="center"><strong>データベース</strong></td>
+    <td>MongoDB, PostgreSQL, Redis</td>
+    <td align="center">2026年通年</td>
+    <td>NoSQL・リレーショナルDB・キャッシュ</td>
+  </tr>
+  <tr>
+    <td align="center"><strong>コンテナ・オーケストレーション</strong></td>
+    <td>Docker, Kubernetes, Docker Compose</td>
+    <td align="center">2026年後半</td>
+    <td>コンテナ化・オーケストレーション・DevOps</td>
+  </tr>
+  <tr>
+    <td align="center"><strong>CI/CD・自動化</strong></td>
+    <td>GitHub Actions, Jenkins</td>
+    <td align="center">2026年後半</td>
+    <td>自動化パイプライン・継続的デリバリー</td>
+  </tr>
+  <tr>
+    <td align="center"><strong>クラウド拡張</strong></td>
+    <td>Azure（基礎〜中級）, GCP（基礎）</td>
+    <td align="center">2026年後半</td>
+    <td>マルチクラウド対応・選択肢拡大</td>
+  </tr>
+  
+  <!-- 優先度：中 -->
+  <tr>
+    <td rowspan="2" align="center"><strong>⚡<br/>重要<br/>(2027年)</strong></td>
+    <td align="center"><strong>テスト技術</strong></td>
+    <td>Jest, JUnit, Selenium, Cypress</td>
+    <td align="center">2027年前半</td>
+    <td>単体・統合・E2Eテスト・品質保証</td>
+  </tr>
+  <tr>
+    <td align="center"><strong>IaC・監視</strong></td>
+    <td>Terraform, Ansible, Prometheus</td>
+    <td align="center">2027年後半</td>
+    <td>インフラコード化・運用監視自動化</td>
+  </tr>
+  
+  <!-- 優先度：将来 -->
+  <tr>
+    <td rowspan="3" align="center"><strong>📅<br/>長期検討<br/>(2028年〜)</strong></td>
+    <td align="center"><strong>モバイル開発</strong></td>
+    <td>React Native, Flutter, Swift</td>
+    <td align="center">2028年以降</td>
+    <td>クロスプラットフォーム・ネイティブアプリ</td>
+  </tr>
+  <tr>
+    <td align="center"><strong>AI/ML</strong></td>
+    <td>TensorFlow, PyTorch, scikit-learn</td>
+    <td align="center">2028年以降</td>
+    <td>機械学習・データサイエンス・AI活用</td>
+  </tr>
+  <tr>
+    <td align="center"><strong>新技術領域</strong></td>
+    <td>Solidity, Web3, GraphQL</td>
+    <td align="center">必要に応じて</td>
+    <td>ブロックチェーン・分散システム・API</td>
+  </tr>
+</table>
 
 ---
 
