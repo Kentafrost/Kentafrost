@@ -87,6 +87,37 @@
 
 ---
 
+### 💻 OSS Operations & Development Engineer (Jan 2026 – Present)
+
+**📋 Basic Information**
+- **Duration:** 1 month (Ongoing)
+- **Key Technologies:** OSS, Java, Kubernetes, AWS, Git/GitHub
+- **Scope:** Open Source Software operations, improvement & validation
+
+**🎯 Main Responsibilities**
+
+**🔍 OSS Operations & Validation**
+- • OSS operational validation & quality assurance
+- • System operations & monitoring
+- • Performance optimization & troubleshooting
+
+**📝 Documentation & Knowledge Management**
+- • OSS operational documentation creation & updates
+- • Best practices documentation
+- • Technical knowledge sharing within the organization
+
+**🔧 Code Improvement & Optimization**
+- • OSS code adjustments & performance improvements
+- • Bug fixes & feature enhancements
+- • Code quality improvement & refactoring
+
+**🚀 Future Work Plans**
+- • **AWS Service Integration** - Cloud-native architecture construction
+- • **Java Development** - Enterprise application development
+- • **Kubernetes Operations** - Container orchestration learning & implementation
+
+---
+
 ### 💻 Technical Skills & Proficiency Map
 
 <table>
