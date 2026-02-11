@@ -28,155 +28,37 @@
 
 ### 🛠️ **障害一次切り分け窓口** (2022.05〜2023.08)
 
-<table>
-  <tr>
-    <th align="center">📋 基本情報</th>
-    <th align="left">🎯 主な業務内容・実績</th>
-  </tr>
-  <tr>
-    <td align="center">
-      <strong>期間:</strong> 1年4か月
-      <br/>
-      <br/>
-      <strong>業務範囲:</strong>
-      <br/>ネットワーク障害一次切り分け・インシデント対応 
-      <br/>(航空業界・SES)
-      <br/>
-      <br/>
-      <strong>主要技術:</strong>
-      <br/>• ネットワーク監視
-      <br/>• インシデント対応
-      <br/>• 英日バイリンガル対応
-      <br/>• トラブルシューティング
-    </td>
-    <td><strong>🔧 インシデント対応・監視</strong>
-      <br/>
-      <br/>• ネットワーク障害の一次切り分け
-      <br/>• 運用監視・トラブル対応
-      <br/>• ping確認・技術者派遣
-      <br/>• 日英バイリンガルメール対応
-      <br/>
-      <br/>
-      <br/>
-      <strong>📈 成果・学び</strong>
-      <br/>
-      <br/>• 障害対応スキル向上
-      <br/>• 航空業界システム運用経験
-      <br/>• 多言語コミュニケーション実践
-      <br/>• 24/7運用体制での責任感醸成
-    </td>
-  </tr>
-</table>
+| **期間** | 1年4か月 |
+|------|------|
+| **業務範囲** | ネットワーク障害一次切り分け・インシデント対応（航空業界・SES） |
+| **主要技術** | ネットワーク監視・インシデント対応・英日バイリンガル対応・トラブルシューティング |
+| **主な実績** | 🔧 ネットワーク障害の一次切り分け・運用監視・トラブル対応・ping確認・技術者派遣・日英バイリンガルメール対応 |
+| **成果・学び** | 📈 障害対応スキル向上・航空業界システム運用経験・多言語コミュニケーション実践・24/7運用体制での責任感醸成 |
 
 <br/>
 
 ### ☁️ **クラウドオペレーションエンジニア（AWS中心）** (2023.09〜2025.12)
 
-<table>
-  <tr>
-    <th align="center">📋 基本情報</th>
-    <th align="left">🎯 主な業務内容・実績</th>
-  </tr>
-  <tr>
-    <td align="center">
-      <strong>期間:</strong> 2年4か月
-      <br/>
-      <br/>
-      <strong>業務範囲:</strong>
-      <br/>AWS環境運用保守・自動化
-      <br/>
-      <br/>
-      <strong>主要技術:</strong>
-      <br/>• AWS (20+サービス)
-      <br/>• Python, VBA
-      <br/>• PowerShell
-      <br/>• CloudFormation
-      <br/>• Lambda, S3, DynamoDB
-      <br/>• QuickSight, CloudWatch
-    </td>
-    <td><strong>📊 運用自動化・効率化</strong>
-      <br/>
-      <br/>• VBAで書類・パラメータシート完全自動化
-      <br/>• QuickSight+LambdaでAWSコスト計算システム構築
-      <br/>• EC2利用状況可視化でコスト削減
-      <br/>
-      <br/>
-      <br/>
-      <strong>🏗️ インフラ構成管理</strong>
-      <br/>
-      <br/>• CloudFormationで20+AWSサービス構成管理
-      <br/>• DynamoDB, ECS, Lambda運用保守
-      <br/>• 自動CFスタック作成スクリプト開発
-      <br/>
-      <br/>
-      <br/>
-      <strong>🔧 Python自動化開発</strong>
-      <br/>
-      <br/>• 20+AWSサービス設定値取得自動化
-      <br/>• 土日祝日判定ロジック実装
-      <br/>• Lambda+S3+SNS PDF処理・通知システム
-      <br/>• EventViewer自動ログ収集・CloudWatch連携
-    </td>
-  </tr>
-</table>
+| **期間** | 2年4か月 |
+|------|------|
+| **業務範囲** | AWS環境運用保守・自動化 |
+| **主要技術** | AWS (20+サービス)・Python・VBA・PowerShell・CloudFormation・Lambda・S3・DynamoDB・QuickSight・CloudWatch |
+| **運用自動化** | 📊 VBAで書類・パラメータシート完全自動化・QuickSight+LambdaでAWSコスト計算システム構築・EC2利用状況可視化でコスト削減 |
+| **インフラ管理** | 🏗️ CloudFormationで20+AWSサービス構成管理・DynamoDB/ECS/Lambda運用保守・自動CFスタック作成スクリプト開発 |
+| **Python開発** | 🔧 20+AWSサービス設定値取得自動化・土日祝日判定ロジック実装・Lambda+S3+SNS PDF処理・通知システム・EventViewer自動ログ収集・CloudWatch連携 |
 
 <br/>
 
 ### 💻 **OSS運用・開発エンジニア** (2026.01〜現在)
 
-<table>
-  <tr>
-    <th align="center">📋 基本情報</th>
-    <th align="left">🎯 主な業務内容・実績</th>
-  </tr>
-  <tr>
-    <td align="center">
-      <strong>期間:</strong> 1か月・継続中
-      <br/>
-      <br/>
-      <strong>業務範囲:</strong>
-      <br/>オープンソース運用・改善・検証
-      <br/>
-      <br/>
-      <strong>主要技術:</strong>
-      <br/>• OSS管理・運用
-      <br/>• Java, Kubernetes
-      <br/>• AWS, Git/GitHub
-      <br/>• コード品質管理
-      <br/>• CI/CD, DevOps
-    </td>
-    <td><strong>🔍 OSS運用・検証</strong>
-      <br/>
-      <br/>• OSS動作検証・品質保証
-      <br/>• システム運用・モニタリング
-      <br/>• パフォーマンス最適化・トラブルシューティング
-      <br/>
-      <br/>
-      <br/>
-      <strong>📝 文書化・ナレッジ管理</strong>
-      <br/>
-      <br/>• OSS運用ドキュメント作成・更新
-      <br/>• ベストプラクティス文書化
-      <br/>• 技術知見社内共有体制構築
-      <br/>
-      <br/>
-      <br/>
-      <strong>🔧 コード改善・最適化</strong>
-      <br/>
-      <br/>• OSSコード調整・パフォーマンス改善
-      <br/>• バグ修正・機能強化・リファクタリング
-      <br/>• コード品質向上・レビュープロセス改善
-      <br/>
-      <br/>
-      <br/>
-      <strong>🚀 今後の業務予定</strong>
-      <br/>
-      <br/>• AWSサービス連携 - クラウドネイティブ構築
-      <br/>• Java開発 - エンタープライズアプリ開発
-      <br/>• Kubernetes運用 - コンテナオーケストレーション
-    </td>
-  </tr>
-</table>
+| **期間** | 1か月・継続中 |
+|------|------|
+| **業務範囲** | オープンソース運用・改善・検証 |
+| **主要技術** | OSS管理・運用・Java・Kubernetes・AWS・Git/GitHub・コード品質管理・CI/CD・DevOps |
+| **OSS運用** | 🔍 OSS動作検証・品質保証・システム運用・モニタリング・パフォーマンス最適化・トラブルシューティング |
+| **文書化** | 📝 OSS運用ドキュメント作成・更新・ベストプラクティス文書化・技術知見社内共有体制構築 |
+| **コード改善** | 🔧 OSSコード調整・パフォーマンス改善・バグ修正・機能強化・リファクタリング・コード品質向上・レビュープロセス改善 |
+| **今後の予定** | 🚀 AWSサービス連携（クラウドネイティブ構築）・Java開発（エンタープライズアプリ開発）・Kubernetes運用（コンテナオーケストレーション） |
 
 ---
 

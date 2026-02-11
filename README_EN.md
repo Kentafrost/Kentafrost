@@ -28,140 +28,37 @@
 
 ### 🛠️ **Tier-1 Network Incident Response** (May 2022 – Aug 2023)
 
-<table>
-  <tr>
-    <th align="center">📋 Basic Information</th>
-    <th align="left">🎯 Key Responsibilities & Achievements</th>
-  </tr>
-  <tr>
-    <td align="center">
-      <strong>Duration:</strong> 1 year 4 months
-      <br/>
-      <br/>
-      <strong>Scope:</strong>
-      <br/>Network Incident Triage & Response
-      <br/>(Aviation Industry, SES)
-      <br/>
-      <br/>
-      <strong>Key Technologies:</strong>
-      <br/>• Network Monitoring
-      <br/>• Incident Response
-      <br/>• Bilingual Support
-      <br/>• Troubleshooting
-    </td>
-    <td><strong>🔧 Incident Response & Monitoring</strong>
-      <br/>• Network incident triage & response coordination
-      <br/>• Operations monitoring & troubleshooting workflows
-      <br/>• Ping connectivity checks & technician dispatch
-      <br/>• Bilingual email communication (Japanese/English)
-      <br/>
-      <br/>
-      <strong>📈 Results & Learning</strong>
-      <br/>• Enhanced incident response & emergency decision skills
-      <br/>• Aviation industry system operations experience
-      <br/>• Multilingual communication capabilities in practice
-      <br/>• Responsibility development in 24/7 operations environment
-    </td>
-  </tr>
-</table>
+| **Duration** | 1 year 4 months |
+|------|------|
+| **Scope** | Network Incident Triage & Response (Aviation Industry, SES) |
+| **Key Technologies** | Network Monitoring・Incident Response・Bilingual Support・Troubleshooting |
+| **Main Achievements** | 🔧 Network incident triage & response coordination・Operations monitoring & troubleshooting workflows・Ping connectivity checks & technician dispatch・Bilingual email communication (Japanese/English) |
+| **Results & Learning** | 📈 Enhanced incident response & emergency decision skills・Aviation industry system operations experience・Multilingual communication capabilities in practice・Responsibility development in 24/7 operations environment |
 
 <br/>
 
 ### ☁️ **Cloud Operations Engineer (AWS Focus)** (Sep 2023 – Dec 2025)
 
-<table>
-  <tr>
-    <th align="center">📋 Basic Information</th>
-    <th align="left">🎯 Key Responsibilities & Achievements</th>
-  </tr>
-  <tr>
-    <td align="center">
-      <strong>Duration:</strong> 2 years 4 months
-      <br/>
-      <br/>
-      <strong>Scope:</strong>
-      <br/>AWS Environment Operations & Automation
-      <br/>
-      <br/>
-      <strong>Key Technologies:</strong>
-      <br/>• AWS (20+ Services)
-      <br/>• Python, VBA
-      <br/>• PowerShell
-      <br/>• CloudFormation
-      <br/>• Lambda, S3, DynamoDB
-      <br/>• QuickSight, CloudWatch
-    </td>
-    <td><strong>📊 Operations Automation & Efficiency</strong>
-      <br/>• Complete VBA automation for documents & parameter sheets
-      <br/>• AWS cost calculation system with QuickSight + Lambda
-      <br/>• EC2 usage visualization for cost reduction initiatives
-      <br/>
-      <br/>
-      <strong>🏗️ Infrastructure Configuration Management</strong>
-      <br/>• CloudFormation management of 20+ AWS services
-      <br/>• Operations & maintenance of DynamoDB, ECS, Lambda
-      <br/>• Automated CloudFormation stack creation scripts
-      <br/>
-      <br/>
-      <strong>🔧 Python Automation Development</strong>
-      <br/>• Automated configuration retrieval from 20+ AWS services
-      <br/>• Holiday detection logic implementation (requests library)
-      <br/>• Lambda+S3+SNS PDF processing & notification system
-      <br/>• EventViewer log auto-collection & CloudWatch integration
-    </td>
-  </tr>
-</table>
+| **Duration** | 2 years 4 months |
+|------|------|
+| **Scope** | AWS Environment Operations & Automation |
+| **Key Technologies** | AWS (20+ Services)・Python・VBA・PowerShell・CloudFormation・Lambda・S3・DynamoDB・QuickSight・CloudWatch |
+| **Operations Automation** | 📊 Complete VBA automation for documents & parameter sheets・AWS cost calculation system with QuickSight + Lambda・EC2 usage visualization for cost reduction initiatives |
+| **Infrastructure Management** | 🏗️ CloudFormation management of 20+ AWS services・Operations & maintenance of DynamoDB, ECS, Lambda・Automated CloudFormation stack creation scripts |
+| **Python Development** | 🔧 Automated configuration retrieval from 20+ AWS services・Holiday detection logic implementation・Lambda+S3+SNS PDF processing & notification system・EventViewer log auto-collection & CloudWatch integration |
 
 <br/>
 
 ### 💻 **OSS Operations & Development Engineer** (Jan 2026 – Present)
 
-<table>
-  <tr>
-    <th align="center">📋 Basic Information</th>
-    <th align="left">🎯 Key Responsibilities & Achievements</th>
-  </tr>
-  <tr>
-    <td align="center">
-      <strong>Duration:</strong> 1 month, Ongoing
-      <br/>
-      <br/>
-      <strong>Scope:</strong>
-      <br/>Open Source Operations, Improvement & Validation
-      <br/>
-      <br/>
-      <strong>Key Technologies:</strong>
-      <br/>• OSS Management
-      <br/>• Java, Kubernetes
-      <br/>• AWS, Git/GitHub
-      <br/>• Code Quality Management
-      <br/>• CI/CD, DevOps
-    </td>
-    <td><strong>🔍 OSS Operations & Validation</strong>
-      <br/>• OSS operational validation & quality assurance
-      <br/>• System operations & monitoring
-      <br/>• Performance optimization & troubleshooting
-      <br/>
-      <br/>
-      <strong>📝 Documentation & Knowledge Management</strong>
-      <br/>• OSS operational documentation creation & updates
-      <br/>• Best practices documentation & standardization
-      <br/>• Technical knowledge sharing system establishment
-      <br/>
-      <br/>
-      <strong>🔧 Code Improvement & Optimization</strong>
-      <br/>• OSS code adjustments & performance improvements
-      <br/>• Bug fixes, feature enhancements & refactoring
-      <br/>• Code quality improvement & review process enhancement
-      <br/>
-      <br/>
-      <strong>🚀 Future Work Plans</strong>
-      <br/>• AWS Service Integration - Cloud-native architecture
-      <br/>• Java Development - Enterprise application development
-      <br/>• Kubernetes Operations - Container orchestration
-    </td>
-  </tr>
-</table>
+| **Duration** | 1 month, Ongoing |
+|------|------|
+| **Scope** | Open Source Operations, Improvement & Validation |
+| **Key Technologies** | OSS Management・Java・Kubernetes・AWS・Git/GitHub・Code Quality Management・CI/CD・DevOps |
+| **OSS Operations** | 🔍 OSS operational validation & quality assurance・System operations & monitoring・Performance optimization & troubleshooting |
+| **Documentation** | 📝 OSS operational documentation creation & updates・Best practices documentation & standardization・Technical knowledge sharing system establishment |
+| **Code Improvement** | 🔧 OSS code adjustments & performance improvements・Bug fixes, feature enhancements & refactoring・Code quality improvement & review process enhancement |
+| **Future Plans** | 🚀 AWS Service Integration (Cloud-native architecture)・Java Development (Enterprise application development)・Kubernetes Operations (Container orchestration) |
 
 ---
 
