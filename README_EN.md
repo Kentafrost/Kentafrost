@@ -281,12 +281,49 @@
 
 <br/>
 
-### �🏆 **Proficiency Level Definitions**
-- **⭐⭐⭐⭐⭐** **Expert** - Can teach others & propose optimizations
-- **⭐⭐⭐⭐** **Advanced** - Can independently handle complex tasks
-- **⭐⭐⭐** **Intermediate** - Can independently handle basic tasks
-- **⭐⭐** **Beginner** - Understanding fundamentals & can handle simple tasks
-- **⭐** **Entry** - Understanding basic concepts & currently learning
+---
+
+## 📖 **Reference Guide**
+
+<div style="background-color: #f6f8fa; border: 2px solid #d1d9e0; border-radius: 8px; padding: 16px; margin: 16px 0;">
+
+### 🏆 **Proficiency Level Definitions**
+> **Note:** This is a reference guide for understanding the star ratings used throughout the technical skills section above.
+
+<table style="width: 100%; table-layout: auto; border-collapse: collapse; border: 1px solid #d1d9e0;">
+  <tr style="background-color: #f1f3f4;">
+    <th align="left" style="width: 20%; word-wrap: break-word; padding: 8px; border: 1px solid #d1d9e0;">⭐ Rating</th>
+    <th align="left" style="width: 20%; word-wrap: break-word; padding: 8px; border: 1px solid #d1d9e0;">📊 Level</th>
+    <th align="left" style="width: 60%; word-wrap: break-word; padding: 8px; border: 1px solid #d1d9e0;">📝 Description</th>
+  </tr>
+  <tr>
+    <td align="left" style="padding: 8px; border: 1px solid #d1d9e0;"><strong>⭐⭐⭐⭐⭐</strong></td>
+    <td style="padding: 8px; border: 1px solid #d1d9e0;"><strong>Expert</strong></td>
+    <td style="padding: 8px; border: 1px solid #d1d9e0;">Can teach others & propose optimizations</td>
+  </tr>
+  <tr style="background-color: #f9f9f9;">
+    <td align="left" style="padding: 8px; border: 1px solid #d1d9e0;"><strong>⭐⭐⭐⭐</strong></td>
+    <td style="padding: 8px; border: 1px solid #d1d9e0;"><strong>Advanced</strong></td>
+    <td style="padding: 8px; border: 1px solid #d1d9e0;">Can independently handle complex tasks</td>
+  </tr>
+  <tr>
+    <td align="left" style="padding: 8px; border: 1px solid #d1d9e0;"><strong>⭐⭐⭐</strong></td>
+    <td style="padding: 8px; border: 1px solid #d1d9e0;"><strong>Intermediate</strong></td>
+    <td style="padding: 8px; border: 1px solid #d1d9e0;">Can independently handle basic tasks</td>
+  </tr>
+  <tr style="background-color: #f9f9f9;">
+    <td align="left" style="padding: 8px; border: 1px solid #d1d9e0;"><strong>⭐⭐</strong></td>
+    <td style="padding: 8px; border: 1px solid #d1d9e0;"><strong>Beginner</strong></td>
+    <td style="padding: 8px; border: 1px solid #d1d9e0;">Understanding fundamentals & can handle simple tasks</td>
+  </tr>
+  <tr>
+    <td align="left" style="padding: 8px; border: 1px solid #d1d9e0;"><strong>⭐</strong></td>
+    <td style="padding: 8px; border: 1px solid #d1d9e0;"><strong>Entry</strong></td>
+    <td style="padding: 8px; border: 1px solid #d1d9e0;">Understanding basic concepts & currently learning</td>
+  </tr>
+</table>
+
+</div>
 
 ---
 

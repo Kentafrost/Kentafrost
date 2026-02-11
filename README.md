@@ -288,12 +288,49 @@
 
 <br/>
 
-### �🏆 **習熟度レベルの定義**
-- **⭐⭐⭐⭐⭐** **エキスパート** - 他者への指導・最適化提案が可能
-- **⭐⭐⭐⭐** **上級レベル** - 複雑なタスクを独立実行可能
-- **⭐⭐⭐** **中級レベル** - 基本タスクを独立実行可能
-- **⭐⭐** **初級レベル** - 基礎理解・簡単なタスク実行可能
-- **⭐** **入門レベル** - 基本概念を理解・学習中
+---
+
+## 📖 **リファレンスガイド**
+
+<div style="background-color: #f6f8fa; border: 2px solid #d1d9e0; border-radius: 8px; padding: 16px; margin: 16px 0;">
+
+### 🏆 **習熟度レベルの定義**
+> **注意：** これは上記の技術スキルセクションで使用されている星評価を理解するためのリファレンスガイドです。
+
+<table style="width: 100%; table-layout: auto; border-collapse: collapse; border: 1px solid #d1d9e0;">
+  <tr style="background-color: #f1f3f4;">
+    <th align="left" style="width: 20%; word-wrap: break-word; padding: 8px; border: 1px solid #d1d9e0;">⭐ 評価</th>
+    <th align="left" style="width: 20%; word-wrap: break-word; padding: 8px; border: 1px solid #d1d9e0;">📊 レベル</th>
+    <th align="left" style="width: 60%; word-wrap: break-word; padding: 8px; border: 1px solid #d1d9e0;">📝 説明</th>
+  </tr>
+  <tr>
+    <td align="left" style="padding: 8px; border: 1px solid #d1d9e0;"><strong>⭐⭐⭐⭐⭐</strong></td>
+    <td style="padding: 8px; border: 1px solid #d1d9e0;"><strong>エキスパート</strong></td>
+    <td style="padding: 8px; border: 1px solid #d1d9e0;">他者への指導・最適化提案が可能</td>
+  </tr>
+  <tr style="background-color: #f9f9f9;">
+    <td align="left" style="padding: 8px; border: 1px solid #d1d9e0;"><strong>⭐⭐⭐⭐</strong></td>
+    <td style="padding: 8px; border: 1px solid #d1d9e0;"><strong>上級レベル</strong></td>
+    <td style="padding: 8px; border: 1px solid #d1d9e0;">複雑なタスクを独立実行可能</td>
+  </tr>
+  <tr>
+    <td align="left" style="padding: 8px; border: 1px solid #d1d9e0;"><strong>⭐⭐⭐</strong></td>
+    <td style="padding: 8px; border: 1px solid #d1d9e0;"><strong>中級レベル</strong></td>
+    <td style="padding: 8px; border: 1px solid #d1d9e0;">基本タスクを独立実行可能</td>
+  </tr>
+  <tr style="background-color: #f9f9f9;">
+    <td align="left" style="padding: 8px; border: 1px solid #d1d9e0;"><strong>⭐⭐</strong></td>
+    <td style="padding: 8px; border: 1px solid #d1d9e0;"><strong>初級レベル</strong></td>
+    <td style="padding: 8px; border: 1px solid #d1d9e0;">基礎理解・簡単なタスク実行可能</td>
+  </tr>
+  <tr>
+    <td align="left" style="padding: 8px; border: 1px solid #d1d9e0;"><strong>⭐</strong></td>
+    <td style="padding: 8px; border: 1px solid #d1d9e0;"><strong>入門レベル</strong></td>
+    <td style="padding: 8px; border: 1px solid #d1d9e0;">基本概念を理解・学習中</td>
+  </tr>
+</table>
+
+</div>
 
 ---
 
