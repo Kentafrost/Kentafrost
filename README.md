@@ -15,14 +15,14 @@
 
 ## ⚡ キャリアサマリー
 
-| 項目 | 内容 |
-|------|------|
 | **総経験年数** | 3年8か月（2022年5月〜現在） |
+|------|------|
 | **専門分野** | AWS運用・自動化、Python開発、インフラ運用 |
-| **強み** | 🔹 AWS 20+サービスの実運用経験<br>🔹 Python自動化スクリプト開発<br>🔹 運用業務の効率化・自動化 |
-| **現在の状況** | OSS運用・動作検証業務に従事中<br/>学習中: React, Java, Spring Boot, Kubernetes<br/>フルスタック開発エンジニアへのキャリアチェンジを目指しています |
+| **強み** | 🔹 AWS 20+サービス実運用経験<br/>🔹 Python自動化スクリプト開発<br/>🔹 運用業務効率化・自動化 |
+| **現状** | OSS運用・動作検証業務中<br/>学習中: React, Java, Spring Boot, Kubernetes<br/>フルスタック開発エンジニアへキャリアチェンジ目指中 |
 
 ---
+
 
 ## 📈 職歴詳細
 
@@ -49,18 +49,21 @@
       <br/>• 英日バイリンガル対応
       <br/>• トラブルシューティング
     </td>
-    <td><strong>🔧 インシデント対応・監視業務</strong>
-      <br/>• ネットワーク障害の一次切り分け・対応
-      <br/>• 運用監視・トラブル対応・報告フロー整備
-      <br/>• ping疎通による障害確認・技術者派遣
-      <br/>• 日英バイリンガル環境でのメール対応
+    <td><strong>🔧 インシデント対応・監視</strong>
+      <br/>
+      <br/>• ネットワーク障害の一次切り分け
+      <br/>• 運用監視・トラブル対応
+      <br/>• ping確認・技術者派遣
+      <br/>• 日英バイリンガルメール対応
+      <br/>
       <br/>
       <br/>
       <strong>📈 成果・学び</strong>
-      <br/>• 障害対応スキル・緊急時判断力の向上
-      <br/>• 航空業界特有のシステム運用経験
-      <br/>• 多言語コミュニケーション能力の実践
-      <br/>• 24時間365日運用体制での責任感の醸成
+      <br/>
+      <br/>• 障害対応スキル向上
+      <br/>• 航空業界システム運用経験
+      <br/>• 多言語コミュニケーション実践
+      <br/>• 24/7運用体制での責任感醸成
     </td>
   </tr>
 </table>
@@ -92,20 +95,25 @@
       <br/>• QuickSight, CloudWatch
     </td>
     <td><strong>📊 運用自動化・効率化</strong>
-      <br/>• VBAによる書類・パラメータシート完全自動化
-      <br/>• QuickSight + Lambda でAWSコスト計算システム構築
-      <br/>• EC2利用状況可視化によるコスト削減施策
+      <br/>
+      <br/>• VBAで書類・パラメータシート完全自動化
+      <br/>• QuickSight+LambdaでAWSコスト計算システム構築
+      <br/>• EC2利用状況可視化でコスト削減
+      <br/>
       <br/>
       <br/>
       <strong>🏗️ インフラ構成管理</strong>
-      <br/>• CloudFormationによる20+AWSサービス構成管理
-      <br/>• DynamoDB, ECS, Lambda等の運用保守
-      <br/>• 自動CloudFormationスタック作成スクリプト開発
+      <br/>
+      <br/>• CloudFormationで20+AWSサービス構成管理
+      <br/>• DynamoDB, ECS, Lambda運用保守
+      <br/>• 自動CFスタック作成スクリプト開発
+      <br/>
       <br/>
       <br/>
       <strong>🔧 Python自動化開発</strong>
+      <br/>
       <br/>• 20+AWSサービス設定値取得自動化
-      <br/>• 土日祝日判定ロジック実装(requests使用)
+      <br/>• 土日祝日判定ロジック実装
       <br/>• Lambda+S3+SNS PDF処理・通知システム
       <br/>• EventViewer自動ログ収集・CloudWatch連携
     </td>
@@ -138,22 +146,31 @@
       <br/>• CI/CD, DevOps
     </td>
     <td><strong>🔍 OSS運用・検証</strong>
-      <br/>• OSSの動作検証・品質保証
+      <br/>
+      <br/>• OSS動作検証・品質保証
       <br/>• システム運用・モニタリング
       <br/>• パフォーマンス最適化・トラブルシューティング
       <br/>
       <br/>
+      <br/>
       <strong>📝 文書化・ナレッジ管理</strong>
+      <br/>
       <br/>• OSS運用ドキュメント作成・更新
-      <br/>• ベストプラクティスの文書化
-      <br/>• 技術的知見の社内共有体制構築
-      <br/><br/>
+      <br/>• ベストプラクティス文書化
+      <br/>• 技術知見社内共有体制構築
+      <br/>
+      <br/>
+      <br/>
       <strong>🔧 コード改善・最適化</strong>
+      <br/>
       <br/>• OSSコード調整・パフォーマンス改善
       <br/>• バグ修正・機能強化・リファクタリング
-      <br/>• コード品質向上・レビュープロセス改善<br/>
+      <br/>• コード品質向上・レビュープロセス改善
+      <br/>
+      <br/>
       <br/>
       <strong>🚀 今後の業務予定</strong>
+      <br/>
       <br/>• AWSサービス連携 - クラウドネイティブ構築
       <br/>• Java開発 - エンタープライズアプリ開発
       <br/>• Kubernetes運用 - コンテナオーケストレーション
@@ -163,7 +180,8 @@
 
 ---
 
-## 💻 技術スタック・習熟度マップ
+
+## ⚙️ 技術スタック・習熟度マップ
 
 ### ☁️ **クラウド・インフラ技術**
 
@@ -182,19 +200,19 @@
     <td><strong>AWS総合</strong></td>
     <td align="center"><strong>⭐⭐⭐⭐⭐</strong></td>
     <td align="center">2年4か月</td>
-    <td>20以上のサービス運用・自動化</td>
+    <td>AWS総合運用・自動化</td>
   </tr>
   <tr>
     <td>CloudFormation（IaC）</td>
     <td align="center">⭐⭐⭐⭐</td>
     <td align="center">2年4か月</td>
-    <td>構成管理・スタック自動作成</td>
+    <td>CF構成管理・スタック自動作成</td>
   </tr>
   <tr>
     <td>Lambda（サーバーレス）</td>
     <td align="center">⭐⭐⭐⭐</td>
     <td align="center">2年4か月</td>
-    <td>PDF処理・通知システム</td>
+    <td>PDF処理・通知システム構築</td>
   </tr>
   <tr>
     <td>EC2・S3</td>
@@ -227,6 +245,8 @@
     <td>マルチクラウド対応準備</td>
   </tr>
 </table>
+
+<br/>
 
 <br/>
 
@@ -275,6 +295,8 @@
 
 <br/>
 
+<br/>
+
 ### 🛠️ **フレームワーク・ライブラリ**
 
 <table>
@@ -290,7 +312,7 @@
     <td>boto3（AWS SDK）</td>
     <td align="center"><strong>⭐⭐⭐⭐⭐</strong></td>
     <td align="center">2年4か月</td>
-    <td>AWS操作・自動化の中核技術</td>
+    <td>AWS操作・自動化の中核</td>
   </tr>
   <tr>
     <td>pandas（データ処理）</td>
@@ -320,6 +342,8 @@
 
 <br/>
 
+<br/>
+
 ### 🌐 **ネットワーク・システム**
 
 <table>
@@ -341,7 +365,7 @@
     <td>Windows Server運用</td>
     <td align="center">⭐⭐⭐</td>
     <td align="center">3年8か月</td>
-    <td>EventViewer・システム監視・ADサーバー使用</td>
+    <td>EventViewer・システム監視・AD使用</td>
   </tr>
   <tr>
     <td>MS Office製品（Expert）</td>
@@ -350,6 +374,8 @@
     <td>ドキュメント作成など</td>
   </tr>
 </table>
+
+<br/>
 
 <br/>
 
@@ -374,7 +400,7 @@
     <td><strong>英語（ビジネスレベル）</strong></td>
     <td align="center"><strong>⭐⭐⭐</strong></td>
     <td align="center">3年8か月</td>
-    <td>日英バイリンガル業務・技術メール対応</td>
+    <td>日英バイリンガル業務・技術メール</td>
   </tr>
 </table>
 
@@ -388,6 +414,7 @@
 - **⭐** **入門レベル** - 基本概念を理解・学習中
 
 ---
+
 
 ## 🚀 個人プロジェクト・開発実績
 
@@ -412,7 +439,7 @@
     <td><strong>📊 データ可視化・<br/>分析ツール</strong></td>
     <td align="center">2024.06〜現在</td>
     <td align="center">pandas<br/>matplotlib<br/>AWS QuickSight</td>
-    <td>• Excel/CSV データ処理・分析<br/>• グラフ作成・レポート自動生成<br/>• QuickSightダッシュボード連携</td>
+    <td>• Excel/CSVデータ処理・分析<br/>• グラフ作成・レポート自動生成<br/>• QuickSightダッシュボード連携</td>
     <td align="center">🟢 **運用中**</td>
   </tr>
   
@@ -421,7 +448,7 @@
     <td rowspan="2"><strong>🌐 Web開発<br/>プロジェクト</strong></td>
     <td align="center">2024.08〜学習中</td>
     <td align="center">React<br/>FastAPI<br/>JavaScript ES6+</td>
-    <td>• 個人用・公開用UI作成<br/>• レスポンシブデザイン実装<br/>• SPA (Single Page Application) 開発</td>
+    <td>• 個人用・UI作成<br/>• レスポンシブデザイン実装<br/>• SPA開発</td>
     <td align="center">🟡 **開発中** <br />
       <a href="https://kentafrost.github.io/ReactApp/">reactデモページ</a>
     </td>
@@ -430,14 +457,15 @@
     <td><strong>☕ Java バックエンド<br/>開発</strong></td>
     <td align="center">2024.10〜学習中</td>
     <td align="center">Spring Boot<br/>Java<br/>Gradle</td>
-    <td>• RESTful API設計・実装<br/>• データベース連携<br/>• MVC アーキテクチャ学習</td>
+    <td>• RESTful API設計・実装<br/>• データベース連携<br/>• MVCアーキテクチャ学習</td>
     <td align="center">🟡 **学習中**</td>
   </tr>
 </table>
 
 ---
 
-## 資格・認定
+
+##  資格・認定
 
 <table>
   <tr>
@@ -478,7 +506,8 @@
 
 ---
 
-## �🎯 キャリア目標・学習計画
+
+## 🎯 キャリア目標・学習計画
 
 ### 📅 **期間別キャリアロードマップ**
 
@@ -494,10 +523,10 @@
     <td align="center"><strong>2026年〜2027年<br/>(短期目標)</strong></td>
     <td align="center">🚀 **フルスタック<br/>開発スキル向上**</td>
     <td>
-      • React + Spring Boot による完全なWebアプリ開発<br/>
-      • TypeScript導入による型安全な開発<br/>
-      • データベース設計・API設計の体系的学習<br/>
-      • Docker・Kubernetesによるコンテナ運用学習
+      • React + Spring BootでWebアプリ開発<br/>
+      • TypeScript導入で型安全開発<br/>
+      • DB設計・API設計の体系学習<br/>
+      • Docker・Kubernetesコンテナ運用学習
     </td>
     <td align="center">ポートフォリオ<br/>完成・公開<br/><br/>🏆 技術資格取得</td>
   </tr>
@@ -507,8 +536,8 @@
     <td align="center">🏢 **開発現場での<br/>実務経験獲得**</td>
     <td>
       • Web開発・システム開発の実プロジェクト参画<br/>
-      • チーム開発・アジャイル開発手法の習得<br/>
-      • コードレビュー・設計レビューの経験<br/>
+      • チーム開発・アジャイル手法習得<br/>
+      • コードレビュー・設計レビュー経験<br/>
       • リーダーシップ・メンタリングスキル向上
     </td>
     <td align="center">💼 開発チーム<br/>中核メンバー<br/><br/>👥 後輩指導経験</td>
@@ -533,7 +562,7 @@
     <td align="center"><strong>言語・基礎</strong></td>
     <td>TypeScript, Java（Spring Boot）</td>
     <td align="center">2026年前半</td>
-    <td>型安全な大規模開発・エンタープライズ開発</td>
+    <td>型安全大規模開発・エンタープライズ開発</td>
   </tr>
   <tr>
     <td align="center"><strong>フロントエンド</strong></td>
@@ -606,7 +635,7 @@
 ---
 
 ### 💡 **ひとこと**
-**AWSクラウド運用2年4か月の経験を活かし、フルスタック開発エンジニアとして成長を続けています。**  
+**AWSクラウド運用経験2年4か月の経験を活かし、フルスタック開発エンジニアとして成長中です。**  
 **自動化・効率化への強いこだわりと、新技術への学習意欲で、チームに貢献していきます！** ⚡
 
 ---
