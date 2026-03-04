@@ -6,7 +6,7 @@ description: "KFrostのキャリア詳細、技術スタック、職歴、個人
 date: 2025-01-01
 last_modified_at: 2026-03-04
 show_toc: true
-permalink: /career/
+permalink: /career/jp
 ---
 
 **[English ver](./README_EN.md)**
