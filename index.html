@@ -1,0 +1,268 @@
+---
+layout: default
+title: "KFrost Portfolio"
+description: "ソフトウェア/クラウドエンジニア KFrost のポートフォリオサイト"
+permalink: /
+---
+
+<div class="hero-section">
+  <div class="hero-content">
+    <h1 class="hero-title">🚀 KFrost</h1>
+    <h2 class="hero-subtitle">Software/Cloud Engineer</h2>
+    <p class="hero-description">
+      AWS運用エンジニア → 開発エンジニアへのキャリアチェンジを目指す
+    </p>
+    <div class="hero-buttons">
+      <a href="{{ '/doc/Career_JP' | relative_url }}" class="btn btn-primary">詳細なキャリア情報</a>
+      <a href="https://github.com/kentafrost" class="btn btn-outline" target="_blank">GitHub Profile</a>
+    </div>
+  </div>
+</div>
+
+<div class="quick-overview">
+  <div class="overview-grid">
+    <div class="overview-card">
+      <div class="card-icon">☁️</div>
+      <h3>クラウド技術</h3>
+      <p>AWS 20+サービス実運用経験<br/>CloudFormation、Lambda、S3運用</p>
+    </div>
+    <div class="overview-card">
+      <div class="card-icon">🐍</div>
+      <h3>Python開発</h3>
+      <p>自動化スクリプト開発<br/>Lambda、データ処理、API連携</p>
+    </div>
+    <div class="overview-card">
+      <div class="card-icon">🌐</div>
+      <h3>Web開発</h3>
+      <p>React、JavaScript学習中<br/>フルスタック開発目指中</p>
+    </div>
+    <div class="overview-card">
+      <div class="card-icon">☕</div>
+      <h3>Java開発</h3>
+      <p>Spring Boot学習中<br/>エンタープライズ開発</p>
+    </div>
+  </div>
+</div>
+
+<div class="recent-updates">
+  <h2>最新の更新</h2>
+  <div class="update-timeline">
+    <div class="update-item">
+      <div class="update-date">2026年3月</div>
+      <div class="update-content">
+        <h4>OSS運用・開発エンジニア開始</h4>
+        <p>オープンソース運用・改善・検証業務に従事</p>
+      </div>
+    </div>
+    <div class="update-item">
+      <div class="update-date">2026年1月</div>
+      <div class="update-content">
+        <h4>React Webアプリケーション開発</h4>
+        <p>個人プロジェクトでReactを活用したUI開発中</p>
+      </div>
+    </div>
+    <div class="update-item">
+      <div class="update-date">2025年12月</div>
+      <div class="update-content">
+        <h4>AWS運用業務完了</h4>
+        <p>2年4ヶ月のAWS運用・自動化業務を完了</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+.hero-section {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 80px 0;
+  text-align: center;
+  margin: -20px -20px 40px -20px;
+}
+
+.hero-title {
+  font-size: 3.5em;
+  margin: 0;
+  font-weight: 700;
+}
+
+.hero-subtitle {
+  font-size: 1.8em;
+  margin: 10px 0;
+  font-weight: 300;
+  opacity: 0.9;
+}
+
+.hero-description {
+  font-size: 1.2em;
+  margin: 20px 0 40px 0;
+  opacity: 0.8;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 30px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background: white;
+  color: #667eea;
+}
+
+.btn-primary:hover {
+  background: #f0f0f0;
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  border: 2px solid white;
+  color: white;
+}
+
+.btn-outline:hover {
+  background: white;
+  color: #667eea;
+  transform: translateY(-2px);
+}
+
+.quick-overview {
+  margin: 60px 0;
+}
+
+.overview-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin: 40px 0;
+}
+
+.overview-card {
+  background: white;
+  border: 1px solid #e1e4e8;
+  border-radius: 12px;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.overview-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.card-icon {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.overview-card h3 {
+  color: #0366d6;
+  margin: 0 0 15px 0;
+}
+
+.overview-card p {
+  color: #586069;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.recent-updates {
+  background: #f6f8fa;
+  padding: 40px;
+  border-radius: 12px;
+  margin: 60px 0;
+}
+
+.recent-updates h2 {
+  text-align: center;
+  color: #0366d6;
+  margin-bottom: 40px;
+}
+
+.update-timeline {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.update-item {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #e1e4e8;
+}
+
+.update-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.update-date {
+  min-width: 100px;
+  font-weight: 600;
+  color: #0366d6;
+  font-size: 0.9em;
+}
+
+.update-content h4 {
+  margin: 0 0 8px 0;
+  color: #24292e;
+}
+
+.update-content p {
+  margin: 0;
+  color: #586069;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 60px 20px;
+    margin: -20px -10px 40px -10px;
+  }
+  
+  .hero-title {
+    font-size: 2.5em;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.4em;
+  }
+  
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .overview-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .update-item {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .update-date {
+    min-width: auto;
+  }
+  
+  .recent-updates {
+    padding: 30px 20px;
+  }
+}
+</style>

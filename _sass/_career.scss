@@ -1,0 +1,331 @@
+// Career Page Specific Styles
+
+// Headers
+h1 {
+  color: var(--primary-color);
+  border-bottom: 3px solid var(--primary-color);
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+  font-size: 2.2em;
+}
+
+h2 {
+  color: var(--secondary-color);
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 8px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-size: 1.8em;
+}
+
+h3 {
+  color: var(--primary-color);
+  margin-top: 30px;
+  margin-bottom: 15px;
+  font-size: 1.4em;
+}
+
+// Table Styles
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background: white;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  font-size: 14px;
+}
+
+th {
+  background: linear-gradient(135deg, var(--primary-color), #0256cc);
+  color: white;
+  font-weight: 600;
+  padding: 12px 10px;
+  text-align: left;
+  font-size: 13px;
+  word-wrap: break-word;
+}
+
+td {
+  padding: 10px;
+  border-bottom: 1px solid var(--border-color);
+  vertical-align: top;
+  word-wrap: break-word;
+}
+
+tr:nth-child(even) {
+  background-color: var(--light-bg);
+}
+
+tr:hover {
+  background-color: #e6f3ff;
+  transition: background-color 0.2s ease;
+}
+
+// Career Summary Section
+.career-summary-section {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 30px;
+  border-radius: 12px;
+  margin: 30px 0;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+  
+  h2 {
+    color: white;
+    border-bottom: 2px solid rgba(255,255,255,0.3);
+    margin-top: 0;
+    padding-bottom: 15px;
+  }
+  
+  table {
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.2);
+  }
+  
+  th {
+    background: rgba(255,255,255,0.2);
+    color: white;
+  }
+  
+  td {
+    color: white;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+}
+
+// Skill Level Stars
+.skill-stars {
+  display: inline-block;
+  font-size: 16px;
+  color: #ffd700;
+}
+
+// Progress Indicators
+.progress-indicator {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.progress-complete {
+  background-color: var(--success-color);
+  color: white;
+}
+
+.progress-ongoing {
+  background-color: var(--warning-color);
+  color: #212529;
+}
+
+.progress-planned {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+// Experience Cards
+.experience-card {
+  background: white;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: var(--shadow);
+  
+  h3 {
+    margin-top: 0;
+    color: var(--primary-color);
+  }
+}
+
+// Technology Tags
+.tech-tag {
+  display: inline-block;
+  background: var(--light-bg);
+  color: var(--secondary-color);
+  padding: 4px 8px;
+  margin: 2px;
+  border-radius: 4px;
+  font-size: 12px;
+  border: 1px solid var(--border-color);
+}
+
+// Highlight Boxes
+.highlight-box {
+  background: var(--light-bg);
+  border: 2px solid var(--border-color);
+  border-radius: var(--radius);
+  padding: 20px;
+  margin: 20px 0;
+  position: relative;
+  
+  &:before {
+    content: "💡";
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    background: white;
+    padding: 0 10px;
+    font-size: 20px;
+  }
+}
+
+// Reference Guide
+.reference-guide {
+  background: #f6f8fa;
+  border: 2px solid var(--border-color);
+  border-radius: 10px;
+  padding: 25px;
+  margin: 30px 0;
+  position: relative;
+  
+  &::before {
+    content: "📚 リファレンス";
+    position: absolute;
+    top: -12px;
+    left: 20px;
+    background: white;
+    padding: 0 15px;
+    font-weight: bold;
+    color: var(--primary-color);
+  }
+}
+
+// Links
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.2s ease;
+  
+  &:hover {
+    border-bottom: 1px solid var(--primary-color);
+  }
+}
+
+// Lists
+ul, ol {
+  padding-left: 20px;
+}
+
+li {
+  margin: 8px 0;
+}
+
+// Code and Pre
+code {
+  background: var(--light-bg);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  font-size: 0.9em;
+}
+
+pre {
+  background: #f8f8f8;
+  padding: 15px;
+  border-radius: var(--radius);
+  overflow-x: auto;
+  border: 1px solid var(--border-color);
+}
+
+// Blockquotes
+blockquote {
+  border-left: 4px solid var(--primary-color);
+  margin: 20px 0;
+  padding: 15px 20px;
+  background: var(--light-bg);
+  font-style: italic;
+}
+
+// Responsive Design
+@media (max-width: 768px) {
+  table {
+    font-size: 12px;
+  }
+  
+  th, td {
+    padding: 6px 4px;
+  }
+  
+  h1 {
+    font-size: 1.8em;
+  }
+  
+  h2 {
+    font-size: 1.5em;
+  }
+  
+  h3 {
+    font-size: 1.2em;
+  }
+  
+  .experience-card {
+    padding: 15px;
+  }
+  
+  .career-summary-section {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  
+  .tech-tag {
+    display: block;
+    margin: 5px 0;
+  }
+  
+  .wrapper {
+    padding: 5px;
+  }
+}
+
+// Animation
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.experience-card, .highlight-box {
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+// Table of Contents
+.toc {
+  background: var(--light-bg);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  padding: 20px;
+  margin: 20px 0;
+  
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  li {
+    margin: 5px 0;
+  }
+  
+  a {
+    color: var(--primary-color);
+    font-weight: 500;
+  }
+}
