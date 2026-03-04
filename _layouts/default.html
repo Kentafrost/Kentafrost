@@ -30,13 +30,13 @@
               <a class="page-link" href="{{ '/' | relative_url }}" data-i18n="nav.home">ホーム</a>
               <a class="page-link" href="https://kentafrost.github.io/Kentafrost/career/jp" data-i18n="nav.career">キャリア詳細</a>
 
-              <!-- switch language -->
+              <!-- language switcher -->
               <div class="language-switcher">
                 <button class="lang-btn" onclick="switchLanguage('ja')" title="日本語">
-                  <span class="flag">🇯🇵</span>
+                  <span class="flag japan-flag">🇯🇵</span>
                 </button>
                 <button class="lang-btn" onclick="switchLanguage('en')" title="English">
-                  <span class="flag">🇬🇧</span>
+                  <span class="flag uk-flag">🇬🇧</span>
                 </button>
               </div>
               
@@ -125,21 +125,21 @@
         }
       };
 
-      // 現在の言語を取得・設定
+      // retrieve saved language or default to Japanese
       let currentLang = localStorage.getItem('language') || 'ja';
 
-      // 言語切り替え関数
+      // language switch function
       function switchLanguage(lang) {
         currentLang = lang;
         localStorage.setItem('language', lang);
         
-        // HTMLのlang属性を更新
+        // HTML lang element update
         document.documentElement.lang = lang;
         
-        // data-i18n属性を持つ要素を翻訳
+        // update translations for elements with data-i18n attribute
         updateTranslations();
         
-        // 言語切り替え時のアニメーション効果
+        // animation for language switch
         const switcher = document.querySelector('.language-switcher');
         switcher.style.transform = 'scale(0.9)';
         setTimeout(() => {
@@ -147,7 +147,7 @@
         }, 100);
       }
 
-      // 翻訳を更新する関数
+      // update translations for elements with data-i18n attribute
       function updateTranslations() {
         const elements = document.querySelectorAll('[data-i18n]');
         
@@ -161,7 +161,7 @@
         });
       }
 
-      // キーから翻訳を取得
+      // get translation by key
       function getTranslationByKey(key, lang) {
         const keys = key.split('.');
         let translation = translations[lang];
@@ -178,10 +178,10 @@
       }
 
       document.addEventListener('DOMContentLoaded', function() {
-        // 保存された言語設定を適用
+        // apply saved language settings
         switchLanguage(currentLang);
         
-        // アクティブな言語ボタンを強調表示
+        // highlight active language button
         updateActiveLanguageButton();
         
         // Smooth scrolling for anchor links
@@ -199,7 +199,7 @@
         });
       });
 
-      // アクティブな言語ボタンの表示を更新
+      // update active language button display
       function updateActiveLanguageButton() {
         const buttons = document.querySelectorAll('.lang-btn');
         buttons.forEach(btn => {
@@ -212,7 +212,7 @@
       }
     </script>
 
-    <!-- 言語切り替えのCSS -->
+    <!-- language switcher CSS -->
     <style>
       .language-switcher {
         display: inline-flex;
