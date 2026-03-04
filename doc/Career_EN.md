@@ -1,3 +1,14 @@
+---
+layout: default
+title: "キャリア詳細"
+subtitle: "AWS運用エンジニア → 開発エンジニアへのキャリアチェンジを目指す"
+description: "KFrostのキャリア詳細、技術スタック、職歴、個人プロジェクトの詳細情報"
+date: 2025-01-01
+last_modified_at: 2026-03-04
+show_toc: true
+permalink: /career/en
+---
+
 **🌟 [日本語版](./README.md) 🌟**
 
 > **AWS Operations Engineer → Transitioning to Software Development Engineer**
