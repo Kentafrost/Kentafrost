@@ -26,52 +26,23 @@ permalink: /career/en
 
 | Item | Details |
 |------|----------|
-| **Total Experience** | 3 years 8 months (May 2022 – Present) |
+| **Total Experience** | {% include career/total-experience-en.txt %} |
 | **Specialization** | AWS Operations & Automation, Python Development, Infrastructure Operations |
 | **Core Strengths** | 🔹 AWS 20+ Services Production Experience<br/>🔹 Python Automation Script Development<br/>🔹 Operations Efficiency & Automation |
-| **Current Status** | OSS operations & validation work<br/>Learning: React, Java, Spring Boot, Kubernetes<br/>Aiming for full-stack developer transition |
+| **Current Status** | OSS operations and validation work<br/>Learning technologies are listed in the dedicated learning table below<br/>Aiming for full-stack developer transition |
 
 ---
 
 ## 📈 Work Experience Details
-
-### 🛠️ **Tier-1 Network Incident Response** (May 2022 – Aug 2023)
-
-| **Duration** | 1 year 4 months |
-|------|------|
-| **Scope** | Network Incident Triage & Response (Aviation Industry, SES) |
-| **Key Technologies** | Network Monitoring<br/>Incident Response<br/>Customer Support<br/>Call Center Operations<br/>Bilingual Support<br/>Troubleshooting |
-| **Main Achievements** | 🔧 Network incident triage & response<br/>   Operations monitoring & troubleshooting<br/>   Ping checks & technician dispatch<br/>   Bilingual email communication |
-| **Results & Learning** | 📈 Enhanced incident response skills<br/>   Customer support skills acquisition<br/>   Aviation system operations experience<br/>   Multilingual communication practice<br/>   24/7 responsibility development |
-
-<br/>
-
-### ☁️ **Cloud Operations Engineer (AWS Focus)** (Sep 2023 – Dec 2025)
-
-| **Duration** | 2 years 4 months |
-|------|------|
-| **Scope** | AWS Environment Operations & Automation |
-| **Key Technologies** | AWS (20+ Services)<br/>Python<br/>VBA<br/>PowerShell<br/>CloudFormation<br/>Lambda<br/>S3<br/>DynamoDB<br/>QuickSight<br/>CloudWatch |
-| **Operations Automation** | 📊 VBA document & parameter sheet automation<br/>   QuickSight+Lambda AWS cost calculation system<br/>   EC2 usage visualization for cost reduction |
-| **Infrastructure Management** | 🏗️ CloudFormation management of 20+ AWS services<br/>    DynamoDB/ECS/Lambda operations<br/>    Automated CF stack creation scripts |
-| **Python Development** | 🔧 20+ AWS services config automation<br/>    Holiday detection logic<br/>    Lambda+S3+SNS PDF processing system<br/>    EventViewer log collection & CloudWatch integration |
-
-<br/>
-
-### 💻 **OSS Operations & Development Engineer** (Jan 2026 – Present)
-
-| **Duration** | 1 month, Ongoing |
-|------|------|
-| **Scope** | Open Source Operations, Improvement & Validation |
-| **Key Technologies** | OSS Management<br/>Java<br/>Kubernetes<br/>AWS<br/>Git/GitHub<br/>Code Quality Management<br/>CI/CD<br/>DevOps |
-| **OSS Operations** | 🔍 OSS validation & quality assurance<br/>   System operations & monitoring<br/>   Performance optimization & troubleshooting |
-| **Documentation** | 📝 OSS documentation creation & updates<br/>   Best practices documentation<br/>   Technical knowledge sharing system |
-| **Code Improvement** | 🔧 OSS code adjustments & performance improvements<br/>    Bug fixes, feature enhancements & refactoring<br/>    Code quality & review process enhancement |
-| **Future Plans** | 🚀 AWS Service Integration (Cloud-native)<br/>    Java Development (Enterprise apps)<br/>    Kubernetes Operations (Container orchestration) |
+{% include career/work-experience-en.md %}
 
 ---
 
 ## 💻 Technical Skills & Proficiency Map
+
+{% include career/technology-totals-en.md %}
+
+<br/>
 
 ### ☁️ **Cloud & Infrastructure Technologies**
 
@@ -86,7 +57,7 @@ permalink: /career/en
   
   <!-- ☁️ Cloud & Infrastructure -->
   <tr>
-    <td rowspan="8" align="left"><strong>☁️<br/>Cloud<br/>Infrastructure</strong></td>
+    <td rowspan="6" align="left"><strong>☁️<br/>Cloud<br/>Infrastructure</strong></td>
     <td><strong>AWS Overall</strong></td>
     <td align="left"><strong>⭐⭐⭐⭐⭐</strong></td>
     <td align="left">2 years 4 months</td>
@@ -95,7 +66,7 @@ permalink: /career/en
   <tr>
     <td>CloudFormation (IaC)</td>
     <td align="left">⭐⭐⭐⭐</td>
-    <td align="left">2 years 4 months</td>
+    <td align="left">1 year 6 months</td>
     <td>Configuration management & stack automation</td>
   </tr>
   <tr>
@@ -113,26 +84,14 @@ permalink: /career/en
   <tr>
     <td>CloudWatch & DynamoDB</td>
     <td align="left">⭐⭐⭐</td>
-    <td align="left">2 years 4 months</td>
+    <td align="left">1 year 6 months</td>
     <td>Log integration & NoSQL operations</td>
   </tr>
   <tr>
     <td>QuickSight</td>
-    <td align="left">⭐⭐⭐</td>
-    <td align="left">2 years 4 months</td>
+    <td align="left">⭐⭐</td>
+    <td align="left">1 month</td>
     <td>Cost visualization dashboards</td>
-  </tr>
-  <tr>
-    <td>EKS</td>
-    <td align="left">⭐</td>
-    <td align="left">Learning</td>
-    <td>Currently validating in work projects</td>
-  </tr>
-  <tr>
-    <td>Azure</td>
-    <td align="left">⭐</td>
-    <td align="left">Planned</td>
-    <td>Multi-cloud preparation</td>
   </tr>
 </table>
 
@@ -149,7 +108,7 @@ permalink: /career/en
     <th align="left" style="width: 35%; word-wrap: break-word;">📝 Main Achievements & Usage</th>
   </tr>
   <tr>
-    <td rowspan="5" align="left"><strong>💻<br/>Programming<br/>Languages</strong></td>
+    <td rowspan="3" align="left"><strong>💻<br/>Programming<br/>Languages</strong></td>
     <td><strong>Python</strong></td>
     <td align="left"><strong>⭐⭐⭐⭐⭐</strong></td>
     <td align="left">2 years 4 months</td>
@@ -167,18 +126,6 @@ permalink: /career/en
     <td align="left">2 years 4 months</td>
     <td>Windows management & operations automation</td>
   </tr>
-  <tr>
-    <td>JavaScript</td>
-    <td align="left">⭐⭐</td>
-    <td align="left">Learning</td>
-    <td>React development & frontend</td>
-  </tr>
-  <tr>
-    <td>Java</td>
-    <td align="left">⭐</td>
-    <td align="left">Learning</td>
-    <td>Spring Boot development</td>
-  </tr>
 </table>
 
 <br/>
@@ -194,7 +141,7 @@ permalink: /career/en
     <th align="left" style="width: 35%; word-wrap: break-word;">📝 Main Achievements & Usage</th>
   </tr>
   <tr>
-    <td rowspan="5" align="left"><strong>🛠️<br/>Frameworks<br/>Libraries</strong></td>
+    <td rowspan="3" align="left"><strong>🛠️<br/>Frameworks<br/>Libraries</strong></td>
     <td>boto3 (AWS SDK)</td>
     <td align="left"><strong>⭐⭐⭐⭐⭐</strong></td>
     <td align="left">2 years 4 months</td>
@@ -211,18 +158,6 @@ permalink: /career/en
     <td align="left">⭐⭐⭐</td>
     <td align="left">1 year</td>
     <td>Data visualization & graph generation</td>
-  </tr>
-  <tr>
-    <td>React</td>
-    <td align="left">⭐⭐</td>
-    <td align="left">Learning</td>
-    <td>Personal project UI development</td>
-  </tr>
-  <tr>
-    <td>Spring Boot</td>
-    <td align="left">⭐</td>
-    <td align="left">Learning</td>
-    <td>Java backend development</td>
   </tr>
 </table>
 
@@ -265,28 +200,7 @@ permalink: /career/en
 
 ### **Language Skills**
 
-<table style="width: 100%; table-layout: auto; border-collapse: collapse;">
-  <tr>
-    <th align="left" style="width: 15%; word-wrap: break-word;">🏷️ Category</th>
-    <th align="left" style="width: 20%; word-wrap: break-word;">Technology & Language</th>
-    <th align="left" style="width: 15%; word-wrap: break-word;">⭐ Proficiency</th>
-    <th align="left" style="width: 15%; word-wrap: break-word;">⏰ Experience</th>
-    <th align="left" style="width: 35%; word-wrap: break-word;">📝 Main Achievements & Usage</th>
-  </tr>
-  <tr>
-    <td rowspan="2" align="left"><strong>🌍<br/>Language<br/>Skills</strong></td>
-    <td><strong>Japanese (Native)</strong></td>
-    <td align="left"><strong>⭐⭐⭐⭐⭐</strong></td>
-    <td align="left">Native</td>
-    <td>Native level & technical documentation</td>
-  </tr>
-  <tr>
-    <td><strong>English (Business Level)</strong></td>
-    <td align="left"><strong>⭐⭐⭐⭐</strong></td>
-    <td align="left">3 years 8 months</td>
-    <td>Bilingual operations & technical email</td>
-  </tr>
-</table>
+{% include career/language-skills-en.md %}
 
 <br/>
 
@@ -382,7 +296,7 @@ permalink: /career/en
 
 ---
 
-## � Certifications & Qualifications
+## 📜 Certifications & Qualifications
 
 <table style="width: 100%; table-layout: auto; border-collapse: collapse;">
   <tr>
@@ -440,7 +354,8 @@ permalink: /career/en
       • Complete web app development with React + Spring Boot<br/>
       • Type-safe development with TypeScript<br/>
       • Systematic learning of database & API design<br/>
-      • Container operations learning with Docker & Kubernetes
+      • Container operations learning with Docker & Kubernetes<br/>
+      • English communications with international teams for OSS management.
     </td>
     <td align="left">Portfolio<br/>Completion & Publication<br/><br/>🏆 Technical Certifications</td>
   </tr>
@@ -452,99 +367,15 @@ permalink: /career/en
       • Real web & system development project participation<br/>
       • Team development & agile methodology acquisition<br/>
       • Code & design review experience<br/>
-      • Leadership & mentoring skill development
     </td>
     <td align="left">💼 Core Development<br/>Team Member<br/><br/>👥 Junior Mentoring Experience</td>
   </tr>
 </table>
 
 
-### 📚 **Learning Technology Roadmap**
+### 📚 **Learning Plan**
 
-<table style="width: 100%; table-layout: auto; border-collapse: collapse;">
-  <tr>
-    <th align="left" style="width: 15%; word-wrap: break-word;">🔥 Priority</th>
-    <th align="left" style="width: 20%; word-wrap: break-word;">📂 Technology Domain</th>
-    <th align="left" style="width: 20%; word-wrap: break-word;">💻 Technologies & Frameworks</th>
-    <th align="left" style="width: 15%; word-wrap: break-word;">⏰ Learning Timeline</th>
-    <th align="left" style="width: 30%; word-wrap: break-word;">📝 Learning Purpose & Applications</th>
-  </tr>
-  
-  <!-- High Priority -->
-  <tr>
-    <td rowspan="6" align="left"><strong>🔥<br/>Highest Priority<br/>(2026)</strong></td>
-    <td align="left"><strong>Languages & Fundamentals</strong></td>
-    <td>TypeScript, Java (Spring Boot)</td>
-    <td align="left">First half of 2026</td>
-    <td>Type-safe large-scale & enterprise development</td>
-  </tr>
-  <tr>
-    <td align="left"><strong>Frontend</strong></td>
-    <td>React (Advanced), Vue.js (New)</td>
-    <td align="left">Throughout 2026</td>
-    <td>Modern SPA development & framework comparison</td>
-  </tr>
-  <tr>
-    <td align="left"><strong>Databases</strong></td>
-    <td>MongoDB, PostgreSQL, Redis</td>
-    <td align="left">Throughout 2026</td>
-    <td>NoSQL, Relational DB & caching</td>
-  </tr>
-  <tr>
-    <td align="left"><strong>Container & Orchestration</strong></td>
-    <td>Docker, Kubernetes, Docker Compose</td>
-    <td align="left">Second half of 2026</td>
-    <td>Containerization, orchestration & DevOps</td>
-  </tr>
-  <tr>
-    <td align="left"><strong>CI/CD & Automation</strong></td>
-    <td>GitHub Actions, Jenkins</td>
-    <td align="left">Second half of 2026</td>
-    <td>Automation pipelines & continuous delivery</td>
-  </tr>
-  <tr>
-    <td align="left"><strong>Cloud Expansion</strong></td>
-    <td>Azure (Basic~Intermediate), GCP (Basic)</td>
-    <td align="left">Second half of 2026</td>
-    <td>Multi-cloud support & option expansion</td>
-  </tr>
-  
-  <!-- Medium Priority -->
-  <tr>
-    <td rowspan="2" align="left"><strong>⚡<br/>Important<br/>(2027)</strong></td>
-    <td align="left"><strong>Testing Technologies</strong></td>
-    <td>Jest, JUnit, Selenium, Cypress</td>
-    <td align="left">First half of 2027</td>
-    <td>Unit, integration, E2E testing & quality assurance</td>
-  </tr>
-  <tr>
-    <td align="left"><strong>IaC & Monitoring</strong></td>
-    <td>Terraform, Ansible, Prometheus</td>
-    <td align="left">Second half of 2027</td>
-    <td>Infrastructure as Code & operations monitoring automation</td>
-  </tr>
-  
-  <!-- Future Priority -->
-  <tr>
-    <td rowspan="3" align="left"><strong>📅<br/>Long-term<br/>(2028+)</strong></td>
-    <td align="left"><strong>Mobile Development</strong></td>
-    <td>React Native, Flutter, Swift</td>
-    <td align="left">2028 onwards</td>
-    <td>Cross-platform & native app development</td>
-  </tr>
-  <tr>
-    <td align="left"><strong>AI/ML</strong></td>
-    <td>TensorFlow, PyTorch, scikit-learn</td>
-    <td align="left">2028 onwards</td>
-    <td>Machine learning, data science & AI utilization</td>
-  </tr>
-  <tr>
-    <td align="left"><strong>Emerging Tech</strong></td>
-    <td>Solidity, Web3, GraphQL</td>
-    <td align="left">As needed</td>
-    <td>Blockchain, distributed systems & advanced APIs</td>
-  </tr>
-</table>
+{% include career/learning-plan-en.md %}
 
 ---
 

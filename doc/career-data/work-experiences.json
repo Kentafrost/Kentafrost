@@ -1,0 +1,191 @@
+[
+  {
+    "id": "tier1-network-response",
+    "startYm": "2022-05",
+    "endYm": "2023-08",
+    "isCurrent": false,
+    "jp": {
+      "role": "🛠️ 障害一次切り分け窓口",
+      "scope": "ネットワーク障害一次切り分け・インシデント対応（航空業界・SES）",
+      "technologies": [
+        { "name": "ネットワーク監視", "years": 1, "months": 4 },
+        { "name": "インシデント対応", "years": 1, "months": 4 },
+        { "name": "チケット管理", "years": 1, "months": 4 },
+        { "name": "エスカレーション対応", "years": 1, "months": 4 },
+        { "name": "バイリンガル対応", "years": 1, "months": 4 }
+      ],
+      "achievements": [
+        "障害一次切り分け対応",
+        "運用監視、ping確認、技術者派遣",
+        "日英メール対応"
+      ]
+    },
+    "en": {
+      "role": "🛠️ Tier-1 Network Incident Response",
+      "scope": "Network Incident Triage and Response (Aviation Industry, SES)",
+      "technologies": [
+        { "name": "Network Monitoring", "years": 1, "months": 4 },
+        { "name": "Incident Response", "years": 1, "months": 4 },
+        { "name": "Troubleshooting", "years": 1, "months": 4 },
+        { "name": "Ticket Management", "years": 1, "months": 4 },
+        { "name": "Escalation Handling", "years": 1, "months": 4 },
+        { "name": "Customer Support", "years": 1, "months": 4 },
+        { "name": "Bilingual Support", "years": 1, "months": 4 }
+      ],
+      "achievements": [
+        "Network incident triage and response",
+        "Operations monitoring and troubleshooting",
+        "Ping checks and technician dispatch",
+        "Bilingual email communication"
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-operations",
+    "startYm": "2023-09",
+    "endYm": "2025-12",
+    "isCurrent": false,
+    "jp": {
+      "role": "☁️ クラウドオペレーションエンジニア（AWS中心）",
+      "scope": "AWS環境運用保守・自動化",
+      "technologies": [
+        { "name": "Python", "years": 2, "months": 4 },
+        { "name": "VBA", "years": 2, "months": 4 },
+        { "name": "PowerShell", "years": 2, "months": 4 },
+        { "name": "YAML", "years": 1, "months": 6 },
+        { "name": "Github Copilot", "years": 0, "months": 6 },
+        { "name": "Linux", "years": 0, "months": 6, "certifications": ["LinuC-1"] },
+        {
+          "name": "AWS",
+          "years": 2,
+          "months": 4,
+          "certifications": [
+            "AWS Cloud Practitioner",
+            "AWS Certified Solutions Architect - Associate",
+            "AWS Certified DevOps Engineer - Associate"
+          ]
+        },
+        { "name": "EC2", "years": 2, "months": 4 },
+        { "name": "VPC", "years": 1, "months": 6 },
+        { "name": "IAM", "years": 1, "months": 8 },
+        { "name": "CloudFormation", "years": 1, "months": 6 },
+        { "name": "Lambda", "years": 2, "months"    : 4 },
+        { "name": "S3", "years": 2, "months": 4 },
+        { "name": "DynamoDB", "years": 1, "months": 6 },
+        { "name": "SNS", "years": 1, "months": 6 },
+        { "name": "EventBridge", "years": 1, "months": 6 },
+        { "name": "Systems Manager", "years": 1, "months": 6 },
+        { "name": "CloudWatch", "years": 2, "months": 0 },
+        { "name": "QuickSight", "years": 0, "months": 1, "learning": true }
+      ],
+      "achievements": [
+        "VBAで書類・パラメータシート自動化",
+        "QuickSight+Lambdaでコスト計算システム構築",
+        "CloudFormationで20+サービス構成管理"
+      ]
+    },
+    "en": {
+      "role": "☁️ Cloud Operations Engineer (AWS Focus)",
+      "scope": "AWS Environment Operations and Automation",
+      "technologies": [
+        { "name": "Python", "years": 2, "months": 4 },
+        { "name": "VBA", "years": 2, "months": 4 },
+        { "name": "PowerShell", "years": 2, "months": 4 },
+        { "name": "Linux", "years": 0, "months": 6, "certifications": ["LinuC-1"] },
+        {
+          "name": "AWS",
+          "years": 2,
+          "months": 4,
+          "certifications": [
+            "AWS Cloud Practitioner",
+            "AWS Certified Solutions Architect - Associate",
+            "AWS Certified DevOps Engineer - Associate"
+          ]
+        },
+        { "name": "EC2", "years": 2, "months": 4 },
+        { "name": "VPC", "years": 1, "months": 6 },
+        { "name": "IAM", "years": 1, "months": 6 },
+        { "name": "CloudFormation", "years": 1, "months": 6 },
+        { "name": "Lambda", "years": 2, "months": 4 },
+        { "name": "S3", "years": 2, "months": 4 },
+        { "name": "DynamoDB", "years": 1, "months": 6 },
+        { "name": "SNS", "years": 0, "months": 8 },
+        { "name": "EventBridge", "years": 0, "months": 8 },
+        { "name": "Systems Manager", "years": 0, "months": 8 },
+        { "name": "CloudWatch", "years": 1, "months": 6 },
+        { "name": "QuickSight", "years": 0, "months": 1 }
+      ],
+      "achievements": [
+        "VBA document and parameter sheet automation",
+        "QuickSight + Lambda AWS cost calculation system",
+        "CloudFormation management for 20+ AWS services"
+      ]
+    }
+  },
+  {
+    "id": "oss-operations-development",
+    "startYm": "2026-01",
+    "endYm": null,
+    "isCurrent": true,
+    "jp": {
+      "role": "💻 OSS運用・開発エンジニア",
+      "scope": "オープンソース運用・改善・検証",
+      "technologies": [
+        { "name": "Java", "years": 0, "months": 2, "learning": true },
+        { "name": "Springboot(mainly check, some modification)", "years": 0, "months": 2, "learning": true },
+        { "name": "Wicket", "years": 0, "months": 2, "learning": true },
+        { "name": "XML", "years": 0, "months": 2, "learning": true },
+        { "name": "Bash", "years": 0, "months": 2, "learning": true },
+        { "name": "Docker", "years": 0, "months": 2, "learning": true },
+        { "name": "OSS", "years": 0, "months": 2, "learning": true },
+        { "name": "AWS", "years": 0, "months": 2, "learning": true },
+        { "name": "Kubernetes", "years": 0, "months": 2, "learning": true },
+        { "name": "GitHub", "years": 0, "months": 2, "learning": true },
+        { "name": "Git Workflow", "years": 0, "months": 2, "learning": true },
+        { "name": "CI/CD", "years": 0, "months": 2, "learning": true },
+        { "name": "Github Copilot", "years": 0, "months": 2, "learning": true },
+        { "name": "Gemini AI", "years": 0, "months": 2, "learning": true },
+        { "name": "English to Japanese Translation", "years": 0, "months": 2, "learning": true },
+        { "name": "Japanese to English Translation", "years": 0, "months": 2, "learning": true },
+        { "name": "English Communication", "years": 0, "months": 2, "learning": true },
+        { "name": "Technical Documentation", "years": 0, "months": 2}
+      ],
+      "achievements": [
+        "OSS動作検証、品質保証、運用改善",
+        "運用ドキュメント整備、知見共有",
+        "コード改善（性能改善・バグ修正・リファクタリング）"
+      ]
+    },
+    "en": {
+      "role": "💻 OSS Operations and Development Engineer",
+      "scope": "Open Source Operations, Improvement and Validation",
+      "technologies": [
+        { "name": "Java", "years": 0, "months": 2, "learning": true },
+        { "name": "Springboot(mainly check, some modification)", "years": 0, "months": 2, "learning": true },
+        { "name": "Wicket", "years": 0, "months": 2, "learning": true },
+        { "name": "XML", "years": 0, "months": 2, "learning": true },
+        { "name": "Linux", "years": 0, "months": 2, "learning": true },
+        { "name": "Docker", "years": 0, "months": 2, "learning": true },
+        { "name": "Bash", "years": 0, "months": 2, "learning": true },
+        { "name": "OSS Management", "years": 0, "months": 2, "learning": true },
+        { "name": "AWS", "years": 0, "months": 2, "learning": true },
+        { "name": "Kubernetes", "years": 0, "months": 2, "learning": true },
+        { "name": "Git/GitHub", "years": 0, "months": 2, "learning": true },
+        { "name": "Git Workflow", "years": 0, "months": 2, "learning": true },
+        { "name": "CI/CD", "years": 0, "months": 2, "learning": true },
+        { "name": "DevOps", "years": 0, "months": 2, "learning": true },
+        { "name": "Gradle", "years": 0, "months": 2, "learning": true },
+        { "name": "REST API", "years": 0, "months": 2, "learning": true },
+        { "name": "English to Japanese Translation", "years": 0, "months": 2, "learning": true },
+        { "name": "Japanese to English Translation", "years": 0, "months": 2, "learning": true },
+        { "name": "English Communication", "years": 0, "months": 2, "learning": true },
+        { "name": "Technical Documentation", "years": 0, "months": 2 }
+      ],
+      "achievements": [
+        "OSS validation and quality assurance",
+        "Technical documentation updates and knowledge sharing",
+        "Code improvements including bug fixes and refactoring"
+      ]
+    }
+  }
+]

@@ -26,6 +26,7 @@ exclude:
 header_pages:
   - README.md
   - doc/Career_JP.md
+  - blog/index.md
 
 # Social media and links
 github_username: kentafrost

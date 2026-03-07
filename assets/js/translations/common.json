@@ -1,0 +1,26 @@
+{
+  "ja": {
+    "nav": {
+      "home": "ホーム",
+      "career": "キャリア詳細"
+    },
+    "content": {
+      "lastUpdated": "最終更新:"
+    },
+    "footer": {
+      "copyright": "All rights reserved."
+    }
+  },
+  "en": {
+    "nav": {
+      "home": "Home",
+      "career": "Career Details"
+    },
+    "content": {
+      "lastUpdated": "Last Updated:"
+    },
+    "footer": {
+      "copyright": "All rights reserved."
+    }
+  }
+}

@@ -36,7 +36,7 @@ permalink: /career/jp
   <tbody>
     <tr>
       <td style="border:1px solid #ddd; padding:8px;"><strong>総経験年数</strong></td>
-      <td style="border:1px solid #ddd; padding:8px;">3年8か月（2022年5月〜現在）</td>
+      <td style="border:1px solid #ddd; padding:8px;">{% include career/total-experience-jp.txt %}</td>
     </tr>
     <tr>
       <td style="border:1px solid #ddd; padding:8px;"><strong>専門分野</strong></td>
@@ -51,10 +51,10 @@ permalink: /career/jp
       </td>
     </tr>
     <tr>
-      <td style="border:1px solid #ddd; padding:8px;"><strong>現状</strong></td>
+        <td align="left">1年4か月</td>
       <td style="border:1px solid #ddd; padding:8px;">
         OSS運用・動作検証業務中<br/>
-        学習中: React, Java, Spring Boot, Kubernetes<br/>
+        学習中技術は下部の「学習中の技術」表を参照<br/>
         フルスタック開発エンジニアへキャリアチェンジ目指中
       </td>
     </tr>
@@ -65,57 +65,15 @@ permalink: /career/jp
 
 
 ## 📈 職歴詳細
-
-<table style="width:100%; border-collapse:collapse;">
-  <thead>
-    <tr>
-      <th align="left" style="width:12%; border:1px solid #ddd; padding:8px;">期間</th>
-      <th align="left" style="width:20%; border:1px solid #ddd; padding:8px;">職種</th>
-      <th align="left" style="width:22%; border:1px solid #ddd; padding:8px;">業務範囲</th>
-      <th align="left" style="width:20%; border:1px solid #ddd; padding:8px;">主要技術</th>
-      <th align="left" style="width:26%; border:1px solid #ddd; padding:8px;">主な実績</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="border:1px solid #ddd; padding:8px;">2022.05〜2023.08<br/>（1年4か月）</td>
-      <td style="border:1px solid #ddd; padding:8px;">🛠️ 障害一次切り分け窓口</td>
-      <td style="border:1px solid #ddd; padding:8px;">ネットワーク障害一次切り分け・インシデント対応（航空業界・SES）</td>
-      <td style="border:1px solid #ddd; padding:8px;">ネットワーク監視 / インシデント対応 / バイリンガル対応</td>
-      <td style="border:1px solid #ddd; padding:8px;">
-        ・障害一次切り分け対応<br/>
-        ・運用監視、ping確認、技術者派遣<br/>
-        ・日英メール対応
-      </td>
-    </tr>
-    <tr>
-      <td style="border:1px solid #ddd; padding:8px;">2023.09〜2025.12<br/>（2年4か月）</td>
-      <td style="border:1px solid #ddd; padding:8px;">☁️ クラウドオペレーションエンジニア（AWS中心）</td>
-      <td style="border:1px solid #ddd; padding:8px;">AWS環境運用保守・自動化</td>
-      <td style="border:1px solid #ddd; padding:8px;">AWS / Python / VBA / PowerShell / CloudFormation / Lambda</td>
-      <td style="border:1px solid #ddd; padding:8px;">
-        ・VBAで書類・パラメータシート自動化<br/>
-        ・QuickSight+Lambdaでコスト計算システム構築<br/>
-        ・CloudFormationで20+サービス構成管理
-      </td>
-    </tr>
-    <tr>
-      <td style="border:1px solid #ddd; padding:8px;">2026.01〜現在<br/>（継続中）</td>
-      <td style="border:1px solid #ddd; padding:8px;">💻 OSS運用・開発エンジニア</td>
-      <td style="border:1px solid #ddd; padding:8px;">オープンソース運用・改善・検証</td>
-      <td style="border:1px solid #ddd; padding:8px;">Java / Kubernetes / AWS / GitHub / CI/CD</td>
-      <td style="border:1px solid #ddd; padding:8px;">
-        ・OSS動作検証、品質保証、運用改善<br/>
-        ・運用ドキュメント整備、知見共有<br/>
-        ・コード改善（性能改善・バグ修正・リファクタリング）
-      </td>
-    </tr>
-  </tbody>
-</table>
+{% include career/work-experience-jp.html %}
 ---
 
 
 ## ⚙️ 技術スタック・習熟度マップ
+
+{% include career/technology-totals-jp.md %}
+
+<br/>
 
 ### ☁️ **クラウド・インフラ技術**
 
@@ -130,7 +88,7 @@ permalink: /career/jp
   
   <!-- ☁️ クラウド・インフラ -->
   <tr>
-    <td rowspan="8" align="left"><strong>☁️<br/>クラウド<br/>インフラ</strong></td>
+    <td rowspan="6" align="left"><strong>☁️<br/>クラウド<br/>インフラ</strong></td>
     <td><strong>AWS総合</strong></td>
     <td align="left"><strong>⭐⭐⭐⭐⭐</strong></td>
     <td align="left">2年4か月</td>
@@ -139,7 +97,7 @@ permalink: /career/jp
   <tr>
     <td>CloudFormation（IaC）</td>
     <td align="left">⭐⭐⭐⭐</td>
-    <td align="left">2年4か月</td>
+    <td align="left">1年6か月</td>
     <td>CF構成管理・スタック自動作成</td>
   </tr>
   <tr>
@@ -157,26 +115,14 @@ permalink: /career/jp
   <tr>
     <td>CloudWatch・DynamoDB</td>
     <td align="left">⭐⭐⭐</td>
-    <td align="left">2年4か月</td>
+    <td align="left">1年6か月</td>
     <td>ログ連携・NoSQL運用</td>
   </tr>
   <tr>
     <td>QuickSight</td>
-    <td align="left">⭐⭐⭐</td>
-    <td align="left">2年4か月</td>
+    <td align="left">⭐⭐</td>
+    <td align="left">1か月</td>
     <td>コスト可視化ダッシュボード</td>
-  </tr>
-  <tr>
-    <td>EKS</td>
-    <td align="left">⭐</td>
-    <td align="left">学習中</td>
-    <td>業務にて検証中</td>
-  </tr>
-  <tr>
-    <td>Azure</td>
-    <td align="left">⭐</td>
-    <td align="left">学習予定</td>
-    <td>マルチクラウド対応準備</td>
   </tr>
 </table>
 
@@ -195,7 +141,7 @@ permalink: /career/jp
     <th align="left" style="width: 35%; word-wrap: break-word;">📝 主な実績・用途</th>
   </tr>
   <tr>
-    <td rowspan="5" align="left"><strong>💻<br/>プログラミング<br/>言語</strong></td>
+    <td rowspan="3" align="left"><strong>💻<br/>プログラミング<br/>言語</strong></td>
     <td><strong>Python</strong></td>
     <td align="left"><strong>⭐⭐⭐⭐⭐</strong></td>
     <td align="left">2年4か月</td>
@@ -212,18 +158,6 @@ permalink: /career/jp
     <td align="left">⭐⭐⭐⭐</td>
     <td align="left">2年4か月</td>
     <td>Windows管理・運用自動化</td>
-  </tr>
-  <tr>
-    <td>JavaScript</td>
-    <td align="left">⭐⭐</td>
-    <td align="left">学習中</td>
-    <td>React開発・フロントエンド</td>
-  </tr>
-  <tr>
-    <td>Java</td>
-    <td align="left">⭐</td>
-    <td align="left">学習中</td>
-    <td>Spring Boot開発</td>
   </tr>
 </table>
 
@@ -242,7 +176,7 @@ permalink: /career/jp
     <th align="left" style="width: 35%; word-wrap: break-word;">📝 主な実績・用途</th>
   </tr>
   <tr>
-    <td rowspan="5" align="left"><strong>🛠️<br/>フレームワーク<br/>ライブラリ</strong></td>
+    <td rowspan="3" align="left"><strong>🛠️<br/>フレームワーク<br/>ライブラリ</strong></td>
     <td>boto3（AWS SDK）</td>
     <td align="left"><strong>⭐⭐⭐⭐⭐</strong></td>
     <td align="left">2年4か月</td>
@@ -259,18 +193,6 @@ permalink: /career/jp
     <td align="left">⭐⭐⭐</td>
     <td align="left">1年</td>
     <td>データ可視化・グラフ作成</td>
-  </tr>
-  <tr>
-    <td>React</td>
-    <td align="left">⭐⭐</td>
-    <td align="left">学習中</td>
-    <td>個人プロジェクトUI作成</td>
-  </tr>
-  <tr>
-    <td>Spring Boot</td>
-    <td align="left">⭐</td>
-    <td align="left">学習中</td>
-    <td>Javaバックエンド開発</td>
   </tr>
 </table>
 
@@ -315,28 +237,7 @@ permalink: /career/jp
 
 ### **言語スキル**
 
-<table style="width: 100%; table-layout: auto; border-collapse: collapse;">
-  <tr>
-    <th align="left" style="width: 15%; word-wrap: break-word;">🏷️ カテゴリ</th>
-    <th align="left" style="width: 20%; word-wrap: break-word;">技術・言語</th>
-    <th align="left" style="width: 15%; word-wrap: break-word;">⭐ 習熟度</th>
-    <th align="left" style="width: 15%; word-wrap: break-word;">⏰ 実務経験</th>
-    <th align="left" style="width: 35%; word-wrap: break-word;">📝 主な実績・用途</th>
-  </tr>
-  <tr>
-    <td rowspan="2" align="left"><strong>🌍<br/>言語<br/>スキル</strong></td>
-    <td><strong>日本語（母国語）</strong></td>
-    <td align="left"><strong>⭐⭐⭐⭐⭐</strong></td>
-    <td align="left">ネイティブ</td>
-    <td>母国語レベル・技術文書作成</td>
-  </tr>
-  <tr>
-    <td><strong>英語（ビジネスレベル）</strong></td>
-    <td align="left"><strong>⭐⭐⭐</strong></td>
-    <td align="left">3年8か月</td>
-    <td>日英バイリンガル業務・技術メール</td>
-  </tr>
-</table>
+{% include career/language-skills-jp.md %}
 
 <br/>
 
@@ -495,7 +396,8 @@ permalink: /career/jp
       • React + Spring BootでWebアプリ開発<br/>
       • TypeScript導入で型安全開発<br/>
       • DB設計・API設計の体系学習<br/>
-      • Docker・Kubernetesコンテナ運用学習
+      • Docker・Kubernetesコンテナ運用学習<br/>
+      • OSS運用向けに海外チームとの英語コミュニケーション強化
     </td>
     <td align="left">ポートフォリオ<br/>完成・公開<br/><br/>🏆 技術資格取得</td>
   </tr>
@@ -506,100 +408,16 @@ permalink: /career/jp
     <td>
       • Web開発・システム開発の実プロジェクト参画<br/>
       • チーム開発・アジャイル手法習得<br/>
-      • コードレビュー・設計レビュー経験<br/>
-      • リーダーシップ・メンタリングスキル向上
+      • コードレビュー・設計レビュー経験
     </td>
     <td align="left">💼 開発チーム<br/>中核メンバー<br/><br/>👥 後輩指導経験</td>
   </tr>
 </table>
 
 
-### 📚 **学習技術ロードマップ**
+### 📚 **学習プラン**
 
-<table style="width: 100%; table-layout: auto; border-collapse: collapse;">
-  <tr>
-    <th align="left" style="width: 15%; word-wrap: break-word;">🔥 優先度</th>
-    <th align="left" style="width: 15%; word-wrap: break-word;">📂 技術分野</th>
-    <th align="left" style="width: 25%; word-wrap: break-word;">💻 技術・フレームワーク</th>
-    <th align="left" style="width: 15%; word-wrap: break-word;">⏰ 学習予定時期</th>
-    <th align="left" style="width: 30%; word-wrap: break-word;">📝 学習目的・用途</th>
-  </tr>
-  
-  <!-- 優先度：高 -->
-  <tr>
-    <td rowspan="6" align="left"><strong>🔥<br/>最優先<br/>(2026年内)</strong></td>
-    <td align="left"><strong>言語・基礎</strong></td>
-    <td>TypeScript, Java（Spring Boot）</td>
-    <td align="left">2026年前半</td>
-    <td>型安全大規模開発・エンタープライズ開発</td>
-  </tr>
-  <tr>
-    <td align="left"><strong>フロントエンド</strong></td>
-    <td>React（上級）, Vue.js（新規）</td>
-    <td align="left">2026年通年</td>
-    <td>モダンSPA開発・フレームワーク比較学習</td>
-  </tr>
-  <tr>
-    <td align="left"><strong>データベース</strong></td>
-    <td>MongoDB, PostgreSQL, Redis</td>
-    <td align="left">2026年通年</td>
-    <td>NoSQL・リレーショナルDB・キャッシュ</td>
-  </tr>
-  <tr>
-    <td align="left"><strong>コンテナ・オーケストレーション</strong></td>
-    <td>Docker, Kubernetes, Docker Compose</td>
-    <td align="left">2026年後半</td>
-    <td>コンテナ化・オーケストレーション・DevOps</td>
-  </tr>
-  <tr>
-    <td align="left"><strong>CI/CD・自動化</strong></td>
-    <td>GitHub Actions, Jenkins</td>
-    <td align="left">2026年後半</td>
-    <td>自動化パイプライン・継続的デリバリー</td>
-  </tr>
-  <tr>
-    <td align="left"><strong>クラウド拡張</strong></td>
-    <td>Azure（基礎～中級）, GCP（基礎）</td>
-    <td align="left">2026年後半</td>
-    <td>マルチクラウド対応・選択肢拡大</td>
-  </tr>
-  
-  <!-- 優先度：中 -->
-  <tr>
-    <td rowspan="2" align="left"><strong>⚡<br/>重要<br/>(2027年)</strong></td>
-    <td align="left"><strong>テスト技術</strong></td>
-    <td>Jest, JUnit, Selenium, Cypress</td>
-    <td align="left">2027年前半</td>
-    <td>単体・統合・E2Eテスト・品質保証</td>
-  </tr>
-  <tr>
-    <td align="left"><strong>IaC・監視</strong></td>
-    <td>Terraform, Ansible, Prometheus</td>
-    <td align="left">2027年後半</td>
-    <td>インフラコード化・運用監視自動化</td>
-  </tr>
-  
-  <!-- 優先度：将来 -->
-  <tr>
-    <td rowspan="3" align="left"><strong>📅<br/>長期検討<br/>(2028年～)</strong></td>
-    <td align="left"><strong>モバイル開発</strong></td>
-    <td>React Native, Flutter, Swift</td>
-    <td align="left">2028年以降</td>
-    <td>クロスプラットフォーム・ネイティブアプリ</td>
-  </tr>
-  <tr>
-    <td align="left"><strong>AI/ML</strong></td>
-    <td>TensorFlow, PyTorch, scikit-learn</td>
-    <td align="left">2028年以降</td>
-    <td>機械学習・データサイエンス・AI活用</td>
-  </tr>
-  <tr>
-    <td align="left"><strong>新技術領域</strong></td>
-    <td>Solidity, Web3, GraphQL</td>
-    <td align="left">必要に応じて</td>
-    <td>ブロックチェーン・分散システム・API</td>
-  </tr>
-</table>
+{% include career/learning-plan-jp.md %}
 
 ---
 

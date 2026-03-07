@@ -1,0 +1,44 @@
+<!-- 
+ページ固有の翻訳データ使用例 
+このスクリプトタグを各ページの <head> または <body> 内に配置してください
+-->
+
+<script>
+// ページ固有の翻訳データ（例：キャリア詳細ページ）
+window.pageTranslations = {
+  ja: {
+    career: {
+      title: "キャリア詳細",
+      subtitle: "AWS運用エンジニア → 開発エンジニアへのキャリアチェンジを目指す",
+      sections: {
+        summary: "キャリアサマリー",
+        experience: "職歴詳細",
+        skills: "技術スタック",
+        projects: "個人プロジェクト",
+        goals: "今後の目標"
+      }
+    }
+  },
+  en: {
+    career: {
+      title: "Career Details",
+      subtitle: "AWS Operations Engineer → Transitioning to Development Engineer",
+      sections: {
+        summary: "Career Summary",
+        experience: "Work Experience",
+        skills: "Technical Skills",
+        projects: "Personal Projects",
+        goals: "Future Goals"
+      }
+    }
+  }
+};
+
+// Optional: ページ読み込み後に翻訳データをマージ
+// （language-switcher.js が既に読み込まれている場合）
+document.addEventListener('DOMContentLoaded', function() {
+  if (typeof window.mergePageTranslations === 'function') {
+    window.mergePageTranslations(window.pageTranslations);
+  }
+});
+</script>

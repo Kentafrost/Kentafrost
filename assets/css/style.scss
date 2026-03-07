@@ -4,6 +4,8 @@
 // Import custom styles (Jekyll / GitHub Pages互換)
 @use "base";
 @use "career";
+@use "language-switcher";
+@use "blog";
 
 // Print Styles
 @media print {
