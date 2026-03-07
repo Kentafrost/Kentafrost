@@ -9,7 +9,7 @@ show_toc: true
 permalink: /career/en
 ---
 
-**[日本語版](./README.md)**
+**[🇯🇵 日本語]({{ '/career/jp' | relative_url }}) | [🇬🇧 English]({{ '/career/en' | relative_url }})**
 
 <style>
 table th {
