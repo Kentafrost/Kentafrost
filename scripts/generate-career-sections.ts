@@ -76,6 +76,8 @@ const outputLearningPlanJp = path.join(includeDir, 'learning-plan-jp.md');
 const outputLearningPlanEn = path.join(includeDir, 'learning-plan-en.md');
 const outputLanguageSkillsJp = path.join(includeDir, 'language-skills-jp.md');
 const outputLanguageSkillsEn = path.join(includeDir, 'language-skills-en.md');
+const careerJpPath = path.join(rootDir, 'doc', 'Career_JP.md');
+const careerEnPath = path.join(rootDir, 'doc', 'Career_EN.md');
 
 function ensureDir(dirPath: string): void {
   if (!fs.existsSync(dirPath)) {
@@ -260,6 +262,25 @@ function monthName(month: number): string {
     'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec',
   ];
   return names[month - 1];
+}
+
+function formatDateForFrontMatter(now: Date): string {
+  const year = now.getFullYear();
+  const month = String(now.getMonth() + 1).padStart(2, '0');
+  const day = String(now.getDate()).padStart(2, '0');
+  return `${year}-${month}-${day}`;
+}
+
+function updateLastModifiedAt(filePath: string, dateText: string): void {
+  const content = fs.readFileSync(filePath, 'utf8');
+  const replaced = content.replace(
+    /^last_modified_at:\s*\d{4}-\d{2}-\d{2}$/m,
+    `last_modified_at: ${dateText}`
+  );
+
+  if (replaced !== content) {
+    fs.writeFileSync(filePath, replaced, 'utf8');
+  }
 }
 
 function validateExperiences(experiences: Experience[]): void {
@@ -648,7 +669,11 @@ function main(): void {
   validateLanguageSkills(languageSkills);
 
   const now = new Date();
+  const frontMatterDate = formatDateForFrontMatter(now);
   const totals = buildTotals(experiences, now);
+
+  updateLastModifiedAt(careerJpPath, frontMatterDate);
+  updateLastModifiedAt(careerEnPath, frontMatterDate);
 
   const jpTable = renderJpWorkTable(experiences, now);
   const enSection = renderEnWorkSection(experiences, now);
@@ -681,6 +706,8 @@ function main(): void {
   console.log(`- Updated: ${path.relative(rootDir, outputLearningPlanEn)}`);
   console.log(`- Updated: ${path.relative(rootDir, outputLanguageSkillsJp)}`);
   console.log(`- Updated: ${path.relative(rootDir, outputLanguageSkillsEn)}`);
+  console.log(`- Updated: ${path.relative(rootDir, careerJpPath)} (last_modified_at=${frontMatterDate})`);
+  console.log(`- Updated: ${path.relative(rootDir, careerEnPath)} (last_modified_at=${frontMatterDate})`);
 }
 
 main();
