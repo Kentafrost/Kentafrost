@@ -50,11 +50,64 @@ table th {
   border-left: 4px solid #8aa5c3;
   background: #f8fbff;
 }
+
+.career-chart {
+  margin: 12px 0 18px;
+  padding: 12px;
+  border: 1px solid #d5dde8;
+  border-radius: 10px;
+  background: #fcfeff;
+}
+
+.career-chart-row {
+  margin-bottom: 10px;
+}
+
+.career-chart-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 4px;
+  font-size: 14px;
+}
+
+.career-chart-name {
+  font-weight: 600;
+}
+
+.career-chart-value {
+  color: #34495e;
+}
+
+.career-chart-track {
+  width: 100%;
+  height: 14px;
+  background: #e8f1fb;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.career-chart-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #6ea8df, #4f87c7);
+}
+
+.career-chart-caption {
+  margin: 8px 0 0;
+  font-size: 12px;
+  color: #5d6d7e;
+}
 </style>
 
 ---
 
 ## Technical Skills
+
+### Experience Visualization (Top)
+
+{% include career/technology-bars-en.html %}
+
+---
 
 {% include career/technology-totals-en.md %}
 

@@ -48,6 +48,8 @@ const outputWorkJp = path.join(includeDir, 'work-experience-jp.html');
 const outputWorkEn = path.join(includeDir, 'work-experience-en.md');
 const outputTechTotalsJp = path.join(includeDir, 'technology-totals-jp.md');
 const outputTechTotalsEn = path.join(includeDir, 'technology-totals-en.md');
+const outputTechBarsJp = path.join(includeDir, 'technology-bars-jp.html');
+const outputTechBarsEn = path.join(includeDir, 'technology-bars-en.html');
 const outputLearningPlanJp = path.join(includeDir, 'learning-plan-jp.md');
 const outputLearningPlanEn = path.join(includeDir, 'learning-plan-en.md');
 const outputFutureWorkRoadmapJp = path.join(includeDir, 'future-work-roadmap-jp.html');
@@ -431,6 +433,36 @@ function renderEnTechnologyTotals(experiences: Experience[], learningItems: Lear
     .join('\n');
 
   return `### Combined Technology Experience (Across Work History)\n\n#### Ready-To-Contribute Areas (1+ Year Work Experience)\n\n| Technology | Total Experience | Rating Guide | Notes |\n|---|---|---|---|\n${workOverOneYearRows || '| - | - | - | - |'}\n\n#### Work Experience Under 1 Year\n\n| Technology | Total Experience | Rating Guide | Notes |\n|---|---|---|---|\n${workUnderOneYearRows || '| - | - | - | - |'}\n\n#### Learning Technologies\n\n| Technology | Learning Period | Rating Guide | Notes |\n|---|---|---|---|\n${learningRows || '| - | - | - | - |'}`;
+}
+
+function renderTechnologyBars(experiences: Experience[], locale: 'jp' | 'en', limit = 10): string {
+  const totals = aggregateTechnologyDurations(experiences, locale)
+    .filter((item) => item.workMonths > 0)
+    .slice(0, limit);
+
+  if (totals.length === 0) {
+    return locale === 'jp'
+      ? '<p>可視化できる実務データがありません。</p>'
+      : '<p>No work-experience data is available for visualization.</p>';
+  }
+
+  const maxMonths = Math.max(...totals.map((item) => item.workMonths), 1);
+  const rows = totals
+    .map((item) => {
+      const width = Math.max(6, Math.round((item.workMonths / maxMonths) * 100));
+      const duration = locale === 'jp'
+        ? formatDurationJp(item.workMonths)
+        : formatDurationEn(item.workMonths);
+
+      return `  <div class="career-chart-row">\n    <div class="career-chart-meta">\n      <span class="career-chart-name">${item.name}</span>\n      <span class="career-chart-value">${duration}</span>\n    </div>\n    <div class="career-chart-track">\n      <div class="career-chart-fill" style="width:${width}%"></div>\n    </div>\n  </div>`;
+    })
+    .join('\n');
+
+  const caption = locale === 'jp'
+    ? `実務経験の長い順に上位${totals.length}件を表示` 
+    : `Top ${totals.length} technologies by work-experience duration`;
+
+  return `<div class="career-chart" role="img" aria-label="${caption}">\n${rows}\n  <p class="career-chart-caption">${caption}</p>\n</div>`;
 }
 
 function renderJpLearningPlan(items: FutureLearningPlanItem[]): string {
@@ -823,6 +855,8 @@ function main(): void {
   const enSection = renderEnWorkSection(experiences, now);
   const jpTechTotals = renderJpTechnologyTotals(experiences, learningItems);
   const enTechTotals = renderEnTechnologyTotals(experiences, learningItems);
+  const jpTechBars = renderTechnologyBars(experiences, 'jp');
+  const enTechBars = renderTechnologyBars(experiences, 'en');
   const jpLearningPlan = renderJpLearningPlan(futurePlanItems);
   const enLearningPlan = renderEnLearningPlan(futurePlanItems);
   const jpFutureWorkRoadmap = renderJpFutureWorkRoadmap(futureWorkRoadmapItems);
@@ -842,6 +876,8 @@ function main(): void {
   fs.writeFileSync(outputWorkEn, `${enSection}\n`, 'utf8');
   fs.writeFileSync(outputTechTotalsJp, `${jpTechTotals}\n`, 'utf8');
   fs.writeFileSync(outputTechTotalsEn, `${enTechTotals}\n`, 'utf8');
+  fs.writeFileSync(outputTechBarsJp, `${jpTechBars}\n`, 'utf8');
+  fs.writeFileSync(outputTechBarsEn, `${enTechBars}\n`, 'utf8');
   fs.writeFileSync(outputLearningPlanJp, `${jpLearningPlan}\n`, 'utf8');
   fs.writeFileSync(outputLearningPlanEn, `${enLearningPlan}\n`, 'utf8');
   fs.writeFileSync(outputFutureWorkRoadmapJp, `${jpFutureWorkRoadmap}\n`, 'utf8');
@@ -870,6 +906,8 @@ function main(): void {
   console.log(`- Updated: ${path.relative(rootDir, outputWorkEn)}`);
   console.log(`- Updated: ${path.relative(rootDir, outputTechTotalsJp)}`);
   console.log(`- Updated: ${path.relative(rootDir, outputTechTotalsEn)}`);
+  console.log(`- Updated: ${path.relative(rootDir, outputTechBarsJp)}`);
+  console.log(`- Updated: ${path.relative(rootDir, outputTechBarsEn)}`);
   console.log(`- Updated: ${path.relative(rootDir, outputLearningPlanJp)}`);
   console.log(`- Updated: ${path.relative(rootDir, outputLearningPlanEn)}`);
   console.log(`- Updated: ${path.relative(rootDir, outputFutureWorkRoadmapJp)}`);
