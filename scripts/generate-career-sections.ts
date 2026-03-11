@@ -181,6 +181,18 @@ function formatDateForFrontMatter(now: Date): string {
   return `${year}-${month}-${day}`;
 }
 
+function formatFooterLastUpdatedJp(now: Date): string {
+  const year = now.getFullYear();
+  const month = String(now.getMonth() + 1).padStart(2, '0');
+  const day = String(now.getDate()).padStart(2, '0');
+  return `*最終更新: ${year}年${month}月${day}日 | このページは定期的に更新されます*`;
+}
+
+function formatFooterLastUpdatedEn(now: Date): string {
+  const fullDate = formatDateForFrontMatter(now);
+  return `*Last Updated: ${fullDate} | This page is updated regularly*`;
+}
+
 function updateLastModifiedAt(filePath: string, dateText: string): void {
   const content = fs.readFileSync(filePath, 'utf8');
   const replaced = content.replace(
@@ -188,6 +200,22 @@ function updateLastModifiedAt(filePath: string, dateText: string): void {
     `last_modified_at: ${dateText}`
   );
 
+  if (replaced !== content) {
+    fs.writeFileSync(filePath, replaced, 'utf8');
+  }
+}
+
+function updateFooterLastUpdated(filePath: string, locale: 'jp' | 'en', now: Date): void {
+  const content = fs.readFileSync(filePath, 'utf8');
+  const replacement = locale === 'jp'
+    ? formatFooterLastUpdatedJp(now)
+    : formatFooterLastUpdatedEn(now);
+
+  const pattern = locale === 'jp'
+    ? /^\*最終更新:.*\*$/m
+    : /^\*Last Updated:.*\*$/m;
+
+  const replaced = content.replace(pattern, replacement);
   if (replaced !== content) {
     fs.writeFileSync(filePath, replaced, 'utf8');
   }
@@ -788,6 +816,8 @@ function main(): void {
 
   updateLastModifiedAt(careerJpPath, frontMatterDate);
   updateLastModifiedAt(careerEnPath, frontMatterDate);
+  updateFooterLastUpdated(careerJpPath, 'jp', now);
+  updateFooterLastUpdated(careerEnPath, 'en', now);
 
   const jpTable = renderJpWorkTable(experiences, now);
   const enSection = renderEnWorkSection(experiences, now);

@@ -9,9 +9,13 @@ show_toc: true
 permalink: /career/en/skills
 ---
 
-**[🇯🇵 日本語 Skills]({{ '/career/jp/skills' | relative_url }}) | [🇬🇧 English Skills]({{ '/career/en/skills' | relative_url }})**
-
-**[Back to Career Overview]({{ '/career/en' | relative_url }})**
+<nav class="skills-nav">
+  <a href="{{ '/career/en' | relative_url }}">Back to Career Overview</a>
+  <span>|</span>
+  <a href="{{ '/career/jp/skills' | relative_url }}">日本語 Skills</a>
+  <span>|</span>
+  <strong>English Skills</strong>
+</nav>
 
 <style>
 table th {
@@ -26,12 +30,27 @@ table td,
 table th {
   vertical-align: top;
 }
-</style>
 
-## Table of Contents
-- [Technical Skills](#-technical-skills)
-- [Language Skills](#-language-skills)
-- [Notes](#-notes)
+.skills-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  margin: 8px 0 16px;
+  padding: 10px 12px;
+  border: 1px solid #d5dde8;
+  border-radius: 8px;
+  background: #f8fbff;
+  font-size: 14px;
+}
+
+.skills-note {
+  margin-top: 12px;
+  padding: 10px 12px;
+  border-left: 4px solid #8aa5c3;
+  background: #f8fbff;
+}
+</style>
 
 ---
 
@@ -49,4 +68,6 @@ table th {
 
 ## Notes
 
-> Star rating guide: ★4 (3+ years) / ★3 (2+ years) / ★2 (1+ year) / ★1 (under 1 year or learning)
+<div class="skills-note">
+Star rating guide: ★4 (3+ years) / ★3 (2+ years) / ★2 (1+ year) / ★1 (under 1 year or learning)
+</div>

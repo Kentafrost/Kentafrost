@@ -9,11 +9,24 @@ show_toc: true
 permalink: /career/en
 ---
 
-**[🇯🇵 日本語]({{ '/career/jp' | relative_url }}) | [🇬🇧 English]({{ '/career/en' | relative_url }})**
+<nav class="career-nav">
+  <a href="{{ '/career/jp' | relative_url }}">日本語</a>
+  <span>|</span>
+  <strong>English</strong>
+  <span>|</span>
+  <a href="{{ '/career/en/skills' | relative_url }}">Skills Page</a>
+</nav>
 
 <style>
+:root {
+  --career-table-header: #d9ecff;
+}
+
+table thead th,
+table tr:first-child th,
 table th {
-  background-color: #e8f1fb;
+  background-color: var(--career-table-header) !important;
+  border-color: #c4dbf3;
 }
 
 table tr:nth-child(even) td {
@@ -24,18 +37,37 @@ table td,
 table th {
   vertical-align: top;
 }
+
+.career-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  margin: 8px 0 16px;
+  padding: 10px 12px;
+  border: 1px solid #d5dde8;
+  border-radius: 8px;
+  background: #f8fbff;
+  font-size: 14px;
+}
+
+.career-note {
+  margin-top: 10px;
+  padding: 10px 12px;
+  border-left: 4px solid #8aa5c3;
+  background: #f8fbff;
+}
+
+.career-summary-box {
+  margin-top: 10px;
+  padding: 12px;
+  border: 1px solid #d5dde8;
+  border-radius: 8px;
+  background: #fdfefe;
+}
 </style>
 
 > **AWS Operations Engineer → Transitioning to Software Development Engineer**
-
-## Table of Contents
-- [Career Summary](#-career-summary)
-- [Work Experience](#-work-experience-details)
-- [Skills & Languages](#-skills--languages)
-- [Personal Projects](#-personal-projects--development-achievements)
-- [Career Goals](#-career-goals--learning-plan)
-
----
 
 ## Career Summary
 
@@ -50,7 +82,7 @@ table th {
 
 ## Skills & Languages
 
-Please refer to the url below for understanding my skills asset.
+For technical and language details, please use the dedicated page:
 
 **[Open Skills & Languages Page]({{ '/career/en/skills' | relative_url }})**
 
@@ -81,12 +113,22 @@ Please refer to the url below for understanding my skills asset.
 
 ---
 
-### Final Thoughts
-• **2 years 4 months AWS operations experience** → Transitioning to full-stack development  
-• **Native Japanese speaker** with practical business English communication skills  
-• **Strong in customer support and incident troubleshooting** through hands-on operations experience  
-• **Strong commitment** to automation, efficiency, and continuous learning
+## Notes
+
+<div class="career-note">
+Star rating guide: ★4 (3+ years) / ★3 (2+ years) / ★2 (1+ year) / ★1 (under 1 year or learning)
+</div>
 
 ---
 
-*Last Updated: February 2026 | This README is updated regularly*
+### Final Thoughts
+<div class="career-summary-box">
+- **2 years 4 months AWS operations experience** -> Transitioning to full-stack development  
+- **Native Japanese speaker** with practical business English communication skills  
+- **Strong in customer support and incident troubleshooting** through hands-on operations experience  
+- **Strong commitment** to automation, efficiency, and continuous learning
+</div>
+
+---
+
+*Last Updated: 2026-03-11 | This page is updated regularly*

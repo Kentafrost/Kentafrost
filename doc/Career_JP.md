@@ -9,11 +9,24 @@ show_toc: true
 permalink: /career/jp
 ---
 
-**[🇯🇵 日本語]({{ '/career/jp' | relative_url }}) | [🇬🇧 English]({{ '/career/en' | relative_url }})**
+<nav class="career-nav">
+  <strong>日本語</strong>
+  <span>|</span>
+  <a href="{{ '/career/en' | relative_url }}">English</a>
+  <span>|</span>
+  <a href="{{ '/career/jp/skills' | relative_url }}">スキルページ</a>
+</nav>
 
 <style>
+:root {
+  --career-table-header: #d9ecff;
+}
+
+table thead th,
+table tr:first-child th,
 table th {
-  background-color: #e8f1fb;
+  background-color: var(--career-table-header) !important;
+  border-color: #c4dbf3;
 }
 
 table tr:nth-child(even) td {
@@ -24,20 +37,39 @@ table td,
 table th {
   vertical-align: top;
 }
+
+.career-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  margin: 8px 0 16px;
+  padding: 10px 12px;
+  border: 1px solid #d5dde8;
+  border-radius: 8px;
+  background: #f8fbff;
+  font-size: 14px;
+}
+
+.career-note {
+  margin-top: 10px;
+  padding: 10px 12px;
+  border-left: 4px solid #8aa5c3;
+  background: #f8fbff;
+}
+
+.career-summary-box {
+  margin-top: 10px;
+  padding: 12px;
+  border: 1px solid #d5dde8;
+  border-radius: 8px;
+  background: #fdfefe;
+}
 </style>
 
 # KFrost - Software/Cloud Engineer
 
 > **AWS運用エンジニア → 開発エンジニアへのキャリアチェンジを目指す**
-
-## 目次
-- [キャリアサマリー](#-キャリアサマリー)
-- [職歴詳細](#-職歴詳細)
-- [スキルと言語](#-スキルと言語)
-- [個人開発](#️-個人開発スキル拡張)
-- [今後の目標](#-今後の目標)
-
----
 
 ## キャリアサマリー
 
@@ -59,10 +91,11 @@ table th {
 
 ---
 
-## 補足
+## 個人開発・スキル拡張
 
-> 星評価の目安: ★4(3年以上) / ★3(2年以上) / ★2(1年以上) / ★1(1年未満・学習中)
+{% include career/personal-projects-jp.html %}
 
+---
 
 ##  資格・認定
 
@@ -84,11 +117,21 @@ table th {
 
 ---
 
-### ひとこと
-• **AWS運用経験2年4か月** → フルスタック開発エンジニアへの転身  
-• **自動化・効率化** への強いこだわり  
-• **新技術学習** への積極的取り組み
+## 補足
+
+<div class="career-note">
+星評価の目安: ★4(3年以上) / ★3(2年以上) / ★2(1年以上) / ★1(1年未満・学習中)
+</div>
 
 ---
 
-*最終更新: 2025年03月 | このREADMEは定期的に更新されます*
+### ひとこと
+<div class="career-summary-box">
+・**AWS運用経験2年4か月** -> フルスタック開発エンジニアへの転身  
+・**自動化・効率化** への強いこだわり  
+・**新技術学習** への積極的取り組み
+</div>
+
+---
+
+*最終更新: 2026年03月11日 | このページは定期的に更新されます*

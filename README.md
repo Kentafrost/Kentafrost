@@ -66,7 +66,7 @@
 
 <div align="center">
 
-💡 **"継続的な学習と改善によって、より良いソリューションを追求しています"**
+💡 **"実際にコードを書くことやCourseraといったオンライン学習を通して、学習を継続しております。"**
 
 ⭐️ From [Kentafrost](https://github.com/Kentafrost)
 
