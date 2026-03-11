@@ -50,12 +50,16 @@ const outputTechTotalsJp = path.join(includeDir, 'technology-totals-jp.md');
 const outputTechTotalsEn = path.join(includeDir, 'technology-totals-en.md');
 const outputTechBarsJp = path.join(includeDir, 'technology-bars-jp.html');
 const outputTechBarsEn = path.join(includeDir, 'technology-bars-en.html');
+const outputTechSummaryJp = path.join(includeDir, 'technology-summary-jp.html');
+const outputTechSummaryEn = path.join(includeDir, 'technology-summary-en.html');
 const outputLearningPlanJp = path.join(includeDir, 'learning-plan-jp.md');
 const outputLearningPlanEn = path.join(includeDir, 'learning-plan-en.md');
 const outputFutureWorkRoadmapJp = path.join(includeDir, 'future-work-roadmap-jp.html');
 const outputFutureWorkRoadmapEn = path.join(includeDir, 'future-work-roadmap-en.html');
 const outputLanguageSkillsJp = path.join(includeDir, 'language-skills-jp.md');
 const outputLanguageSkillsEn = path.join(includeDir, 'language-skills-en.md');
+const outputLanguageBarsJp = path.join(includeDir, 'language-bars-jp.html');
+const outputLanguageBarsEn = path.join(includeDir, 'language-bars-en.html');
 const outputCertificationsJp = path.join(includeDir, 'certifications-jp.html');
 const outputCertificationsEn = path.join(includeDir, 'certifications-en.html');
 const outputPersonalProjectsJp = path.join(includeDir, 'personal-projects-jp.html');
@@ -465,6 +469,81 @@ function renderTechnologyBars(experiences: Experience[], locale: 'jp' | 'en', li
   return `<div class="career-chart" role="img" aria-label="${caption}">\n${rows}\n  <p class="career-chart-caption">${caption}</p>\n</div>`;
 }
 
+function renderTechnologySummary(experiences: Experience[], learningItems: LearningTechnology[], locale: 'jp' | 'en'): string {
+  const totals = aggregateTechnologyDurations(experiences, locale);
+  const overOneYear = totals.filter((item) => item.workMonths >= 12).length;
+  const underOneYear = totals.filter((item) => item.workMonths > 0 && item.workMonths < 12).length;
+  const learning = aggregateLearningTechnologies(learningItems, locale).length;
+
+  const rows = locale === 'jp'
+    ? [
+      { label: '実務1年以上', value: overOneYear },
+      { label: '実務1年未満', value: underOneYear },
+      { label: '学習中', value: learning },
+    ]
+    : [
+      { label: '1+ Year Work Experience', value: overOneYear },
+      { label: 'Under 1 Year Work Experience', value: underOneYear },
+      { label: 'Learning', value: learning },
+    ];
+
+  const maxValue = Math.max(...rows.map((row) => row.value), 1);
+  const rowHtml = rows
+    .map((row) => {
+      const width = Math.max(8, Math.round((row.value / maxValue) * 100));
+      return `  <div class="career-chart-row">\n    <div class="career-chart-meta">\n      <span class="career-chart-name">${row.label}</span>\n      <span class="career-chart-value">${row.value}</span>\n    </div>\n    <div class="career-chart-track">\n      <div class="career-chart-fill" style="width:${width}%"></div>\n    </div>\n  </div>`;
+    })
+    .join('\n');
+
+  const caption = locale === 'jp'
+    ? '技術カテゴリごとの件数'
+    : 'Count by technology category';
+
+  return `<div class="career-chart" role="img" aria-label="${caption}">\n${rowHtml}\n  <p class="career-chart-caption">${caption}</p>\n</div>`;
+}
+
+function levelToScore(levelText: string): number {
+  const stars = (levelText.match(/⭐/g) || []).length;
+  if (stars > 0) {
+    return Math.min(4, stars);
+  }
+
+  const lowered = levelText.toLowerCase();
+  if (lowered.includes('native') || lowered.includes('母国語')) {
+    return 4;
+  }
+  if (lowered.includes('business') || lowered.includes('ビジネス')) {
+    return 3;
+  }
+  return 1;
+}
+
+function renderLanguageBars(items: LanguageSkillItem[], locale: 'jp' | 'en'): string {
+  if (items.length === 0) {
+    return locale === 'jp'
+      ? '<p>可視化できる言語データがありません。</p>'
+      : '<p>No language data is available for visualization.</p>';
+  }
+
+  const rows = items
+    .map((item) => {
+      const name = locale === 'jp' ? item.jpName : item.enName;
+      const level = locale === 'jp' ? item.jpLevel : item.enLevel;
+      const experience = locale === 'jp' ? item.jpExperience : item.enExperience;
+      const score = levelToScore(level);
+      const width = Math.round((score / 4) * 100);
+
+      return `  <div class="career-chart-row">\n    <div class="career-chart-meta">\n      <span class="career-chart-name">${name}</span>\n      <span class="career-chart-value">${level} / ${experience}</span>\n    </div>\n    <div class="career-chart-track">\n      <div class="career-chart-fill" style="width:${width}%"></div>\n    </div>\n  </div>`;
+    })
+    .join('\n');
+
+  const caption = locale === 'jp'
+    ? '言語レベルの目安（4段階）'
+    : 'Language level guide (4-step scale)';
+
+  return `<div class="career-chart" role="img" aria-label="${caption}">\n${rows}\n  <p class="career-chart-caption">${caption}</p>\n</div>`;
+}
+
 function renderJpLearningPlan(items: FutureLearningPlanItem[]): string {
   const rows = items
     .map((item) => `| ${item.priorityJp} | ${item.domainJp} | ${item.technologiesJp} | ${item.timelineJp} | ${item.purposeJp} |`)
@@ -857,12 +936,16 @@ function main(): void {
   const enTechTotals = renderEnTechnologyTotals(experiences, learningItems);
   const jpTechBars = renderTechnologyBars(experiences, 'jp');
   const enTechBars = renderTechnologyBars(experiences, 'en');
+  const jpTechSummary = renderTechnologySummary(experiences, learningItems, 'jp');
+  const enTechSummary = renderTechnologySummary(experiences, learningItems, 'en');
   const jpLearningPlan = renderJpLearningPlan(futurePlanItems);
   const enLearningPlan = renderEnLearningPlan(futurePlanItems);
   const jpFutureWorkRoadmap = renderJpFutureWorkRoadmap(futureWorkRoadmapItems);
   const enFutureWorkRoadmap = renderEnFutureWorkRoadmap(futureWorkRoadmapItems);
   const jpLanguageSkills = renderJpLanguageSkills(languageSkills);
   const enLanguageSkills = renderEnLanguageSkills(languageSkills);
+  const jpLanguageBars = renderLanguageBars(languageSkills, 'jp');
+  const enLanguageBars = renderLanguageBars(languageSkills, 'en');
   const jpCertifications = renderJpCertifications(certifications);
   const enCertifications = renderEnCertifications(certifications);
   const jpPersonalProjects = renderJpPersonalProjects(personalProjects);
@@ -878,12 +961,16 @@ function main(): void {
   fs.writeFileSync(outputTechTotalsEn, `${enTechTotals}\n`, 'utf8');
   fs.writeFileSync(outputTechBarsJp, `${jpTechBars}\n`, 'utf8');
   fs.writeFileSync(outputTechBarsEn, `${enTechBars}\n`, 'utf8');
+  fs.writeFileSync(outputTechSummaryJp, `${jpTechSummary}\n`, 'utf8');
+  fs.writeFileSync(outputTechSummaryEn, `${enTechSummary}\n`, 'utf8');
   fs.writeFileSync(outputLearningPlanJp, `${jpLearningPlan}\n`, 'utf8');
   fs.writeFileSync(outputLearningPlanEn, `${enLearningPlan}\n`, 'utf8');
   fs.writeFileSync(outputFutureWorkRoadmapJp, `${jpFutureWorkRoadmap}\n`, 'utf8');
   fs.writeFileSync(outputFutureWorkRoadmapEn, `${enFutureWorkRoadmap}\n`, 'utf8');
   fs.writeFileSync(outputLanguageSkillsJp, `${jpLanguageSkills}\n`, 'utf8');
   fs.writeFileSync(outputLanguageSkillsEn, `${enLanguageSkills}\n`, 'utf8');
+  fs.writeFileSync(outputLanguageBarsJp, `${jpLanguageBars}\n`, 'utf8');
+  fs.writeFileSync(outputLanguageBarsEn, `${enLanguageBars}\n`, 'utf8');
   fs.writeFileSync(outputCertificationsJp, `${jpCertifications}\n`, 'utf8');
   fs.writeFileSync(outputCertificationsEn, `${enCertifications}\n`, 'utf8');
   fs.writeFileSync(outputPersonalProjectsJp, `${jpPersonalProjects}\n`, 'utf8');
@@ -908,12 +995,16 @@ function main(): void {
   console.log(`- Updated: ${path.relative(rootDir, outputTechTotalsEn)}`);
   console.log(`- Updated: ${path.relative(rootDir, outputTechBarsJp)}`);
   console.log(`- Updated: ${path.relative(rootDir, outputTechBarsEn)}`);
+  console.log(`- Updated: ${path.relative(rootDir, outputTechSummaryJp)}`);
+  console.log(`- Updated: ${path.relative(rootDir, outputTechSummaryEn)}`);
   console.log(`- Updated: ${path.relative(rootDir, outputLearningPlanJp)}`);
   console.log(`- Updated: ${path.relative(rootDir, outputLearningPlanEn)}`);
   console.log(`- Updated: ${path.relative(rootDir, outputFutureWorkRoadmapJp)}`);
   console.log(`- Updated: ${path.relative(rootDir, outputFutureWorkRoadmapEn)}`);
   console.log(`- Updated: ${path.relative(rootDir, outputLanguageSkillsJp)}`);
   console.log(`- Updated: ${path.relative(rootDir, outputLanguageSkillsEn)}`);
+  console.log(`- Updated: ${path.relative(rootDir, outputLanguageBarsJp)}`);
+  console.log(`- Updated: ${path.relative(rootDir, outputLanguageBarsEn)}`);
   console.log(`- Updated: ${path.relative(rootDir, outputCertificationsJp)}`);
   console.log(`- Updated: ${path.relative(rootDir, outputCertificationsEn)}`);
   console.log(`- Updated: ${path.relative(rootDir, outputPersonalProjectsJp)}`);

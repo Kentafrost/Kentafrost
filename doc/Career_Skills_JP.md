@@ -111,9 +111,19 @@ table th {
 
 {% include career/technology-totals-jp.md %}
 
+### 技術カテゴリのサマリー
+
+{% include career/technology-summary-jp.html %}
+
 ---
 
 ## 言語スキル
+
+### 言語レベルの可視化
+
+{% include career/language-bars-jp.html %}
+
+---
 
 {% include career/language-skills-jp.md %}
 

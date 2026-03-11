@@ -111,9 +111,19 @@ table th {
 
 {% include career/technology-totals-en.md %}
 
+### Technology Category Summary
+
+{% include career/technology-summary-en.html %}
+
 ---
 
 ## Language Skills
+
+### Language Level Visualization
+
+{% include career/language-bars-en.html %}
+
+---
 
 {% include career/language-skills-en.md %}
 
