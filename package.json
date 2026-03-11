@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Blog generation system for Kentafrost portfolio",
   "scripts": {
+    "career:editor": "npx tsx scripts/start-career-data-editor.ts",
     "career:update": "npx tsx scripts/generate-career-sections.ts",
     "blog:generate": "npx tsx scripts/generate-blog-pages.ts",
     "blog:generate:verbose": "npx tsx scripts/generate-blog-pages.ts --verbose",

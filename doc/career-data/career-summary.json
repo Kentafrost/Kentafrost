@@ -1,0 +1,38 @@
+[
+  {
+    "keyJp": "専門分野",
+    "keyEn": "Specialization",
+    "valueJp": "AWS運用・自動化、Python開発、インフラ運用",
+    "valueEn": "AWS Operations & Automation, Python Development, Infrastructure Operations"
+  },
+  {
+    "keyJp": "強み",
+    "keyEn": "Core Strengths",
+    "valueJp": "",
+    "valueEn": "",
+    "listJp": [
+      "AWS 20+サービス実運用経験",
+      "Python自動化スクリプト開発",
+      "運用業務効率化・自動化"
+    ],
+    "listEn": [
+      "AWS 20+ Services Production Experience",
+      "Python Automation Script Development",
+      "Operations Efficiency & Automation"
+    ]
+  },
+  {
+    "keyJp": "現在の状況",
+    "keyEn": "Current Status",
+    "valueJp": "OSS運用・動作検証業務中",
+    "valueEn": "OSS operations and validation work",
+    "listJp": [
+      "学習中技術は下部の『学習中の技術』表を参照",
+      "フルスタック開発エンジニアへキャリアチェンジを目指し中"
+    ],
+    "listEn": [
+      "Learning technologies are listed in the dedicated learning table below",
+      "Aiming for full-stack developer transition"
+    ]
+  }
+]

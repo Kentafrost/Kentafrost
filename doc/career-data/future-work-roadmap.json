@@ -1,0 +1,42 @@
+[
+  {
+    "periodJp": "2026年-2027年<br/>(短期目標)",
+    "periodEn": "2026-2027<br/>(Short-term Goals)",
+    "objectiveJp": "フルスタック<br/>開発スキル向上",
+    "objectiveEn": "Full-Stack<br/>Development Skills",
+    "initiativesJp": [
+      "React + Spring BootでWebアプリ開発",
+      "TypeScript導入で型安全開発",
+      "DB設計・API設計の体系学習",
+      "Docker・Kubernetesコンテナ運用学習",
+      "OSS運用向けに海外チームとの英語コミュニケーション強化"
+    ],
+    "initiativesEn": [
+      "Complete web app development with React + Spring Boot",
+      "Type-safe development with TypeScript",
+      "Systematic learning of database & API design",
+      "Container operations learning with Docker & Kubernetes",
+      "English communications with international teams for OSS management"
+    ],
+    "metricsJp": "ポートフォリオ<br/>完成・公開<br/><br/>技術資格取得",
+    "metricsEn": "Portfolio<br/>Completion & Publication<br/><br/>Technical Certifications"
+  },
+  {
+    "periodJp": "2028年-2029年<br/>(中・長期目標)",
+    "periodEn": "2028-2029<br/>(Medium & Long-term Goals)",
+    "objectiveJp": "開発現場での<br/>実務経験獲得",
+    "objectiveEn": "Real-world Development<br/>Experience Acquisition",
+    "initiativesJp": [
+      "Web開発・システム開発の実プロジェクト参画",
+      "チーム開発・アジャイル手法習得",
+      "コードレビュー・設計レビュー経験"
+    ],
+    "initiativesEn": [
+      "Real web & system development project participation",
+      "Team development & agile methodology acquisition",
+      "Code & design review experience"
+    ],
+    "metricsJp": "開発チーム<br/>中核メンバー<br/><br/>後輩指導経験",
+    "metricsEn": "Core Development<br/>Team Member<br/><br/>Junior Mentoring Experience"
+  }
+]

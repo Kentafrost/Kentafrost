@@ -1,70 +1,46 @@
 /* eslint-disable no-console */
 import * as fs from 'fs';
 import * as path from 'path';
-
-type LocalizedExperience = {
-  role: string;
-  scope: string;
-  technologies: TechnologyDuration[];
-  achievements: string[];
-};
-
-type TechnologyDuration = {
-  name: string;
-  years: number;
-  months: number;
-  learning?: boolean;
-  certifications?: string[];
-};
-
-type Experience = {
-  id: string;
-  startYm: string;
-  endYm: string | null;
-  isCurrent: boolean;
-  jp: LocalizedExperience;
-  en: LocalizedExperience;
-};
-
-type LearningTechnology = {
-  jpName: string;
-  enName: string;
-  years: number;
-  months: number;
-  certifications?: string[];
-};
-
-type FutureLearningPlanItem = {
-  priorityJp: string;
-  priorityEn: string;
-  domainJp: string;
-  domainEn: string;
-  technologiesJp: string;
-  technologiesEn: string;
-  timelineJp: string;
-  timelineEn: string;
-  purposeJp: string;
-  purposeEn: string;
-};
-
-type LanguageSkillItem = {
-  jpName: string;
-  enName: string;
-  jpLevel: string;
-  enLevel: string;
-  jpExperience: string;
-  enExperience: string;
-  jpUsage: string;
-  enUsage: string;
-};
-
-type YearMonth = { year: number; month: number };
+import type {
+  CareerSummaryItem,
+  CertificationGroup,
+  Experience,
+  FutureLearningPlanItem,
+  FutureWorkRoadmapItem,
+  LanguageSkillItem,
+  LearningTechnology,
+  PersonalProjectItem,
+  TechnologyDuration,
+  YearMonth,
+} from './career/types';
+import {
+  validateCareerSummary,
+  validateCertifications,
+  validateExperiences,
+  validateFutureLearningPlan,
+  validateFutureWorkRoadmap,
+  validateLanguageSkills,
+  validateLearningTechnologies,
+  validatePersonalProjects,
+} from './career/validators';
 
 const rootDir = path.resolve(__dirname, '..');
-const dataPath = path.join(rootDir, 'doc', 'career-data', 'work-experiences.json');
-const learningDataPath = path.join(rootDir, 'doc', 'career-data', 'learning-technologies.json');
-const futureLearningPlanPath = path.join(rootDir, 'doc', 'career-data', 'future-learning-plan.json');
-const languageSkillsPath = path.join(rootDir, 'doc', 'career-data', 'language-skills.json');
+const careerDataDir = path.join(rootDir, 'doc', 'career-data');
+
+function resolveCareerDataPath(fileName: string): string {
+  const basePath = path.join(careerDataDir, fileName);
+  const localOverride = basePath.replace(/\.json$/i, '.local.json');
+  return fs.existsSync(localOverride) ? localOverride : basePath;
+}
+
+const dataPath = resolveCareerDataPath('work-experiences.json');
+const learningDataPath = resolveCareerDataPath('learning-technologies.json');
+const futureLearningPlanPath = resolveCareerDataPath('future-learning-plan.json');
+const futureWorkRoadmapPath = resolveCareerDataPath('future-work-roadmap.json');
+const languageSkillsPath = resolveCareerDataPath('language-skills.json');
+const certificationsPath = resolveCareerDataPath('certifications.json');
+const personalProjectsPath = resolveCareerDataPath('personal-projects.json');
+const careerSummaryPath = resolveCareerDataPath('career-summary.json');
 const includeDir = path.join(rootDir, '_includes', 'career');
 const outputTotalJp = path.join(includeDir, 'total-experience-jp.txt');
 const outputTotalEn = path.join(includeDir, 'total-experience-en.txt');
@@ -74,8 +50,16 @@ const outputTechTotalsJp = path.join(includeDir, 'technology-totals-jp.md');
 const outputTechTotalsEn = path.join(includeDir, 'technology-totals-en.md');
 const outputLearningPlanJp = path.join(includeDir, 'learning-plan-jp.md');
 const outputLearningPlanEn = path.join(includeDir, 'learning-plan-en.md');
+const outputFutureWorkRoadmapJp = path.join(includeDir, 'future-work-roadmap-jp.html');
+const outputFutureWorkRoadmapEn = path.join(includeDir, 'future-work-roadmap-en.html');
 const outputLanguageSkillsJp = path.join(includeDir, 'language-skills-jp.md');
 const outputLanguageSkillsEn = path.join(includeDir, 'language-skills-en.md');
+const outputCertificationsJp = path.join(includeDir, 'certifications-jp.html');
+const outputCertificationsEn = path.join(includeDir, 'certifications-en.html');
+const outputPersonalProjectsJp = path.join(includeDir, 'personal-projects-jp.html');
+const outputPersonalProjectsEn = path.join(includeDir, 'personal-projects-en.html');
+const outputCareerSummaryJp = path.join(includeDir, 'career-summary-jp.html');
+const outputCareerSummaryEn = path.join(includeDir, 'career-summary-en.html');
 const careerJpPath = path.join(rootDir, 'doc', 'Career_JP.md');
 const careerEnPath = path.join(rootDir, 'doc', 'Career_EN.md');
 
@@ -165,80 +149,6 @@ function formatTechEn(item: TechnologyDuration): string {
   return `${item.name} (${formatDurationEn(toTotalMonths(item))})`;
 }
 
-function validateTechnology(item: TechnologyDuration, context: string): void {
-  if (!item.name || typeof item.name !== 'string') {
-    throw new Error(`Invalid technology name at ${context}`);
-  }
-  if (!Number.isFinite(item.years) || !Number.isFinite(item.months)) {
-    throw new Error(`Invalid years/months at ${context}`);
-  }
-  if (item.certifications && !Array.isArray(item.certifications)) {
-    throw new Error(`Invalid certifications at ${context}`);
-  }
-}
-
-function validateLearningTechnologies(items: LearningTechnology[]): void {
-  items.forEach((item, index) => {
-    if (!item.jpName || typeof item.jpName !== 'string') {
-      throw new Error(`Invalid jpName at learning-technologies[${index}]`);
-    }
-    if (!item.enName || typeof item.enName !== 'string') {
-      throw new Error(`Invalid enName at learning-technologies[${index}]`);
-    }
-    if (!Number.isFinite(item.years) || !Number.isFinite(item.months)) {
-      throw new Error(`Invalid years/months at learning-technologies[${index}]`);
-    }
-    if (item.certifications && !Array.isArray(item.certifications)) {
-      throw new Error(`Invalid certifications at learning-technologies[${index}]`);
-    }
-  });
-}
-
-function validateFutureLearningPlan(items: FutureLearningPlanItem[]): void {
-  if (items.length === 0) {
-    throw new Error('future-learning-plan.json is empty. Add at least one plan item.');
-  }
-
-  items.forEach((item, index) => {
-    const required = [
-      item.priorityJp,
-      item.priorityEn,
-      item.domainJp,
-      item.domainEn,
-      item.technologiesJp,
-      item.technologiesEn,
-      item.timelineJp,
-      item.timelineEn,
-      item.purposeJp,
-      item.purposeEn,
-    ];
-    if (required.some((value) => !value || typeof value !== 'string')) {
-      throw new Error(`Invalid future learning plan item at index ${index}`);
-    }
-  });
-}
-
-function validateLanguageSkills(items: LanguageSkillItem[]): void {
-  if (items.length === 0) {
-    throw new Error('language-skills.json is empty. Add at least one language skill item.');
-  }
-
-  items.forEach((item, index) => {
-    const required = [
-      item.jpName,
-      item.enName,
-      item.jpLevel,
-      item.enLevel,
-      item.jpExperience,
-      item.enExperience,
-      item.jpUsage,
-      item.enUsage,
-    ];
-    if (required.some((value) => !value || typeof value !== 'string')) {
-      throw new Error(`Invalid language skill item at index ${index}`);
-    }
-  });
-}
 
 function toStars(totalMonths: number, isLearning: boolean): string {
   if (isLearning) {
@@ -281,40 +191,6 @@ function updateLastModifiedAt(filePath: string, dateText: string): void {
   if (replaced !== content) {
     fs.writeFileSync(filePath, replaced, 'utf8');
   }
-}
-
-function validateExperiences(experiences: Experience[]): void {
-  if (experiences.length === 0) {
-    throw new Error('work-experiences.json is empty. Add at least one experience.');
-  }
-
-  const currentEntries = experiences.filter((item) => item.isCurrent);
-  if (currentEntries.length !== 1) {
-    throw new Error('Exactly one experience must have isCurrent=true.');
-  }
-
-  const latest = [...experiences].sort((a, b) => {
-    const ay = parseYm(a.startYm);
-    const by = parseYm(b.startYm);
-    return compareYm(by, ay);
-  })[0];
-
-  if (!latest.isCurrent) {
-    throw new Error('The latest experience by startYm must have isCurrent=true.');
-  }
-
-  if (latest.endYm !== null) {
-    throw new Error('The current experience must have endYm=null.');
-  }
-
-  experiences.forEach((exp, expIndex) => {
-    exp.jp.technologies.forEach((tech, techIndex) => {
-      validateTechnology(tech, `experiences[${expIndex}].jp.technologies[${techIndex}]`);
-    });
-    exp.en.technologies.forEach((tech, techIndex) => {
-      validateTechnology(tech, `experiences[${expIndex}].en.technologies[${techIndex}]`);
-    });
-  });
 }
 
 function aggregateTechnologyDurations(
@@ -569,6 +445,228 @@ function renderEnLanguageSkills(items: LanguageSkillItem[]): string {
 ${rows}`;
 }
 
+function renderJpFutureWorkRoadmap(items: FutureWorkRoadmapItem[]): string {
+  const rows = items
+    .map((item) => {
+      const initiatives = item.initiativesJp.map((entry) => `・${entry}`).join('<br/>');
+      return `  <tr>
+    <td align="left"><strong>${item.periodJp}</strong></td>
+    <td align="left"><strong>${item.objectiveJp}</strong></td>
+    <td>${initiatives}</td>
+    <td align="left">${item.metricsJp}</td>
+  </tr>`;
+    })
+    .join('\n\n');
+
+  return `<table>
+  <tr>
+    <th align="left">期間</th>
+    <th align="left">主要目標</th>
+    <th align="left">具体的な取り組み</th>
+    <th align="left">成果指標</th>
+  </tr>
+
+${rows}
+</table>`;
+}
+
+function renderEnFutureWorkRoadmap(items: FutureWorkRoadmapItem[]): string {
+  const rows = items
+    .map((item) => {
+      const initiatives = item.initiativesEn.map((entry) => `• ${entry}`).join('<br/>');
+      return `  <tr>
+    <td align="left"><strong>${item.periodEn}</strong></td>
+    <td align="left"><strong>${item.objectiveEn}</strong></td>
+    <td>${initiatives}</td>
+    <td align="left">${item.metricsEn}</td>
+  </tr>`;
+    })
+    .join('\n\n');
+
+  return `<table style="width: 100%; table-layout: auto; border-collapse: collapse;">
+  <tr>
+    <th align="left" style="width: 20%; word-wrap: break-word;">Period</th>
+    <th align="left" style="width: 25%; word-wrap: break-word;">Main Objectives</th>
+    <th align="left" style="width: 35%; word-wrap: break-word;">Specific Initiatives</th>
+    <th align="left" style="width: 20%; word-wrap: break-word;">Success Metrics</th>
+  </tr>
+
+${rows}
+</table>`;
+}
+
+function renderJpCertifications(groups: CertificationGroup[]): string {
+  const rows = groups
+    .map((group) => group.items.map((item, itemIndex) => {
+      const categoryCell = itemIndex === 0
+        ? `    <td rowspan="${group.items.length}" align="left"><strong>${group.categoryJp}</strong></td>\n`
+        : '';
+      return `  <tr>\n${categoryCell}    <td align="left"><strong>${item.name}</strong></td>\n    <td align="left">${item.obtainedJp}</td>\n    <td align="left">${item.usageJp}</td>\n  </tr>`;
+    }).join('\n'))
+    .join('\n\n');
+
+  return `<table>
+  <tr>
+    <th align="left">カテゴリ</th>
+    <th align="left">資格名</th>
+    <th align="left">取得日</th>
+    <th align="left">関連技術・用途</th>
+  </tr>
+
+${rows}
+</table>`;
+}
+
+function renderEnCertifications(groups: CertificationGroup[]): string {
+  const rows = groups
+    .map((group) => group.items.map((item, itemIndex) => {
+      const categoryCell = itemIndex === 0
+        ? `    <td rowspan="${group.items.length}" align="left"><strong>${group.categoryEn}</strong></td>\n`
+        : '';
+      return `  <tr>\n${categoryCell}    <td align="left"><strong>${item.name}</strong></td>\n    <td align="left">${item.obtainedEn}</td>\n    <td align="left">${item.usageEn}</td>\n  </tr>`;
+    }).join('\n'))
+    .join('\n\n');
+
+  return `<table style="width: 100%; table-layout: auto; border-collapse: collapse;">
+  <tr>
+    <th align="left" style="width: 15%; word-wrap: break-word;">Category</th>
+    <th align="left" style="width: 30%; word-wrap: break-word;">Certification Name</th>
+    <th align="left" style="width: 15%; word-wrap: break-word;">Obtained</th>
+    <th align="left" style="width: 40%; word-wrap: break-word;">Related Technologies & Usage</th>
+  </tr>
+
+${rows}
+</table>`;
+}
+
+function renderJpPersonalProjects(items: PersonalProjectItem[]): string {
+  const rows = items
+    .map((item) => {
+      const technologies = item.technologiesJp.join('<br/>');
+      const achievements = item.achievementsJp.map((entry) => `・${entry}`).join('<br/>');
+      const progress = item.linkUrl
+        ? `<strong>${item.progressJp}</strong><br/><a href="${item.linkUrl}">${item.linkLabelJp || '関連リンク'}</a>`
+        : `<strong>${item.progressJp}</strong>`;
+
+      return `  <tr>
+    <td><strong>${item.nameJp}</strong></td>
+    <td>${item.periodJp}</td>
+    <td>${technologies}</td>
+    <td>${achievements}</td>
+    <td>${progress}</td>
+  </tr>`;
+    })
+    .join('\n\n');
+
+  return `<table style="width: 100%; table-layout: auto; border-collapse: collapse;">
+  <tr>
+    <th align="left" style="width: 20%; word-wrap: break-word;">プロジェクト名</th>
+    <th align="left" style="width: 15%; word-wrap: break-word;">期間</th>
+    <th align="left" style="width: 20%; word-wrap: break-word;">主要技術</th>
+    <th align="left" style="width: 35%; word-wrap: break-word;">機能・成果</th>
+    <th align="left" style="width: 10%; word-wrap: break-word;">進捗</th>
+  </tr>
+
+${rows}
+</table>`;
+}
+
+function renderEnPersonalProjects(items: PersonalProjectItem[]): string {
+  const rows = items
+    .map((item) => {
+      const technologies = item.technologiesEn.join('<br/>');
+      const achievements = item.achievementsEn.map((entry) => `• ${entry}`).join('<br/>');
+      const progress = item.linkUrl
+        ? `<strong>${item.progressEn}</strong><br/><a href="${item.linkUrl}">${item.linkLabelEn || 'Related Link'}</a>`
+        : `<strong>${item.progressEn}</strong>`;
+
+      return `  <tr>
+    <td><strong>${item.nameEn}</strong></td>
+    <td>${item.periodEn}</td>
+    <td>${technologies}</td>
+    <td>${achievements}</td>
+    <td>${progress}</td>
+  </tr>`;
+    })
+    .join('\n\n');
+
+  return `<table style="width: 100%; table-layout: auto; border-collapse: collapse;">
+  <tr>
+    <th align="left" style="width: 20%; word-wrap: break-word;">Project Name</th>
+    <th align="left" style="width: 15%; word-wrap: break-word;">Period</th>
+    <th align="left" style="width: 20%; word-wrap: break-word;">Key Technologies</th>
+    <th align="left" style="width: 35%; word-wrap: break-word;">Features & Achievements</th>
+    <th align="left" style="width: 10%; word-wrap: break-word;">Progress</th>
+  </tr>
+
+${rows}
+</table>`;
+}
+
+function renderJpCareerSummary(items: CareerSummaryItem[]): string {
+  const rows = items
+    .map((item) => {
+      const base = item.valueJp.trim();
+      const listText = item.listJp && item.listJp.length > 0
+        ? item.listJp.map((entry) => `・${entry}`).join('<br/>')
+        : '';
+      const content = [base, listText].filter(Boolean).join('<br/>');
+      return `    <tr>
+      <td style="border:1px solid #ddd; padding:8px;"><strong>${item.keyJp}</strong></td>
+      <td style="border:1px solid #ddd; padding:8px;">${content}</td>
+    </tr>`;
+    })
+    .join('\n');
+
+  return `<table style="width:100%; border-collapse:collapse;">
+  <thead>
+    <tr>
+      <th align="left" style="width:20%; border:1px solid #ddd; padding:8px;">項目</th>
+      <th align="left" style="border:1px solid #ddd; padding:8px;">内容</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border:1px solid #ddd; padding:8px;"><strong>総経験年数</strong></td>
+      <td style="border:1px solid #ddd; padding:8px;">{% include career/total-experience-jp.txt %}</td>
+    </tr>
+${rows}
+  </tbody>
+</table>`;
+}
+
+function renderEnCareerSummary(items: CareerSummaryItem[]): string {
+  const rows = items
+    .map((item) => {
+      const base = item.valueEn.trim();
+      const listText = item.listEn && item.listEn.length > 0
+        ? item.listEn.map((entry) => `- ${entry}`).join('<br/>')
+        : '';
+      const content = [base, listText].filter(Boolean).join('<br/>');
+      return `    <tr>
+      <td style="border:1px solid #ddd; padding:8px;"><strong>${item.keyEn}</strong></td>
+      <td style="border:1px solid #ddd; padding:8px;">${content}</td>
+    </tr>`;
+    })
+    .join('\n');
+
+  return `<table style="width:100%; border-collapse:collapse;">
+  <thead>
+    <tr>
+      <th align="left" style="width:20%; border:1px solid #ddd; padding:8px;">Item</th>
+      <th align="left" style="border:1px solid #ddd; padding:8px;">Details</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border:1px solid #ddd; padding:8px;"><strong>Total Experience</strong></td>
+      <td style="border:1px solid #ddd; padding:8px;">{% include career/total-experience-en.txt %}</td>
+    </tr>
+${rows}
+  </tbody>
+</table>`;
+}
+
 function renderJpWorkTable(experiences: Experience[], now: Date): string {
   const rows = experiences.map((exp) => {
     const start = parseYm(exp.startYm);
@@ -664,9 +762,25 @@ function main(): void {
   const futurePlanItems = JSON.parse(futurePlanRaw) as FutureLearningPlanItem[];
   validateFutureLearningPlan(futurePlanItems);
 
+  const futureWorkRoadmapRaw = fs.readFileSync(futureWorkRoadmapPath, 'utf8');
+  const futureWorkRoadmapItems = JSON.parse(futureWorkRoadmapRaw) as FutureWorkRoadmapItem[];
+  validateFutureWorkRoadmap(futureWorkRoadmapItems);
+
   const languageSkillsRaw = fs.readFileSync(languageSkillsPath, 'utf8');
   const languageSkills = JSON.parse(languageSkillsRaw) as LanguageSkillItem[];
   validateLanguageSkills(languageSkills);
+
+  const certificationsRaw = fs.readFileSync(certificationsPath, 'utf8');
+  const certifications = JSON.parse(certificationsRaw) as CertificationGroup[];
+  validateCertifications(certifications);
+
+  const personalProjectsRaw = fs.readFileSync(personalProjectsPath, 'utf8');
+  const personalProjects = JSON.parse(personalProjectsRaw) as PersonalProjectItem[];
+  validatePersonalProjects(personalProjects);
+
+  const careerSummaryRaw = fs.readFileSync(careerSummaryPath, 'utf8');
+  const careerSummary = JSON.parse(careerSummaryRaw) as CareerSummaryItem[];
+  validateCareerSummary(careerSummary);
 
   const now = new Date();
   const frontMatterDate = formatDateForFrontMatter(now);
@@ -681,8 +795,16 @@ function main(): void {
   const enTechTotals = renderEnTechnologyTotals(experiences, learningItems);
   const jpLearningPlan = renderJpLearningPlan(futurePlanItems);
   const enLearningPlan = renderEnLearningPlan(futurePlanItems);
+  const jpFutureWorkRoadmap = renderJpFutureWorkRoadmap(futureWorkRoadmapItems);
+  const enFutureWorkRoadmap = renderEnFutureWorkRoadmap(futureWorkRoadmapItems);
   const jpLanguageSkills = renderJpLanguageSkills(languageSkills);
   const enLanguageSkills = renderEnLanguageSkills(languageSkills);
+  const jpCertifications = renderJpCertifications(certifications);
+  const enCertifications = renderEnCertifications(certifications);
+  const jpPersonalProjects = renderJpPersonalProjects(personalProjects);
+  const enPersonalProjects = renderEnPersonalProjects(personalProjects);
+  const jpCareerSummary = renderJpCareerSummary(careerSummary);
+  const enCareerSummary = renderEnCareerSummary(careerSummary);
 
   fs.writeFileSync(outputTotalJp, `${totals.jp}\n`, 'utf8');
   fs.writeFileSync(outputTotalEn, `${totals.en}\n`, 'utf8');
@@ -692,10 +814,26 @@ function main(): void {
   fs.writeFileSync(outputTechTotalsEn, `${enTechTotals}\n`, 'utf8');
   fs.writeFileSync(outputLearningPlanJp, `${jpLearningPlan}\n`, 'utf8');
   fs.writeFileSync(outputLearningPlanEn, `${enLearningPlan}\n`, 'utf8');
+  fs.writeFileSync(outputFutureWorkRoadmapJp, `${jpFutureWorkRoadmap}\n`, 'utf8');
+  fs.writeFileSync(outputFutureWorkRoadmapEn, `${enFutureWorkRoadmap}\n`, 'utf8');
   fs.writeFileSync(outputLanguageSkillsJp, `${jpLanguageSkills}\n`, 'utf8');
   fs.writeFileSync(outputLanguageSkillsEn, `${enLanguageSkills}\n`, 'utf8');
+  fs.writeFileSync(outputCertificationsJp, `${jpCertifications}\n`, 'utf8');
+  fs.writeFileSync(outputCertificationsEn, `${enCertifications}\n`, 'utf8');
+  fs.writeFileSync(outputPersonalProjectsJp, `${jpPersonalProjects}\n`, 'utf8');
+  fs.writeFileSync(outputPersonalProjectsEn, `${enPersonalProjects}\n`, 'utf8');
+  fs.writeFileSync(outputCareerSummaryJp, `${jpCareerSummary}\n`, 'utf8');
+  fs.writeFileSync(outputCareerSummaryEn, `${enCareerSummary}\n`, 'utf8');
 
   console.log('Career sections generated successfully.');
+  console.log(`- Source: ${path.relative(rootDir, dataPath)}`);
+  console.log(`- Source: ${path.relative(rootDir, learningDataPath)}`);
+  console.log(`- Source: ${path.relative(rootDir, futureLearningPlanPath)}`);
+  console.log(`- Source: ${path.relative(rootDir, futureWorkRoadmapPath)}`);
+  console.log(`- Source: ${path.relative(rootDir, languageSkillsPath)}`);
+  console.log(`- Source: ${path.relative(rootDir, certificationsPath)}`);
+  console.log(`- Source: ${path.relative(rootDir, personalProjectsPath)}`);
+  console.log(`- Source: ${path.relative(rootDir, careerSummaryPath)}`);
   console.log(`- Total JP: ${totals.jp}`);
   console.log(`- Total EN: ${totals.en}`);
   console.log(`- Updated: ${path.relative(rootDir, outputWorkJp)}`);
@@ -704,8 +842,16 @@ function main(): void {
   console.log(`- Updated: ${path.relative(rootDir, outputTechTotalsEn)}`);
   console.log(`- Updated: ${path.relative(rootDir, outputLearningPlanJp)}`);
   console.log(`- Updated: ${path.relative(rootDir, outputLearningPlanEn)}`);
+  console.log(`- Updated: ${path.relative(rootDir, outputFutureWorkRoadmapJp)}`);
+  console.log(`- Updated: ${path.relative(rootDir, outputFutureWorkRoadmapEn)}`);
   console.log(`- Updated: ${path.relative(rootDir, outputLanguageSkillsJp)}`);
   console.log(`- Updated: ${path.relative(rootDir, outputLanguageSkillsEn)}`);
+  console.log(`- Updated: ${path.relative(rootDir, outputCertificationsJp)}`);
+  console.log(`- Updated: ${path.relative(rootDir, outputCertificationsEn)}`);
+  console.log(`- Updated: ${path.relative(rootDir, outputPersonalProjectsJp)}`);
+  console.log(`- Updated: ${path.relative(rootDir, outputPersonalProjectsEn)}`);
+  console.log(`- Updated: ${path.relative(rootDir, outputCareerSummaryJp)}`);
+  console.log(`- Updated: ${path.relative(rootDir, outputCareerSummaryEn)}`);
   console.log(`- Updated: ${path.relative(rootDir, careerJpPath)} (last_modified_at=${frontMatterDate})`);
   console.log(`- Updated: ${path.relative(rootDir, careerEnPath)} (last_modified_at=${frontMatterDate})`);
 }

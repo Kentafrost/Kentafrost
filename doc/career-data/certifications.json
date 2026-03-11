@@ -1,0 +1,42 @@
+[
+  {
+    "categoryJp": "AWS<br/>資格",
+    "categoryEn": "AWS<br/>Certifications",
+    "items": [
+      {
+        "name": "AWS Certified Solutions Architect - Associate",
+        "obtainedJp": "2024年",
+        "obtainedEn": "2024",
+        "usageJp": "AWSアーキテクチャ設計・構築・運用",
+        "usageEn": "AWS Architecture Design, Construction & Operations"
+      },
+      {
+        "name": "AWS Certified DevOps Engineer - Associate",
+        "obtainedJp": "2025年",
+        "obtainedEn": "2025",
+        "usageJp": "CI/CDパイプライン・インフラ自動化",
+        "usageEn": "CI/CD Pipelines & Infrastructure Automation"
+      },
+      {
+        "name": "LinuC Level 1",
+        "obtainedJp": "2022年",
+        "obtainedEn": "2022",
+        "usageJp": "Linuxシステム管理・運用基盤",
+        "usageEn": "Linux System Administration & Operations Foundation"
+      }
+    ]
+  },
+  {
+    "categoryJp": "語学<br/>資格",
+    "categoryEn": "Language<br/>Certifications",
+    "items": [
+      {
+        "name": "TOEIC Listening & Reading Test",
+        "obtainedJp": "790点",
+        "obtainedEn": "790 points",
+        "usageJp": "英語ビジネスコミュニケーション力の客観評価（CEFR B2-C1相当）",
+        "usageEn": "English Business Communication Proficiency Certification (Equivalent to CEFR B2-C1 Level)"
+      }
+    ]
+  }
+]

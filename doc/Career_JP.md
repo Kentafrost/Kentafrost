@@ -4,7 +4,7 @@ title: "キャリア詳細"
 subtitle: "AWS運用エンジニア → 開発エンジニアへのキャリアチェンジを目指す"
 description: "KFrostのキャリア詳細、技術スタック、職歴、個人プロジェクトの詳細情報"
 date: 2025-01-01
-last_modified_at: 2026-03-07
+last_modified_at: 2026-03-11
 show_toc: true
 permalink: /career/jp
 ---
@@ -33,7 +33,7 @@ table th {
 ## 目次
 - [キャリアサマリー](#-キャリアサマリー)
 - [職歴詳細](#-職歴詳細)
-- [技術スタック](#-技術スタック習熟度)
+- [スキルと言語](#-スキルと言語)
 - [個人開発](#️-個人開発スキル拡張)
 - [今後の目標](#-今後の目標)
 
@@ -41,40 +41,7 @@ table th {
 
 ## キャリアサマリー
 
-<table style="width:100%; border-collapse:collapse;">
-  <thead>
-    <tr>
-      <th align="left" style="width:20%; border:1px solid #ddd; padding:8px;">項目</th>
-      <th align="left" style="border:1px solid #ddd; padding:8px;">内容</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="border:1px solid #ddd; padding:8px;"><strong>総経験年数</strong></td>
-      <td style="border:1px solid #ddd; padding:8px;">{% include career/total-experience-jp.txt %}</td>
-    </tr>
-    <tr>
-      <td style="border:1px solid #ddd; padding:8px;"><strong>専門分野</strong></td>
-      <td style="border:1px solid #ddd; padding:8px;">AWS運用・自動化、Python開発、インフラ運用</td>
-    </tr>
-    <tr>
-      <td style="border:1px solid #ddd; padding:8px;"><strong>強み</strong></td>
-      <td style="border:1px solid #ddd; padding:8px;">
-        ・AWS 20+サービス実運用経験<br/>
-        ・Python自動化スクリプト開発<br/>
-        ・運用業務効率化・自動化
-      </td>
-    </tr>
-    <tr>
-        <td align="left">1年4か月</td>
-      <td style="border:1px solid #ddd; padding:8px;">
-        OSS運用・動作検証業務中<br/>
-        学習中技術は下部の「学習中の技術」表を参照<br/>
-        フルスタック開発エンジニアへキャリアチェンジ目指中
-      </td>
-    </tr>
-  </tbody>
-</table>
+{% include career/career-summary-jp.html %}
 
 ---
 
@@ -84,17 +51,11 @@ table th {
 ---
 
 
-## 技術スタック
+## スキルと言語
 
-{% include career/technology-totals-jp.md %}
+技術スキル・言語スキルの詳細は専用ページを参照:
 
-<br/>
-
-### **言語スキル**
-
-{% include career/language-skills-jp.md %}
-
-<br/>
+**[スキルページを開く]({{ '/career/jp/skills' | relative_url }})**
 
 ---
 
@@ -105,39 +66,7 @@ table th {
 
 ##  資格・認定
 
-<table>
-  <tr>
-    <th align="left">カテゴリ</th>
-    <th align="left">資格名</th>
-    <th align="left">取得日</th>
-    <th align="left">関連技術・用途</th>
-  </tr>
-  
-  <!-- AWS資格 -->
-  <tr>
-    <td rowspan="3" align="left"><strong>AWS<br/>資格</strong></td>
-    <td align="left"><strong>AWS Certified Solutions Architect – Associate</strong></td>
-    <td align="left">2024年</td>
-  </tr>
-  <tr>
-    <td align="left"><strong>AWS Certified DevOps Engineer – Associate</strong></td>
-    <td align="left">2025年</td>
-  </tr>
-  <tr>
-    <td align="left"><strong>LinuC Level 1</strong></td>
-    <td align="left">2022年</td>
-  </tr>
-  
-  <!-- 語学資格 -->
-  <tr>
-    <td align="left"><strong>語学<br/>資格</strong></td>
-    <td align="left">
-      <strong>TOEIC Listening & Reading Test</strong>
-    </td>
-    <td align="left">790点</td>
-    <td>CEFR B2～C1レベル相当</td>
-  </tr>
-</table>
+{% include career/certifications-jp.html %}
 
 ---
 
@@ -146,38 +75,7 @@ table th {
 
 ### 期間別キャリアロードマップ
 
-<table>
-  <tr>
-    <th align="left">期間</th>
-    <th align="left">主要目標</th>
-    <th align="left">具体的な取り組み</th>
-    <th align="left">成果指標</th>
-  </tr>
-  
-  <tr>
-    <td align="left"><strong>2026年～2027年<br/>(短期目標)</strong></td>
-    <td align="left"><strong>フルスタック<br/>開発スキル向上</strong></td>
-    <td>
-      • React + Spring BootでWebアプリ開発<br/>
-      • TypeScript導入で型安全開発<br/>
-      • DB設計・API設計の体系学習<br/>
-      • Docker・Kubernetesコンテナ運用学習<br/>
-      • OSS運用向けに海外チームとの英語コミュニケーション強化
-    </td>
-    <td align="left">ポートフォリオ<br/>完成・公開<br/><br/>技術資格取得</td>
-  </tr>
-  
-  <tr>
-    <td align="left"><strong>2028年～2029年<br/>(中・長期目標)</strong></td>
-    <td align="left">🏢 **開発現場での<br/>実務経験獲得**</td>
-    <td>
-      • Web開発・システム開発の実プロジェクト参画<br/>
-      • チーム開発・アジャイル手法習得<br/>
-      • コードレビュー・設計レビュー経験
-    </td>
-    <td align="left">💼 開発チーム<br/>中核メンバー<br/><br/>👥 後輩指導経験</td>
-  </tr>
-</table>
+{% include career/future-work-roadmap-jp.html %}
 
 
 ### 学習プラン
