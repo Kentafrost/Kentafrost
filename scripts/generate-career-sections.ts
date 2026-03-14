@@ -268,36 +268,46 @@ function renderWorkTechTypeTable(experiences: Experience[], locale: 'jp' | 'en')
     .filter((t) => classifyTechForTable(t.name) === 'cloud')
     .sort((a, b) => b.totalMonths - a.totalMonths);
 
-  const techTypeRows = [
-    { categoryLabel: locale === 'jp' ? 'プログラミング言語' : 'Programming Languages', techs: langTechs },
-    { categoryLabel: locale === 'jp' ? 'フレームワーク' : 'Frameworks', techs: frameworkTechs },
-    { categoryLabel: locale === 'jp' ? 'クラウド技術 (AWS)' : 'Cloud Technologies (AWS)', techs: cloudTechs },
-  ];
+  const techHeader = locale === 'jp' ? '技術名' : 'Technology';
+  const durationHeader = locale === 'jp' ? '経験量' : 'Experience';
+  const sectionTitle = locale === 'jp' ? '使用技術（カテゴリ別）' : 'Technologies Used (by Category)';
 
-  const rows = techTypeRows
-    .map(({ categoryLabel, techs }) => {
-      const techList = techs
-        .map((t) => `${t.name} (${formatMonthsAsLabel(t.totalMonths, locale)})`)
-        .join('<br>');
-      return `  <tr>\n    <td>${categoryLabel}</td>\n    <td>${techList || '—'}</td>\n  </tr>`;
-    })
-    .join('\n');
+  function singleTable(title: string, techs: Array<{ name: string; totalMonths: number }>): string {
+    const rows = techs
+      .map((t) => `  <tr>\n    <td>${t.name}</td>\n    <td>${formatMonthsAsLabel(t.totalMonths, locale)}</td>\n  </tr>`)
+      .join('\n');
+    return [
+      `<h3>${title}</h3>`,
+      '<table>',
+      '  <thead>',
+      `    <tr><th>${techHeader}</th><th>${durationHeader}</th></tr>`,
+      '  </thead>',
+      '  <tbody>',
+      rows || `  <tr><td colspan="2">—</td></tr>`,
+      '  </tbody>',
+      '</table>',
+    ].join('\n');
+  }
 
-  const title = locale === 'jp' ? '使用技術（カテゴリ別）' : 'Technologies Used (by Category)';
-  const categoryHeader = locale === 'jp' ? 'カテゴリ' : 'Category';
-  const techHeader = locale === 'jp' ? '主な使用技術（実務経験）' : 'Main Technologies Used (Work Experience)';
+  const langTitle = locale === 'jp' ? 'プログラミング言語' : 'Programming Languages';
+  const fwTitle = locale === 'jp' ? 'フレームワーク' : 'Frameworks';
+  const cloudTitle = locale === 'jp' ? 'クラウド技術（AWS）' : 'Cloud Technologies (AWS)';
 
   return [
-    `<h3>${title}</h3>`,
-    '<table>',
-    '  <thead>',
-    `    <tr><th>${categoryHeader}</th><th>${techHeader}</th></tr>`,
-    '  </thead>',
-    '  <tbody>',
-    rows,
-    '  </tbody>',
-    '</table>',
-  ].join('\n');
+    '<style>',
+    '.career-tech-type-grid { display: grid; grid-template-columns: repeat(3, minmax(240px, 1fr)); gap: 16px; align-items: start; }',
+    '.career-tech-type-panel h3 { margin: 0 0 8px; }',
+    '.career-tech-type-panel table { width: 100%; margin: 0; }',
+    '@media (max-width: 1100px) { .career-tech-type-grid { grid-template-columns: repeat(2, minmax(240px, 1fr)); } }',
+    '@media (max-width: 760px) { .career-tech-type-grid { grid-template-columns: 1fr; } }',
+    '</style>',
+    `<h3>${sectionTitle}</h3>`,
+    '<div class="career-tech-type-grid">',
+    `  <section class="career-tech-type-panel">${singleTable(langTitle, langTechs)}</section>`,
+    `  <section class="career-tech-type-panel">${singleTable(fwTitle, frameworkTechs)}</section>`,
+    `  <section class="career-tech-type-panel">${singleTable(cloudTitle, cloudTechs)}</section>`,
+    '</div>',
+  ].join('\n\n');
 }
 
 function renderWorkCategoryTable(experiences: Experience[], locale: 'jp' | 'en'): string {
