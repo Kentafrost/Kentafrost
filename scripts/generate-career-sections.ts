@@ -144,7 +144,7 @@ function formatMonthsAsLabel(totalMonths: number, locale: 'jp' | 'en'): string {
   return `${months}m`;
 }
 
-function renderWorkCategoryVisual(experiences: Experience[], locale: 'jp' | 'en'): string {
+function buildCategoryTotalsByExperience(experiences: Experience[]): Map<ExperienceCategory, number> {
   const totals = new Map<ExperienceCategory, number>();
   EXPERIENCE_CATEGORY_ORDER.forEach((category) => totals.set(category, 0));
 
@@ -169,6 +169,132 @@ function renderWorkCategoryVisual(experiences: Experience[], locale: 'jp' | 'en'
       totals.set(category, (totals.get(category) || 0) + months);
     });
   });
+
+  return totals;
+}
+
+function buildTechnologyExperience(experiences: Experience[]):
+  Array<{ name: string; totalMonths: number; category: ExperienceCategory }> {
+  const techTotals = new Map<string, { name: string; totalMonths: number; category: ExperienceCategory }>();
+
+  experiences.forEach((experience) => {
+    experience.en.technologies.forEach((tech) => {
+      const category = resolveExperienceCategory(tech.name);
+      if (!category) {
+        return;
+      }
+
+      const name = tech.name.trim();
+      if (!name) {
+        return;
+      }
+
+      const months = Math.max(0, tech.years * 12 + tech.months);
+      const existing = techTotals.get(name);
+      if (!existing) {
+        techTotals.set(name, { name, totalMonths: months, category });
+        return;
+      }
+
+      existing.totalMonths += months;
+    });
+  });
+
+  return [...techTotals.values()];
+}
+
+function topItemsHtml(
+  items: Array<{ name: string; totalMonths: number }>,
+  locale: 'jp' | 'en',
+  limit = 5
+): string {
+  const top = items
+    .sort((a, b) => b.totalMonths - a.totalMonths || a.name.localeCompare(b.name))
+    .slice(0, limit);
+
+  if (top.length === 0) {
+    return locale === 'jp' ? '-' : '-';
+  }
+
+  return top
+    .map((item) => `${item.name} (${formatMonthsAsLabel(item.totalMonths, locale)})`)
+    .join('<br>');
+}
+
+function renderWorkCategoryTable(experiences: Experience[], locale: 'jp' | 'en'): string {
+  const categoryTotals = buildCategoryTotalsByExperience(experiences);
+  const techExperience = buildTechnologyExperience(experiences);
+
+  const categoryRows = EXPERIENCE_CATEGORY_ORDER.map((category) => {
+    const label = locale === 'jp'
+      ? EXPERIENCE_CATEGORY_LABELS[category].labelJp
+      : EXPERIENCE_CATEGORY_LABELS[category].labelEn;
+    const totalMonths = categoryTotals.get(category) || 0;
+    const categoryTechs = techExperience.filter((item) => item.category === category);
+
+    return `  <tr>\n    <td>${label}</td>\n    <td>${formatMonthsAsLabel(totalMonths, locale)}</td>\n    <td>${categoryTechs.length}</td>\n    <td>${topItemsHtml(categoryTechs, locale, 5)}</td>\n  </tr>`;
+  }).join('\n');
+
+  const overallTopRows = techExperience
+    .sort((a, b) => b.totalMonths - a.totalMonths || a.name.localeCompare(b.name))
+    .slice(0, 5)
+    .map((item, index) => {
+      const categoryLabel = locale === 'jp'
+        ? EXPERIENCE_CATEGORY_LABELS[item.category].labelJp
+        : EXPERIENCE_CATEGORY_LABELS[item.category].labelEn;
+      return `  <tr>\n    <td>${index + 1}</td>\n    <td>${item.name}</td>\n    <td>${categoryLabel}</td>\n    <td>${formatMonthsAsLabel(item.totalMonths, locale)}</td>\n  </tr>`;
+    })
+    .join('\n');
+
+  if (locale === 'jp') {
+    return [
+      '<h3>カテゴリ別サマリー（表）</h3>',
+      '<table>',
+      '  <thead>',
+      '    <tr><th>カテゴリ</th><th>経験量</th><th>技術数</th><th>経験TOP5（カテゴリ内）</th></tr>',
+      '  </thead>',
+      '  <tbody>',
+      categoryRows,
+      '  </tbody>',
+      '</table>',
+      '',
+      '<h3>経験技術 TOP5（全体）</h3>',
+      '<table>',
+      '  <thead>',
+      '    <tr><th>順位</th><th>技術</th><th>カテゴリ</th><th>経験量</th></tr>',
+      '  </thead>',
+      '  <tbody>',
+      overallTopRows,
+      '  </tbody>',
+      '</table>',
+    ].join('\n');
+  }
+
+  return [
+    '<h3>Category Summary Table</h3>',
+    '<table>',
+    '  <thead>',
+    '    <tr><th>Category</th><th>Experience</th><th>Technology Count</th><th>Top 5 by experience (within category)</th></tr>',
+    '  </thead>',
+    '  <tbody>',
+    categoryRows,
+    '  </tbody>',
+    '</table>',
+    '',
+    '<h3>Top 5 Technologies by Experience (Overall)</h3>',
+    '<table>',
+    '  <thead>',
+    '    <tr><th>Rank</th><th>Technology</th><th>Category</th><th>Experience</th></tr>',
+    '  </thead>',
+    '  <tbody>',
+    overallTopRows,
+    '  </tbody>',
+    '</table>',
+  ].join('\n');
+}
+
+function renderWorkCategoryVisual(experiences: Experience[], locale: 'jp' | 'en'): string {
+  const totals = buildCategoryTotalsByExperience(experiences);
 
   const rows = EXPERIENCE_CATEGORY_ORDER.map((category) => {
     const total = totals.get(category) || 0;
@@ -409,6 +535,11 @@ function main(): void {
   const workCategoryVisualEnPath = path.join(includeDir, 'work-category-visual-en.html');
   writeFile(workCategoryVisualJpPath, renderWorkCategoryVisual(experiences, 'jp'));
   writeFile(workCategoryVisualEnPath, renderWorkCategoryVisual(experiences, 'en'));
+
+  const workCategoryTableJpPath = path.join(includeDir, 'work-category-table-jp.html');
+  const workCategoryTableEnPath = path.join(includeDir, 'work-category-table-en.html');
+  writeFile(workCategoryTableJpPath, renderWorkCategoryTable(experiences, 'jp'));
+  writeFile(workCategoryTableEnPath, renderWorkCategoryTable(experiences, 'en'));
 
   const careerJpDoc = path.join(rootDir, 'doc', 'Career_JP.md');
   const careerEnDoc = path.join(rootDir, 'doc', 'Career_EN.md');

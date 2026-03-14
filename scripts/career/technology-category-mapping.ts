@@ -9,7 +9,13 @@ export type TechCategory =
   | 'platform'
   | 'other';
 
-export type ExperienceCategory = 'cloud' | 'coding' | 'infrastructure' | 'server';
+export type ExperienceCategory =
+  | 'cloud'
+  | 'coding'
+  | 'infrastructure'
+  | 'server'
+  | 'language'
+  | 'other';
 
 export type LocalizedCategory = {
   labelJp: string;
@@ -33,6 +39,8 @@ export const EXPERIENCE_CATEGORY_LABELS: Record<ExperienceCategory, LocalizedCat
   coding: { labelJp: 'コーディング系', labelEn: 'Coding' },
   infrastructure: { labelJp: 'インフラ系', labelEn: 'Infrastructure' },
   server: { labelJp: 'サーバー系', labelEn: 'Server' },
+  language: { labelJp: '語学系', labelEn: 'Language' },
+  other: { labelJp: 'その他', labelEn: 'Other' },
 };
 
 export const EXPERIENCE_CATEGORY_ORDER: ExperienceCategory[] = [
@@ -40,6 +48,8 @@ export const EXPERIENCE_CATEGORY_ORDER: ExperienceCategory[] = [
   'coding',
   'infrastructure',
   'server',
+  'language',
+  'other',
 ];
 
 type KeywordRule = {
@@ -97,15 +107,14 @@ const TECHNOLOGY_CATEGORY_RULES: KeywordRule[] = [
   },
 ];
 
-const EXPERIENCE_NON_TECH_KEYWORDS = [
+const EXPERIENCE_LANGUAGE_KEYWORDS = [
   'translation',
   'communication',
-  'documentation',
-  'customer support',
+  'bilingual',
+  '語学',
   'バイリンガル',
   '翻訳',
   'コミュニケーション',
-  'ドキュメント',
 ];
 
 const EXPERIENCE_CATEGORY_RULES: Array<{ category: ExperienceCategory; keywords: string[] }> = [
@@ -195,11 +204,11 @@ export function resolveTechnologyCategory(tech: string): TechCategory {
   return 'other';
 }
 
-export function resolveExperienceCategory(tech: string): ExperienceCategory | null {
+export function resolveExperienceCategory(tech: string): ExperienceCategory {
   const key = normalizeTechName(tech);
 
-  if (EXPERIENCE_NON_TECH_KEYWORDS.some((keyword) => key.includes(keyword))) {
-    return null;
+  if (EXPERIENCE_LANGUAGE_KEYWORDS.some((keyword) => key.includes(keyword))) {
+    return 'language';
   }
 
   if (resolveCodingLanguage(tech)) {
@@ -212,5 +221,5 @@ export function resolveExperienceCategory(tech: string): ExperienceCategory | nu
     }
   }
 
-  return 'coding';
+  return 'other';
 }

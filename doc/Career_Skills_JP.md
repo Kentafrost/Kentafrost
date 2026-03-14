@@ -40,6 +40,8 @@ permalink: /career/jp/skills
 
 {% include career/work-category-visual-jp.html %}
 
+{% include career/work-category-table-jp.html %}
+
 ---
 
 ### 技術経験の可視化（上位）

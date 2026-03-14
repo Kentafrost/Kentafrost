@@ -40,6 +40,8 @@ This page helps readers quickly understand technology experience, learning areas
 
 {% include career/work-category-visual-en.html %}
 
+{% include career/work-category-table-en.html %}
+
 ---
 
 ### Experience Visualization (Top)
