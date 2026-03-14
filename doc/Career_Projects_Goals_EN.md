@@ -13,19 +13,46 @@ permalink: /career/en/projects-goals
 
 {% include career/career-page-styles.html %}
 
-# Personal Projects & Development Growth
+<div class="career-hero-media">
+	<img src="{{ '/assets/img/career/projects-goals.svg' | relative_url }}" alt="Personal projects and career goals overview">
+</div>
+
+<p class="career-intro">
+This page connects hands-on personal projects with the longer-term roadmap for development growth.
+</p>
+
+<div class="career-glance-grid">
+	<div class="career-glance-card">
+		<p class="career-glance-label">Projects</p>
+		<p class="career-glance-value">Build more design and implementation depth through personal work</p>
+	</div>
+	<div class="career-glance-card">
+		<p class="career-glance-label">Roadmap</p>
+		<p class="career-glance-value">Clarify short- and mid-term career direction</p>
+	</div>
+	<div class="career-glance-card">
+		<p class="career-glance-label">Learning</p>
+		<p class="career-glance-value">Prioritize technical areas for the next growth step</p>
+	</div>
+</div>
+
+## Visual Summary
+
+{% include career/projects-visual-en.html %}
+
+## Personal Projects & Development Growth
 
 {% include career/personal-projects-en.html %}
 
 ---
 
-# Career Goals & Learning Plan
+## Career Goals & Learning Plan
 
-## Period-Based Career Roadmap
+### Period-Based Career Roadmap
 
 {% include career/future-work-roadmap-en.html %}
 
-## Learning Plan
+### Learning Plan
 
 {% include career/learning-plan-en.md %}
 

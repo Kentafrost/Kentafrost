@@ -1,8 +1,8 @@
 ---
 layout: default
-title: "キャリア詳細"
+title: "Career Summary & Work Experience"
 subtitle: "AWS運用エンジニア → 開発エンジニアへのキャリアチェンジを目指す"
-description: "KFrostのキャリア詳細、技術スタック、職歴、個人プロジェクトの詳細情報"
+description: "KFrost career summary and work experience details"
 date: 2025-01-01
 last_modified_at: 2026-03-14
 show_toc: true
@@ -13,7 +13,28 @@ permalink: /career/en
 
 {% include career/career-page-styles.html %}
 
-> **AWS Operations Engineer → Transitioning to Software Development Engineer**
+<div class="career-hero-media">
+	<img src="{{ '/assets/img/career/overview.svg' | relative_url }}" alt="Career summary and work experience overview">
+</div>
+
+<p class="career-intro">
+This page provides a compact view of current positioning, work history, and the transition path from AWS operations to software development.
+</p>
+
+<div class="career-glance-grid">
+	<div class="career-glance-card">
+		<p class="career-glance-label">Focus</p>
+		<p class="career-glance-value">Moving from AWS operations toward development-focused responsibilities</p>
+	</div>
+	<div class="career-glance-card">
+		<p class="career-glance-label">Content</p>
+		<p class="career-glance-value">Career summary and project-by-project work experience</p>
+	</div>
+	<div class="career-glance-card">
+		<p class="career-glance-label">Goal</p>
+		<p class="career-glance-value">Connect operations knowledge to full-stack engineering work</p>
+	</div>
+</div>
 
 ## Career Summary
 

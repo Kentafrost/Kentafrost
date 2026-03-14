@@ -1,13 +1,16 @@
-<nav class="career-nav">
-  <strong>日本語</strong>
-  <span>|</span>
-  <a href="{{ '/career/en' | relative_url }}">English</a>
-  <span>|</span>
-  {% if include.active == 'overview' %}<strong>1. キャリアサマリー・職歴</strong>{% else %}<a href="{{ '/career/jp' | relative_url }}">1. キャリアサマリー・職歴</a>{% endif %}
-  <span>|</span>
-  {% if include.active == 'skills' %}<strong>2. スキルと言語</strong>{% else %}<a href="{{ '/career/jp/skills' | relative_url }}">2. スキルと言語</a>{% endif %}
-  <span>|</span>
-  {% if include.active == 'certifications' %}<strong>3. 資格・認定</strong>{% else %}<a href="{{ '/career/jp/certifications' | relative_url }}">3. 資格・認定</a>{% endif %}
-  <span>|</span>
-  {% if include.active == 'projects-goals' %}<strong>4. 個人開発・学習計画</strong>{% else %}<a href="{{ '/career/jp/projects-goals' | relative_url }}">4. 個人開発・学習計画</a>{% endif %}
-</nav>
+<div class="career-nav-group">
+  <nav class="career-nav career-lang-nav">
+    <span class="career-lang-link is-active">日本語</span>
+    <a class="career-lang-link" href="{{ '/career/en' | relative_url }}">English</a>
+  </nav>
+
+  <nav class="career-nav career-section-nav">
+    {% if include.active == 'overview' %}<strong>1. キャリアサマリー・職歴</strong>{% else %}<a href="{{ '/career/jp' | relative_url }}">1. キャリアサマリー・職歴</a>{% endif %}
+    <span>|</span>
+    {% if include.active == 'skills' %}<strong>2. スキルと言語</strong>{% else %}<a href="{{ '/career/jp/skills' | relative_url }}">2. スキルと言語</a>{% endif %}
+    <span>|</span>
+    {% if include.active == 'certifications' %}<strong>3. 資格・認定</strong>{% else %}<a href="{{ '/career/jp/certifications' | relative_url }}">3. 資格・認定</a>{% endif %}
+    <span>|</span>
+    {% if include.active == 'projects-goals' %}<strong>4. 個人開発・学習計画</strong>{% else %}<a href="{{ '/career/jp/projects-goals' | relative_url }}">4. 個人開発・学習計画</a>{% endif %}
+  </nav>
+</div>

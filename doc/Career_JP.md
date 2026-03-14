@@ -1,8 +1,8 @@
 ---
 layout: default
-title: "キャリア詳細"
+title: "キャリアサマリー・職歴"
 subtitle: "AWS運用エンジニア → 開発エンジニアへのキャリアチェンジを目指す"
-description: "KFrostのキャリア詳細、技術スタック、職歴、個人プロジェクトの詳細情報"
+description: "KFrostのキャリアサマリーと職歴詳細"
 date: 2025-01-01
 last_modified_at: 2026-03-14
 show_toc: true
@@ -13,9 +13,28 @@ permalink: /career/jp
 
 {% include career/career-page-styles.html %}
 
-# KFrost - Software/Cloud Engineer
+<div class="career-hero-media">
+	<img src="{{ '/assets/img/career/overview.svg' | relative_url }}" alt="キャリアサマリーと職歴の概要イメージ">
+</div>
 
-> **AWS運用エンジニア → 開発エンジニアへのキャリアチェンジを目指す**
+<p class="career-intro">
+AWS運用を軸に積み上げてきた経験と、開発エンジニアへの移行に向けた現在地をまとめています。
+</p>
+
+<div class="career-glance-grid">
+	<div class="career-glance-card">
+		<p class="career-glance-label">Focus</p>
+		<p class="career-glance-value">AWS運用から開発寄りの役割へ段階的に移行中</p>
+	</div>
+	<div class="career-glance-card">
+		<p class="career-glance-label">Content</p>
+		<p class="career-glance-value">キャリアサマリーと案件ごとの職歴詳細を確認可能</p>
+	</div>
+	<div class="career-glance-card">
+		<p class="career-glance-label">Goal</p>
+		<p class="career-glance-value">運用知識を活かせるフルスタック開発へ接続</p>
+	</div>
+</div>
 
 ## キャリアサマリー
 

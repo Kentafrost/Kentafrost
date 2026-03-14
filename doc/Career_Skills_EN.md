@@ -13,6 +13,29 @@ permalink: /career/en/skills
 
 {% include career/career-page-styles.html %}
 
+<div class="career-hero-media">
+	<img src="{{ '/assets/img/career/skills.svg' | relative_url }}" alt="Technical skills and languages overview">
+</div>
+
+<p class="career-intro">
+This page helps readers quickly understand technology experience, learning areas, and working language capability.
+</p>
+
+<div class="career-glance-grid">
+	<div class="career-glance-card">
+		<p class="career-glance-label">Technical</p>
+		<p class="career-glance-value">Main technologies are visualized by accumulated experience</p>
+	</div>
+	<div class="career-glance-card">
+		<p class="career-glance-label">Learning</p>
+		<p class="career-glance-value">Learning-stage technologies are separated from practical work</p>
+	</div>
+	<div class="career-glance-card">
+		<p class="career-glance-label">Language</p>
+		<p class="career-glance-value">Japanese and English business usage levels are summarized</p>
+	</div>
+</div>
+
 ---
 
 ## Technical Skills
