@@ -52,9 +52,11 @@
         { "name": "Python", "years": 2, "months": 4 },
         { "name": "VBA", "years": 2, "months": 4 },
         { "name": "PowerShell", "years": 2, "months": 4 },
+        { "name": "batch", "years": 1, "months": 6 },
         { "name": "YAML", "years": 1, "months": 6 },
         { "name": "Github Copilot", "years": 0, "months": 6 },
         { "name": "Linux", "years": 0, "months": 6, "certifications": ["LinuC-1"] },
+        { "name": "Windows Server", "years": 1, "months": 6 },
         {
           "name": "AWS",
           "years": 2,
@@ -76,6 +78,9 @@
         { "name": "EventBridge", "years": 1, "months": 6 },
         { "name": "Systems Manager", "years": 1, "months": 6 },
         { "name": "CloudWatch", "years": 2, "months": 0 },
+        { "name": "Security Hub", "years": 1, "months": 0 },
+        { "name": "AWS Health", "years": 1, "months": 0 },
+        { "name": "Amazon Bedrock", "years": 1, "months": 0 },
         { "name": "QuickSight", "years": 0, "months": 1, "learning": true }
       ],
       "achievements": [
@@ -92,6 +97,10 @@
         { "name": "VBA", "years": 2, "months": 4 },
         { "name": "PowerShell", "years": 2, "months": 4 },
         { "name": "Linux", "years": 0, "months": 6, "certifications": ["LinuC-1"] },
+        { "name": "Windows Server", "years": 1, "months": 6 },
+        { "name": "batch", "years": 1, "months": 6 },
+        { "name": "Github Copilot", "years": 1, "months": 0 },
+
         {
           "name": "AWS",
           "years": 2,
@@ -113,6 +122,9 @@
         { "name": "EventBridge", "years": 0, "months": 8 },
         { "name": "Systems Manager", "years": 0, "months": 8 },
         { "name": "CloudWatch", "years": 1, "months": 6 },
+        { "name": "Security Hub", "years": 1, "months": 0 },
+        { "name": "AWS Health", "years": 1, "months": 0 },
+        { "name": "Amazon Bedrock", "years": 1, "months": 0 },
         { "name": "QuickSight", "years": 0, "months": 1 }
       ],
       "achievements": [

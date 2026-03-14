@@ -36,6 +36,12 @@ This page helps readers quickly understand technology experience, learning areas
 
 ## Technical Skills
 
+### Experience by Category
+
+{% include career/work-category-visual-en.html %}
+
+---
+
 ### Experience Visualization (Top)
 
 {% include career/technology-bars-en.html %}

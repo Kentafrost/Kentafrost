@@ -13,7 +13,7 @@
 | **Duration** | 2 years 4 months |
 |------|------|
 | **Scope** | AWS Environment Operations and Automation |
-| **Key Technologies** | Python (2 years 4 months)<br/>VBA (2 years 4 months)<br/>PowerShell (2 years 4 months)<br/>Linux (6 months)<br/>AWS (2 years 4 months)<br/>EC2 (2 years 4 months)<br/>VPC (1 year 6 months)<br/>IAM (1 year 6 months)<br/>CloudFormation (1 year 6 months)<br/>Lambda (2 years 4 months)<br/>S3 (2 years 4 months)<br/>DynamoDB (1 year 6 months)<br/>SNS (8 months)<br/>EventBridge (8 months)<br/>Systems Manager (8 months)<br/>CloudWatch (1 year 6 months)<br/>QuickSight (1 month) |
+| **Key Technologies** | Python (2 years 4 months)<br/>VBA (2 years 4 months)<br/>PowerShell (2 years 4 months)<br/>Linux (6 months)<br/>Windows Server (1 year 6 months)<br/>batch (1 year 6 months)<br/>Github Copilot (1 year)<br/>AWS (2 years 4 months)<br/>EC2 (2 years 4 months)<br/>VPC (1 year 6 months)<br/>IAM (1 year 6 months)<br/>CloudFormation (1 year 6 months)<br/>Lambda (2 years 4 months)<br/>S3 (2 years 4 months)<br/>DynamoDB (1 year 6 months)<br/>SNS (8 months)<br/>EventBridge (8 months)<br/>Systems Manager (8 months)<br/>CloudWatch (1 year 6 months)<br/>Security Hub (1 year)<br/>AWS Health (1 year)<br/>Amazon Bedrock (1 year)<br/>QuickSight (1 month) |
 | **Main Achievements** | VBA document and parameter sheet automation<br/>   QuickSight + Lambda AWS cost calculation system<br/>   CloudFormation management for 20+ AWS services |
 
 <br/>

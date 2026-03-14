@@ -36,6 +36,12 @@ permalink: /career/jp/skills
 
 ## 技術スキル
 
+### 経験カテゴリ別サマリー
+
+{% include career/work-category-visual-jp.html %}
+
+---
+
 ### 技術経験の可視化（上位）
 
 {% include career/technology-bars-jp.html %}

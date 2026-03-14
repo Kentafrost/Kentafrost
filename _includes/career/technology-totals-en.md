@@ -11,11 +11,13 @@
 | Python | 2 years 4 months | ⭐⭐⭐ | - |
 | S3 | 2 years 4 months | ⭐⭐⭐ | - |
 | VBA | 2 years 4 months | ⭐⭐⭐ | - |
+| batch | 1 year 6 months | ⭐⭐ | - |
 | CloudFormation | 1 year 6 months | ⭐⭐ | - |
 | CloudWatch | 1 year 6 months | ⭐⭐ | - |
 | DynamoDB | 1 year 6 months | ⭐⭐ | - |
 | IAM | 1 year 6 months | ⭐⭐ | - |
 | VPC | 1 year 6 months | ⭐⭐ | - |
+| Windows Server | 1 year 6 months | ⭐⭐ | - |
 | Bilingual Support | 1 year 4 months | ⭐⭐ | - |
 | Customer Support | 1 year 4 months | ⭐⭐ | - |
 | Escalation Handling | 1 year 4 months | ⭐⭐ | - |
@@ -23,6 +25,10 @@
 | Network Monitoring | 1 year 4 months | ⭐⭐ | - |
 | Ticket Management | 1 year 4 months | ⭐⭐ | - |
 | Troubleshooting | 1 year 4 months | ⭐⭐ | - |
+| Amazon Bedrock | 1 year | ⭐⭐ | - |
+| AWS Health | 1 year | ⭐⭐ | - |
+| Github Copilot | 1 year | ⭐⭐ | - |
+| Security Hub | 1 year | ⭐⭐ | - |
 
 #### Work Experience Under 1 Year
 

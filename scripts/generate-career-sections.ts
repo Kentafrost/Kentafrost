@@ -56,6 +56,16 @@ import {
   renderTechnologyBars,
   renderTechnologySummary,
 } from './career/charts';
+import {
+  EXPERIENCE_CATEGORY_LABELS,
+  EXPERIENCE_CATEGORY_ORDER,
+  resolveCodingLanguage,
+  resolveExperienceCategory,
+  resolveTechnologyCategory,
+  TECH_CATEGORY_LABELS,
+  type ExperienceCategory,
+  type TechCategory,
+} from './career/technology-category-mapping';
 import type {
   CareerSummaryItem,
   CertificationGroup,
@@ -109,6 +119,73 @@ function renderBarChart(
     .join('\n');
 
   return `<div class="career-chart" role="img" aria-label="${ariaLabel}">\n${rowHtml}\n  <p class="career-chart-caption">${caption}</p>\n</div>`;
+}
+
+function formatMonthsAsLabel(totalMonths: number, locale: 'jp' | 'en'): string {
+  const years = Math.floor(totalMonths / 12);
+  const months = totalMonths % 12;
+
+  if (locale === 'jp') {
+    if (years > 0 && months > 0) {
+      return `${years}年${months}か月`;
+    }
+    if (years > 0) {
+      return `${years}年`;
+    }
+    return `${months}か月`;
+  }
+
+  if (years > 0 && months > 0) {
+    return `${years}y ${months}m`;
+  }
+  if (years > 0) {
+    return `${years}y`;
+  }
+  return `${months}m`;
+}
+
+function renderWorkCategoryVisual(experiences: Experience[], locale: 'jp' | 'en'): string {
+  const totals = new Map<ExperienceCategory, number>();
+  EXPERIENCE_CATEGORY_ORDER.forEach((category) => totals.set(category, 0));
+
+  experiences.forEach((experience) => {
+    const perExperienceCategoryMax = new Map<ExperienceCategory, number>();
+
+    // Use a single locale side to avoid double-counting the same technology entry.
+    experience.en.technologies.forEach((tech) => {
+      const category = resolveExperienceCategory(tech.name);
+      if (!category) {
+        return;
+      }
+
+      const months = Math.max(0, tech.years * 12 + tech.months);
+      const currentMax = perExperienceCategoryMax.get(category) || 0;
+      if (months > currentMax) {
+        perExperienceCategoryMax.set(category, months);
+      }
+    });
+
+    perExperienceCategoryMax.forEach((months, category) => {
+      totals.set(category, (totals.get(category) || 0) + months);
+    });
+  });
+
+  const rows = EXPERIENCE_CATEGORY_ORDER.map((category) => {
+    const total = totals.get(category) || 0;
+    return {
+      label: locale === 'jp' ? EXPERIENCE_CATEGORY_LABELS[category].labelJp : EXPERIENCE_CATEGORY_LABELS[category].labelEn,
+      valueLabel: formatMonthsAsLabel(total, locale),
+      numericValue: total,
+    };
+  }).filter((row) => row.numericValue > 0);
+
+  return renderBarChart(
+    locale === 'jp' ? '職務経験のカテゴリ別サマリー' : 'Work experience summary by category',
+    locale === 'jp'
+      ? 'クラウド・コーディング・インフラ・サーバーの経験年数（work-experiences集計）'
+      : 'Years/months of experience across Cloud, Coding, Infrastructure, and Server (from work-experiences)',
+    rows
+  );
 }
 
 function renderCertificationVisual(
@@ -189,6 +266,8 @@ function renderProjectVisual(
   );
 
   const techCounts = new Map<string, number>();
+  const categoryCounts = new Map<TechCategory, number>();
+  const codingLanguageCounts = new Map<string, number>();
   projects.forEach((project) => {
     const techList = locale === 'jp' ? project.technologiesJp : project.technologiesEn;
     techList.forEach((tech) => {
@@ -197,8 +276,46 @@ function renderProjectVisual(
         return;
       }
       techCounts.set(key, (techCounts.get(key) || 0) + 1);
+
+      const category = resolveTechnologyCategory(key);
+      categoryCounts.set(category, (categoryCounts.get(category) || 0) + 1);
+
+      const codingLanguage = resolveCodingLanguage(key);
+      if (codingLanguage) {
+        codingLanguageCounts.set(codingLanguage, (codingLanguageCounts.get(codingLanguage) || 0) + 1);
+      }
     });
   });
+
+  const categoryRows = [...categoryCounts.entries()]
+    .sort((a, b) => b[1] - a[1])
+    .map(([category, count]) => ({
+      label: locale === 'jp' ? TECH_CATEGORY_LABELS[category].labelJp : TECH_CATEGORY_LABELS[category].labelEn,
+      valueLabel: locale === 'jp' ? `${count}件` : `${count}`,
+      numericValue: count,
+    }));
+
+  const categoryChart = renderBarChart(
+    locale === 'jp' ? '技術カテゴリ別の分布' : 'Technology category distribution',
+    locale === 'jp' ? '技術カテゴリ別の採用件数' : 'Technology usage by category',
+    categoryRows
+  );
+
+  const codingLanguageRows = [...codingLanguageCounts.entries()]
+    .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
+    .map(([label, count]) => ({
+      label,
+      valueLabel: locale === 'jp' ? `${count}件` : `${count}`,
+      numericValue: count,
+    }));
+
+  const codingLanguageChart = renderBarChart(
+    locale === 'jp' ? 'コーディング言語別の分布' : 'Coding language distribution',
+    locale === 'jp'
+      ? 'コーディングカテゴリ内の言語別件数'
+      : 'Language breakdown within the coding category',
+    codingLanguageRows
+  );
 
   const techRows = [...techCounts.entries()]
     .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
@@ -215,7 +332,7 @@ function renderProjectVisual(
     techRows
   );
 
-  return `${progressChart}\n\n${techChart}`;
+  return `${progressChart}\n\n${categoryChart}\n\n${codingLanguageChart}\n\n${techChart}`;
 }
 
 function main(): void {
@@ -287,6 +404,11 @@ function main(): void {
   const projectsVisualEnPath = path.join(includeDir, 'projects-visual-en.html');
   writeFile(projectsVisualJpPath, renderProjectVisual(personalProjects, 'jp'));
   writeFile(projectsVisualEnPath, renderProjectVisual(personalProjects, 'en'));
+
+  const workCategoryVisualJpPath = path.join(includeDir, 'work-category-visual-jp.html');
+  const workCategoryVisualEnPath = path.join(includeDir, 'work-category-visual-en.html');
+  writeFile(workCategoryVisualJpPath, renderWorkCategoryVisual(experiences, 'jp'));
+  writeFile(workCategoryVisualEnPath, renderWorkCategoryVisual(experiences, 'en'));
 
   const careerJpDoc = path.join(rootDir, 'doc', 'Career_JP.md');
   const careerEnDoc = path.join(rootDir, 'doc', 'Career_EN.md');
