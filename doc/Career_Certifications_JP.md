@@ -13,10 +13,6 @@ permalink: /career/jp/certifications
 
 {% include career/career-page-styles.html %}
 
-<div class="career-hero-media">
-	<img src="{{ '/assets/img/career/certifications.svg' | relative_url }}" alt="資格・認定の概要イメージ">
-</div>
-
 <p class="career-intro">
 保有資格を単なる一覧ではなく、業務との結びつきや今後の学習テーマと合わせて見られるようにしています。
 </p>

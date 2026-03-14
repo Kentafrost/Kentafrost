@@ -13,10 +13,6 @@ permalink: /career/en/skills
 
 {% include career/career-page-styles.html %}
 
-<div class="career-hero-media">
-	<img src="{{ '/assets/img/career/skills.svg' | relative_url }}" alt="Technical skills and languages overview">
-</div>
-
 <p class="career-intro">
 This page helps readers quickly understand technology experience, learning areas, and working language capability.
 </p>

@@ -13,10 +13,6 @@ permalink: /career/en/certifications
 
 {% include career/career-page-styles.html %}
 
-<div class="career-hero-media">
-	<img src="{{ '/assets/img/career/certifications.svg' | relative_url }}" alt="Certifications and qualifications overview">
-</div>
-
 <p class="career-intro">
 Certifications are presented together with their relation to operations, practical work, and future technical direction.
 </p>

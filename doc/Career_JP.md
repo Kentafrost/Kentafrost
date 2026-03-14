@@ -13,10 +13,6 @@ permalink: /career/jp
 
 {% include career/career-page-styles.html %}
 
-<div class="career-hero-media">
-	<img src="{{ '/assets/img/career/overview.svg' | relative_url }}" alt="キャリアサマリーと職歴の概要イメージ">
-</div>
-
 <p class="career-intro">
 AWS運用を軸に積み上げてきた経験と、開発エンジニアへの移行に向けた現在地をまとめています。
 </p>

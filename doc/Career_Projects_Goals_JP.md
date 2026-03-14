@@ -13,10 +13,6 @@ permalink: /career/jp/projects-goals
 
 {% include career/career-page-styles.html %}
 
-<div class="career-hero-media">
-	<img src="{{ '/assets/img/career/projects-goals.svg' | relative_url }}" alt="個人開発とキャリア目標の概要イメージ">
-</div>
-
 <p class="career-intro">
 個人開発で積みたい実装経験と、今後のキャリア目標・学習計画を一つの流れで確認できるページです。
 </p>

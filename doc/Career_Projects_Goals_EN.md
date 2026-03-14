@@ -13,10 +13,6 @@ permalink: /career/en/projects-goals
 
 {% include career/career-page-styles.html %}
 
-<div class="career-hero-media">
-	<img src="{{ '/assets/img/career/projects-goals.svg' | relative_url }}" alt="Personal projects and career goals overview">
-</div>
-
 <p class="career-intro">
 This page connects hands-on personal projects with the longer-term roadmap for development growth.
 </p>

@@ -13,10 +13,6 @@ permalink: /career/en
 
 {% include career/career-page-styles.html %}
 
-<div class="career-hero-media">
-	<img src="{{ '/assets/img/career/overview.svg' | relative_url }}" alt="Career summary and work experience overview">
-</div>
-
 <p class="career-intro">
 This page provides a compact view of current positioning, work history, and the transition path from AWS operations to software development.
 </p>

@@ -13,10 +13,6 @@ permalink: /career/jp/skills
 
 {% include career/career-page-styles.html %}
 
-<div class="career-hero-media">
-	<img src="{{ '/assets/img/career/skills.svg' | relative_url }}" alt="技術スキルと言語の概要イメージ">
-</div>
-
 <p class="career-intro">
 技術スタック全体の経験年数、学習中の領域、言語スキルをひと目で把握できるページです。
 </p>
