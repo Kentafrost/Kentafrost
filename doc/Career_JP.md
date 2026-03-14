@@ -9,63 +9,9 @@ show_toc: true
 permalink: /career/jp
 ---
 
-<nav class="career-nav">
-  <strong>日本語</strong>
-  <span>|</span>
-  <a href="{{ '/career/en' | relative_url }}">English</a>
-  <span>|</span>
-  <a href="{{ '/career/jp/skills' | relative_url }}">スキルページ</a>
-</nav>
+{% include career/career-nav-jp.html active='overview' %}
 
-<style>
-:root {
-  --career-table-header: #d9ecff;
-}
-
-table thead th,
-table tr:first-child th,
-table th {
-  background-color: var(--career-table-header) !important;
-  border-color: #c4dbf3;
-}
-
-table tr:nth-child(even) td {
-  background-color: #fafcff;
-}
-
-table td,
-table th {
-  vertical-align: top;
-}
-
-.career-nav {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  align-items: center;
-  margin: 8px 0 16px;
-  padding: 10px 12px;
-  border: 1px solid #d5dde8;
-  border-radius: 8px;
-  background: #f8fbff;
-  font-size: 14px;
-}
-
-.career-note {
-  margin-top: 10px;
-  padding: 10px 12px;
-  border-left: 4px solid #8aa5c3;
-  background: #f8fbff;
-}
-
-.career-summary-box {
-  margin-top: 10px;
-  padding: 12px;
-  border: 1px solid #d5dde8;
-  border-radius: 8px;
-  background: #fdfefe;
-}
-</style>
+{% include career/career-page-styles.html %}
 
 # KFrost - Software/Cloud Engineer
 
@@ -77,43 +23,9 @@ table th {
 
 ---
 
-
 ## 職歴詳細
+
 {% include career/work-experience-jp.html %}
----
-
-
-## スキルと言語
-
-技術スキル・言語スキルの詳細は専用ページを参照:
-
-**[スキルページを開く]({{ '/career/jp/skills' | relative_url }})**
-
----
-
-## 個人開発・スキル拡張
-
-{% include career/personal-projects-jp.html %}
-
----
-
-##  資格・認定
-
-{% include career/certifications-jp.html %}
-
----
-
-
-## キャリア目標・学習計画
-
-### 期間別キャリアロードマップ
-
-{% include career/future-work-roadmap-jp.html %}
-
-
-### 学習プラン
-
-{% include career/learning-plan-jp.md %}
 
 ---
 

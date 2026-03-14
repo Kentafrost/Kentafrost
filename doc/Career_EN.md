@@ -9,63 +9,9 @@ show_toc: true
 permalink: /career/en
 ---
 
-<nav class="career-nav">
-  <a href="{{ '/career/jp' | relative_url }}">日本語</a>
-  <span>|</span>
-  <strong>English</strong>
-  <span>|</span>
-  <a href="{{ '/career/en/skills' | relative_url }}">Skills Page</a>
-</nav>
+{% include career/career-nav-en.html active='overview' %}
 
-<style>
-:root {
-  --career-table-header: #d9ecff;
-}
-
-table thead th,
-table tr:first-child th,
-table th {
-  background-color: var(--career-table-header) !important;
-  border-color: #c4dbf3;
-}
-
-table tr:nth-child(even) td {
-  background-color: #fafcff;
-}
-
-table td,
-table th {
-  vertical-align: top;
-}
-
-.career-nav {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  align-items: center;
-  margin: 8px 0 16px;
-  padding: 10px 12px;
-  border: 1px solid #d5dde8;
-  border-radius: 8px;
-  background: #f8fbff;
-  font-size: 14px;
-}
-
-.career-note {
-  margin-top: 10px;
-  padding: 10px 12px;
-  border-left: 4px solid #8aa5c3;
-  background: #f8fbff;
-}
-
-.career-summary-box {
-  margin-top: 10px;
-  padding: 12px;
-  border: 1px solid #d5dde8;
-  border-radius: 8px;
-  background: #fdfefe;
-}
-</style>
+{% include career/career-page-styles.html %}
 
 > **AWS Operations Engineer → Transitioning to Software Development Engineer**
 
@@ -76,40 +22,8 @@ table th {
 ---
 
 ## Work Experience Details
+
 {% include career/work-experience-en.md %}
-
----
-
-## Skills & Languages
-
-For technical and language details, please use the dedicated page:
-
-**[Open Skills & Languages Page]({{ '/career/en/skills' | relative_url }})**
-
----
-
-## Personal Projects & Development Achievements
-
-{% include career/personal-projects-en.html %}
-
----
-
-## Certifications & Qualifications
-
-{% include career/certifications-en.html %}
-
----
-
-## Career Goals & Learning Plan
-
-### Period-Based Career Roadmap
-
-{% include career/future-work-roadmap-en.html %}
-
-
-### Learning Plan
-
-{% include career/learning-plan-en.md %}
 
 ---
 
