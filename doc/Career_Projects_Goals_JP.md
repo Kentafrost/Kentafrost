@@ -36,6 +36,8 @@ permalink: /career/jp/projects-goals
 
 {% include career/projects-visual-jp.html %}
 
+{% include career/work-tech-type-table-jp.html %}
+
 ## 個人開発・スキル拡張
 
 {% include career/personal-projects-jp.html %}

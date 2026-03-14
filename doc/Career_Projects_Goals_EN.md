@@ -36,6 +36,8 @@ This page connects hands-on personal projects with the longer-term roadmap for d
 
 {% include career/projects-visual-en.html %}
 
+{% include career/work-tech-type-table-en.html %}
+
 ## Personal Projects & Development Growth
 
 {% include career/personal-projects-en.html %}

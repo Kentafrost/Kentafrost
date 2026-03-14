@@ -221,6 +221,85 @@ function topItemsHtml(
     .join('<br>');
 }
 
+function classifyTechForTable(tech: string): 'language' | 'framework' | 'cloud' | null {
+  const key = tech.trim().toLowerCase();
+
+  // Framework check first (before coding-language check)
+  if (['spring', 'wicket', 'react', 'vue', 'angular', 'django', 'flask', 'fastapi', 'node.js', 'next.js'].some((kw) => key.includes(kw))) {
+    return 'framework';
+  }
+
+  // AWS cloud services
+  const awsKeywords = ['ec2', 'vpc', 'iam', 'cloudformation', 'lambda', 's3', 'dynamodb', 'sns', 'eventbridge', 'systems manager', 'cloudwatch', 'security hub', 'aws health', 'amazon bedrock', 'quicksight'];
+  if (key === 'aws' || awsKeywords.some((kw) => key.includes(kw))) {
+    return 'cloud';
+  }
+
+  // Programming and scripting languages
+  if (resolveCodingLanguage(tech) || ['vba', 'powershell', 'bash', 'batch'].some((kw) => key.includes(kw))) {
+    return 'language';
+  }
+
+  return null;
+}
+
+function renderWorkTechTypeTable(experiences: Experience[], locale: 'jp' | 'en'): string {
+  const monthsByTech = new Map<string, number>();
+
+  // Use EN tech names as single source; aggregate months; exclude learning items
+  experiences.forEach((exp) => {
+    exp.en.technologies.forEach((tech) => {
+      if (tech.learning) return;
+      const name = tech.name.trim();
+      const totalMonths = (tech.years || 0) * 12 + (tech.months || 0);
+      monthsByTech.set(name, (monthsByTech.get(name) || 0) + totalMonths);
+    });
+  });
+
+  const allTechs = [...monthsByTech.entries()].map(([name, totalMonths]) => ({ name, totalMonths }));
+
+  const langTechs = allTechs
+    .filter((t) => classifyTechForTable(t.name) === 'language')
+    .sort((a, b) => b.totalMonths - a.totalMonths);
+  const frameworkTechs = allTechs
+    .filter((t) => classifyTechForTable(t.name) === 'framework')
+    .sort((a, b) => b.totalMonths - a.totalMonths);
+  const cloudTechs = allTechs
+    .filter((t) => classifyTechForTable(t.name) === 'cloud')
+    .sort((a, b) => b.totalMonths - a.totalMonths);
+
+  const techTypeRows = [
+    { categoryLabel: locale === 'jp' ? 'プログラミング言語' : 'Programming Languages', techs: langTechs },
+    { categoryLabel: locale === 'jp' ? 'フレームワーク' : 'Frameworks', techs: frameworkTechs },
+    { categoryLabel: locale === 'jp' ? 'クラウド技術 (AWS)' : 'Cloud Technologies (AWS)', techs: cloudTechs },
+  ];
+
+  const rows = techTypeRows
+    .map(({ categoryLabel, techs }) => {
+      const techList = techs
+        .map((t) => `${t.name} (${formatMonthsAsLabel(t.totalMonths, locale)})`)
+        .join('<br>');
+      return `  <tr>\n    <td>${categoryLabel}</td>\n    <td>${techList || '—'}</td>\n  </tr>`;
+    })
+    .join('\n');
+
+  const title = locale === 'jp' ? '使用技術（カテゴリ別）' : 'Technologies Used (by Category)';
+  const categoryHeader = locale === 'jp' ? 'カテゴリ' : 'Category';
+  const techHeader = locale === 'jp' ? '主な使用技術（実務経験）' : 'Main Technologies Used (Work Experience)';
+
+  return [
+    `<h3>${title}</h3>`,
+    '<table>',
+    '  <thead>',
+    `    <tr><th>${categoryHeader}</th><th>${techHeader}</th></tr>`,
+    '  </thead>',
+    '  <tbody>',
+    rows,
+    '  </tbody>',
+    '</table>',
+  ].join('\n');
+}
+
 function renderWorkCategoryTable(experiences: Experience[], locale: 'jp' | 'en'): string {
   const categoryTotals = buildCategoryTotalsByExperience(experiences);
   const techExperience = buildTechnologyExperience(experiences);
@@ -232,7 +311,7 @@ function renderWorkCategoryTable(experiences: Experience[], locale: 'jp' | 'en')
     const totalMonths = categoryTotals.get(category) || 0;
     const categoryTechs = techExperience.filter((item) => item.category === category);
 
-    return `  <tr>\n    <td>${label}</td>\n    <td>${formatMonthsAsLabel(totalMonths, locale)}</td>\n    <td>${categoryTechs.length}</td>\n    <td>${topItemsHtml(categoryTechs, locale, 5)}</td>\n  </tr>`;
+    return `  <tr>\n    <td>${label}</td>\n    <td>${formatMonthsAsLabel(totalMonths, locale)}</td>\n    <td>${topItemsHtml(categoryTechs, locale, 5)}</td>\n  </tr>`;
   }).join('\n');
 
   const overallTopRows = techExperience
@@ -251,7 +330,7 @@ function renderWorkCategoryTable(experiences: Experience[], locale: 'jp' | 'en')
       '<h3>カテゴリ別サマリー（表）</h3>',
       '<table>',
       '  <thead>',
-      '    <tr><th>カテゴリ</th><th>経験量</th><th>技術数</th><th>経験TOP5（カテゴリ内）</th></tr>',
+      '<tr><th>カテゴリ</th><th>経験量</th><th>経験TOP5（カテゴリ内）</th></tr>',
       '  </thead>',
       '  <tbody>',
       categoryRows,
@@ -274,7 +353,7 @@ function renderWorkCategoryTable(experiences: Experience[], locale: 'jp' | 'en')
     '<h3>Category Summary Table</h3>',
     '<table>',
     '  <thead>',
-    '    <tr><th>Category</th><th>Experience</th><th>Technology Count</th><th>Top 5 by experience (within category)</th></tr>',
+      '<tr><th>Category</th><th>Experience</th><th>Top 5 by experience (within category)</th></tr>',
     '  </thead>',
     '  <tbody>',
     categoryRows,
@@ -391,74 +470,7 @@ function renderProjectVisual(
     progressRows
   );
 
-  const techCounts = new Map<string, number>();
-  const categoryCounts = new Map<TechCategory, number>();
-  const codingLanguageCounts = new Map<string, number>();
-  projects.forEach((project) => {
-    const techList = locale === 'jp' ? project.technologiesJp : project.technologiesEn;
-    techList.forEach((tech) => {
-      const key = tech.trim();
-      if (!key) {
-        return;
-      }
-      techCounts.set(key, (techCounts.get(key) || 0) + 1);
-
-      const category = resolveTechnologyCategory(key);
-      categoryCounts.set(category, (categoryCounts.get(category) || 0) + 1);
-
-      const codingLanguage = resolveCodingLanguage(key);
-      if (codingLanguage) {
-        codingLanguageCounts.set(codingLanguage, (codingLanguageCounts.get(codingLanguage) || 0) + 1);
-      }
-    });
-  });
-
-  const categoryRows = [...categoryCounts.entries()]
-    .sort((a, b) => b[1] - a[1])
-    .map(([category, count]) => ({
-      label: locale === 'jp' ? TECH_CATEGORY_LABELS[category].labelJp : TECH_CATEGORY_LABELS[category].labelEn,
-      valueLabel: locale === 'jp' ? `${count}件` : `${count}`,
-      numericValue: count,
-    }));
-
-  const categoryChart = renderBarChart(
-    locale === 'jp' ? '技術カテゴリ別の分布' : 'Technology category distribution',
-    locale === 'jp' ? '技術カテゴリ別の採用件数' : 'Technology usage by category',
-    categoryRows
-  );
-
-  const codingLanguageRows = [...codingLanguageCounts.entries()]
-    .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
-    .map(([label, count]) => ({
-      label,
-      valueLabel: locale === 'jp' ? `${count}件` : `${count}`,
-      numericValue: count,
-    }));
-
-  const codingLanguageChart = renderBarChart(
-    locale === 'jp' ? 'コーディング言語別の分布' : 'Coding language distribution',
-    locale === 'jp'
-      ? 'コーディングカテゴリ内の言語別件数'
-      : 'Language breakdown within the coding category',
-    codingLanguageRows
-  );
-
-  const techRows = [...techCounts.entries()]
-    .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
-    .slice(0, 8)
-    .map(([label, count]) => ({
-      label,
-      valueLabel: locale === 'jp' ? `${count}件` : `${count}`,
-      numericValue: count,
-    }));
-
-  const techChart = renderBarChart(
-    locale === 'jp' ? '採用技術の頻度' : 'Technology usage frequency',
-    locale === 'jp' ? '個人開発での採用技術（上位8件）' : 'Top 8 technologies used in personal projects',
-    techRows
-  );
-
-  return `${progressChart}\n\n${categoryChart}\n\n${codingLanguageChart}\n\n${techChart}`;
+  return progressChart;
 }
 
 function main(): void {
@@ -530,6 +542,11 @@ function main(): void {
   const projectsVisualEnPath = path.join(includeDir, 'projects-visual-en.html');
   writeFile(projectsVisualJpPath, renderProjectVisual(personalProjects, 'jp'));
   writeFile(projectsVisualEnPath, renderProjectVisual(personalProjects, 'en'));
+
+  const workTechTypeTableJpPath = path.join(includeDir, 'work-tech-type-table-jp.html');
+  const workTechTypeTableEnPath = path.join(includeDir, 'work-tech-type-table-en.html');
+  writeFile(workTechTypeTableJpPath, renderWorkTechTypeTable(experiences, 'jp'));
+  writeFile(workTechTypeTableEnPath, renderWorkTechTypeTable(experiences, 'en'));
 
   const workCategoryVisualJpPath = path.join(includeDir, 'work-category-visual-jp.html');
   const workCategoryVisualEnPath = path.join(includeDir, 'work-category-visual-en.html');
