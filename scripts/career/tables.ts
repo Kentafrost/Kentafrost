@@ -11,6 +11,15 @@ import type {
   TechnologyDuration,
   YearMonth,
 } from './types';
+import {
+  enLanguageSkillsTableSchema,
+  enLearningPlanTableSchema,
+  enTechnologyTableSchemas,
+  jpLanguageSkillsTableSchema,
+  jpLearningPlanTableSchema,
+  jpTechnologyTableSchemas,
+  type TableColumn,
+} from './table-schemas';
 
 type AggregatedTechnology = {
   name: string;
@@ -120,6 +129,12 @@ function toStars(totalMonths: number, isLearning: boolean): string {
     return '⭐⭐';
   }
   return '⭐';
+}
+
+function renderMarkdownTableHeader(columns: TableColumn[]): string {
+  const labels = columns.map((column) => column.label).join(' | ');
+  const separators = columns.map(() => '---').join('|');
+  return `| ${labels} |\n|${separators}|`;
 }
 
 function monthName(month: number): string {
@@ -285,6 +300,9 @@ export function aggregateLearningTechnologies(
 }
 
 export function renderJpTechnologyTotals(experiences: Experience[], learningItems: LearningTechnology[]): string {
+  const readyHeader = renderMarkdownTableHeader(jpTechnologyTableSchemas[0].columns);
+  const underOneYearHeader = renderMarkdownTableHeader(jpTechnologyTableSchemas[1].columns);
+  const learningHeader = renderMarkdownTableHeader(jpTechnologyTableSchemas[2].columns);
   const totals = aggregateTechnologyDurations(experiences, 'jp');
   const workOverOneYear = totals.filter((item) => item.hasWorkExperience && item.workMonths >= 12);
   const workUnderOneYear = totals.filter((item) => item.hasWorkExperience && item.workMonths > 0 && item.workMonths < 12);
@@ -319,10 +337,13 @@ export function renderJpTechnologyTotals(experiences: Experience[], learningItem
     })
     .join('\n');
 
-  return `### 主要技術の累計経験（職歴合算）\n\n#### 戦力になれる分野（実務経験 1年以上）\n\n| 技術 | 累計経験 | 目安評価 | 備考 |\n|---|---|---|---|\n${workOverOneYearRows || '| - | - | - | - |'}\n\n#### 業務経験あり（実務経験 1年未満）\n\n| 技術 | 累計経験 | 目安評価 | 備考 |\n|---|---|---|---|\n${workUnderOneYearRows || '| - | - | - | - |'}\n\n#### 学習中の技術\n\n| 技術 | 学習期間 | 目安評価 | 備考 |\n|---|---|---|---|\n${learningRows || '| - | - | - | - |'}`;
+  return `### 主要技術の累計経験（職歴合算）\n\n#### 戦力になれる分野（実務経験 1年以上）\n\n${readyHeader}\n${workOverOneYearRows || '| - | - | - | - |'}\n\n#### 業務経験あり（実務経験 1年未満）\n\n${underOneYearHeader}\n${workUnderOneYearRows || '| - | - | - | - |'}\n\n#### 学習中の技術\n\n${learningHeader}\n${learningRows || '| - | - | - | - |'}`;
 }
 
 export function renderEnTechnologyTotals(experiences: Experience[], learningItems: LearningTechnology[]): string {
+  const readyHeader = renderMarkdownTableHeader(enTechnologyTableSchemas[0].columns);
+  const underOneYearHeader = renderMarkdownTableHeader(enTechnologyTableSchemas[1].columns);
+  const learningHeader = renderMarkdownTableHeader(enTechnologyTableSchemas[2].columns);
   const totals = aggregateTechnologyDurations(experiences, 'en');
   const workOverOneYear = totals.filter((item) => item.hasWorkExperience && item.workMonths >= 12);
   const workUnderOneYear = totals.filter((item) => item.hasWorkExperience && item.workMonths > 0 && item.workMonths < 12);
@@ -357,31 +378,35 @@ export function renderEnTechnologyTotals(experiences: Experience[], learningItem
     })
     .join('\n');
 
-  return `### Combined Technology Experience (Across Work History)\n\n#### Ready-To-Contribute Areas (1+ Year Work Experience)\n\n| Technology | Total Experience | Rating Guide | Notes |\n|---|---|---|---|\n${workOverOneYearRows || '| - | - | - | - |'}\n\n#### Work Experience Under 1 Year\n\n| Technology | Total Experience | Rating Guide | Notes |\n|---|---|---|---|\n${workUnderOneYearRows || '| - | - | - | - |'}\n\n#### Learning Technologies\n\n| Technology | Learning Period | Rating Guide | Notes |\n|---|---|---|---|\n${learningRows || '| - | - | - | - |'}`;
+  return `### Combined Technology Experience (Across Work History)\n\n#### Ready-To-Contribute Areas (1+ Year Work Experience)\n\n${readyHeader}\n${workOverOneYearRows || '| - | - | - | - |'}\n\n#### Work Experience Under 1 Year\n\n${underOneYearHeader}\n${workUnderOneYearRows || '| - | - | - | - |'}\n\n#### Learning Technologies\n\n${learningHeader}\n${learningRows || '| - | - | - | - |'}`;
 }
 
 export function renderJpLearningPlan(items: FutureLearningPlanItem[]): string {
+  const header = renderMarkdownTableHeader(jpLearningPlanTableSchema.columns);
   const rows = items
     .map((item) => `| ${item.priorityJp} | ${item.domainJp} | ${item.technologiesJp} | ${item.timelineJp} | ${item.purposeJp} |`)
     .join('\n');
-  return `| 優先度 | 技術分野 | 技術・フレームワーク | 学習予定時期 | 学習目的・用途 |\n|---|---|---|---|---|\n${rows}`;
+  return `${header}\n${rows}`;
 }
 
 export function renderEnLearningPlan(items: FutureLearningPlanItem[]): string {
+  const header = renderMarkdownTableHeader(enLearningPlanTableSchema.columns);
   const rows = items
     .map((item) => `| ${item.priorityEn} | ${item.domainEn} | ${item.technologiesEn} | ${item.timelineEn} | ${item.purposeEn} |`)
     .join('\n');
-  return `| Priority | Technology Domain | Technologies & Frameworks | Learning Timeline | Learning Purpose & Applications |\n|---|---|---|---|---|\n${rows}`;
+  return `${header}\n${rows}`;
 }
 
 export function renderJpLanguageSkills(items: LanguageSkillItem[]): string {
+  const header = renderMarkdownTableHeader(jpLanguageSkillsTableSchema.columns);
   const rows = items.map((item) => `| ${item.jpName} | ${item.jpLevel} | ${item.jpExperience} | ${item.jpUsage} |`).join('\n');
-  return `| 言語 | レベル | 実務経験 | 主な実績・用途 |\n|---|---|---|---|\n${rows}`;
+  return `${header}\n${rows}`;
 }
 
 export function renderEnLanguageSkills(items: LanguageSkillItem[]): string {
+  const header = renderMarkdownTableHeader(enLanguageSkillsTableSchema.columns);
   const rows = items.map((item) => `| ${item.enName} | ${item.enLevel} | ${item.enExperience} | ${item.enUsage} |`).join('\n');
-  return `| Language | Level | Experience | Main Achievements & Usage |\n|---|---|---|---|\n${rows}`;
+  return `${header}\n${rows}`;
 }
 
 export function renderJpFutureWorkRoadmap(items: FutureWorkRoadmapItem[]): string {

@@ -4,7 +4,7 @@ title: "キャリア詳細"
 subtitle: "AWS運用エンジニア → 開発エンジニアへのキャリアチェンジを目指す"
 description: "KFrostのキャリア詳細、技術スタック、職歴、個人プロジェクトの詳細情報"
 date: 2025-01-01
-last_modified_at: 2026-03-11
+last_modified_at: 2026-03-14
 show_toc: true
 permalink: /career/jp
 ---
@@ -134,4 +134,4 @@ table th {
 
 ---
 
-*最終更新: 2026年03月11日 | このページは定期的に更新されます*
+*最終更新: 2026年03月14日 | このページは定期的に更新されます*
